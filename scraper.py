@@ -36,9 +36,27 @@ FAANG_COMPANIES = {
         ("scaleai", "Scale AI"),
         ("anthropic", "Anthropic"),
         ("meta", "Meta"),
-        ("apple", "Apple"),
+        ("nvidia", "NVIDIA"),
+        ("amd", "AMD"),
+        ("intel", "Intel"),
+        ("qualcomm", "Qualcomm"),
+        ("adobe", "Adobe"),
+        ("vmware", "VMware"),
+        ("servicenow", "ServiceNow"),
+        ("workday", "Workday"),
+        ("intuit", "Intuit"),
+        ("autodesk", "Autodesk"),
+        ("paloaltonetworks", "Palo Alto Networks"),
+        ("crowdstrike", "CrowdStrike"),
+        ("datadog", "Datadog"),
+        ("elastic", "Elastic"),
+        ("confluent", "Confluent"),
+        ("supabase", "Supabase"),
+        ("vercel", "Vercel"),
     ],
-    "lever": []
+    "lever": [
+        ("netflix", "Netflix"),
+    ]
 }
 
 OTHER_COMPANIES = {
@@ -57,7 +75,6 @@ OTHER_COMPANIES = {
         ("hubspot", "HubSpot"),
         ("lyft", "Lyft"),
         ("mongodb", "MongoDB"),
-        ("nvidia", "NVIDIA"),
         ("okta", "Okta"),
         ("palantir", "Palantir"),
         ("pinterest", "Pinterest"),
@@ -78,6 +95,86 @@ OTHER_COMPANIES = {
         ("wayfair", "Wayfair"),
         ("zoom", "Zoom"),
         ("zscaler", "Zscaler"),
+        # Additional companies with CA/Seattle presence
+        ("coursera", "Coursera"),
+        ("duolingo", "Duolingo"),
+        ("flexport", "Flexport"),
+        ("rippling", "Rippling"),
+        ("faire", "Faire"),
+        ("retool", "Retool"),
+        ("linear", "Linear"),
+        ("loom", "Loom"),
+        ("miro", "Miro"),
+        ("canva", "Canva"),
+        ("webflow", "Webflow"),
+        ("amplitude", "Amplitude"),
+        ("mixpanel", "Mixpanel"),
+        ("segment", "Segment"),
+        ("twilio", "Twilio"),
+        ("cloudflare", "Cloudflare"),
+        ("fastly", "Fastly"),
+        ("netlify", "Netlify"),
+        ("gitlab", "GitLab"),
+        ("atlassian", "Atlassian"),
+        ("postman", "Postman"),
+        ("sentry", "Sentry"),
+        ("launchdarkly", "LaunchDarkly"),
+        ("pagerduty", "PagerDuty"),
+        ("newrelic", "New Relic"),
+        ("sumologic", "Sumo Logic"),
+        ("grafana", "Grafana Labs"),
+        ("circleci", "CircleCI"),
+        ("buildkite", "Buildkite"),
+        ("waymo", "Waymo"),
+        ("cruise", "Cruise"),
+        ("aurora", "Aurora"),
+        ("nuro", "Nuro"),
+        ("zoox", "Zoox"),
+        ("rivian", "Rivian"),
+        ("lucidmotors", "Lucid Motors"),
+        ("chargepoint", "ChargePoint"),
+        ("thetradedesk", "The Trade Desk"),
+        ("applovin", "AppLovin"),
+        ("unity", "Unity"),
+        ("roblox", "Roblox"),
+        ("box", "Box"),
+        ("docusign", "DocuSign"),
+        ("monday", "Monday.com"),
+        ("clickup", "ClickUp"),
+        ("wrike", "Wrike"),
+        ("smartsheet", "Smartsheet"),
+        ("coda", "Coda"),
+        # AI/ML companies
+        ("huggingface", "Hugging Face"),
+        ("cohere", "Cohere"),
+        ("ai21labs", "AI21 Labs"),
+        ("stability", "Stability AI"),
+        ("runway", "Runway"),
+        ("jasperai", "Jasper AI"),
+        ("adept", "Adept"),
+        ("inflection", "Inflection AI"),
+        ("characterai", "Character.AI"),
+        ("inworld", "Inworld AI"),
+        ("synthesia", "Synthesia"),
+        ("descript", "Descript"),
+        # Fintech
+        ("marqeta", "Marqeta"),
+        ("checkout", "Checkout.com"),
+        ("klarna", "Klarna"),
+        ("upstart", "Upstart"),
+        ("sofi", "SoFi"),
+        ("current", "Current"),
+        ("varo", "Varo"),
+        # Healthcare tech
+        ("veeva", "Veeva"),
+        ("flatiron", "Flatiron Health"),
+        ("tempus", "Tempus"),
+        ("grail", "GRAIL"),
+        ("color", "Color Health"),
+        ("illumina", "Illumina"),
+        ("10xgenomics", "10x Genomics"),
+        ("thermofisher", "Thermo Fisher"),
+        ("intuitivesurgical", "Intuitive Surgical"),
     ],
     "lever": [
         ("anduril", "Anduril"),
@@ -85,17 +182,46 @@ OTHER_COMPANIES = {
         ("woven", "Woven by Toyota"),
         ("ripple", "Ripple"),
         ("gemini", "Gemini"),
+        ("retool", "Retool"),
+        ("webflow", "Webflow"),
+        ("loom", "Loom"),
+        ("miro", "Miro"),
+        ("linear", "Linear"),
+        ("superhuman", "Superhuman"),
+        ("front", "Front"),
+        ("intercom", "Intercom"),
+        ("gong", "Gong"),
+        ("clari", "Clari"),
+        ("outreach", "Outreach"),
+        ("apollo", "Apollo.io"),
+        ("zoominfo", "ZoomInfo"),
+        ("clearbit", "Clearbit"),
+        ("6sense", "6sense"),
+        ("highspot", "Highspot"),
+        ("seismic", "Seismic"),
+        ("mindtickle", "MindTickle"),
+        ("allego", "Allego"),
+        ("fireflies", "Fireflies.ai"),
+        ("otter", "Otter.ai"),
+        ("fathom", "Fathom"),
+        ("grain", "Grain"),
+        ("vidyard", "Vidyard"),
+        ("wistia", "Wistia"),
+        ("vimeo", "Vimeo"),
+        ("restream", "Restream"),
+        ("streamyard", "StreamYard"),
+        ("riverside", "Riverside.fm"),
+        ("descript", "Descript"),
     ]
 }
 
 # Keywords to identify intern positions (must be exact matches or word boundaries)
 INTERN_KEYWORDS = [
-    " intern ", " intern,", " intern)", "(intern ", " intern\n",
-    "intern ", "internship", "co-op", "coop", 
-    "summer 2026", "fall 2026", "spring 2026",
-    "2026 intern", "2026 summer", "2026 fall",
-    "summer 2025", "fall 2025",
-    ", intern", "- intern"
+    "intern", "internship", "co-op", "coop",
+    "summer 2025", "fall 2025", "spring 2025", "winter 2025",
+    "summer 2026", "fall 2026", "spring 2026", "winter 2026",
+    "new grad", "new college grad", "university grad",
+    "early career", "entry level", "junior"
 ]
 
 # Keywords that indicate this is NOT an intern position
@@ -114,7 +240,9 @@ SWE_KEYWORDS = [
     "mobile", "ios", "android", "web", "platform",
     "infrastructure", "devops", "systems", "data engineer",
     "machine learning", "ml engineer", "ai engineer", "embedded",
-    "firmware"
+    "firmware", "cloud", "security", "site reliability", "sre",
+    "data science", "research", "computer science", "cs ",
+    "programmer", "coding", "tech", "technology"
 ]
 
 SOFTWARE_ENGINEER_TOKENS = [
@@ -149,7 +277,13 @@ CALIFORNIA_TOKENS = [
 SEATTLE_TOKENS = [
     "seattle",
     "seattle, wa",
-    "seattle wa"
+    "seattle wa",
+    "bellevue",
+    "redmond",
+    "kirkland",
+    "bothell",
+    "tacoma",
+    "washington"
 ]
 
 
@@ -158,9 +292,8 @@ def is_software_engineer_intern(title: str) -> bool:
     is_intern = any(kw in title_lower for kw in INTERN_KEYWORDS)
     is_swe = any(kw in title_lower for kw in SWE_KEYWORDS)
     is_excluded = any(kw in title_lower for kw in EXCLUDE_KEYWORDS)
-    is_se = any(token in title_lower for token in SOFTWARE_ENGINEER_TOKENS)
 
-    return is_intern and is_swe and is_se and not is_excluded
+    return is_intern and is_swe and not is_excluded
 
 
 def has_state_token(location_lower: str, state: str) -> bool:
@@ -179,17 +312,21 @@ def has_state_token(location_lower: str, state: str) -> bool:
 def location_priority(location: str) -> int:
     location_lower = location.lower()
     is_california = any(token in location_lower for token in CALIFORNIA_TOKENS) or has_state_token(location_lower, "ca")
-    is_seattle = any(token in location_lower for token in SEATTLE_TOKENS)
+    is_seattle = any(token in location_lower for token in SEATTLE_TOKENS) or has_state_token(location_lower, "wa")
+    is_remote = "remote" in location_lower or "hybrid" in location_lower
+    is_usa = "usa" in location_lower or "united states" in location_lower or "us" == location_lower.strip()
 
     if is_california:
         return 0
     if is_seattle:
         return 1
-    return 2
+    if is_remote or is_usa:
+        return 2
+    return 3
 
 
 def should_include_location(location: str) -> bool:
-    return location_priority(location) < 2
+    return location_priority(location) <= 2
 
 
 def fetch_greenhouse_jobs(company_id: str, company_name: str) -> List[Dict]:
