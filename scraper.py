@@ -14,6 +14,9 @@ import os
 GREENHOUSE_API = "https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
 LEVER_API = "https://api.lever.co/v0/postings/{company}"
 
+REPO_OWNER = "SreyaSomisetty17"
+REPO_NAME = "OpenPositions"
+
 # Companies to scrape - organized by category
 # FAANG+ = Facebook/Meta, Apple, Amazon, Netflix, Google + top tech companies
 FAANG_COMPANIES = {
@@ -34,28 +37,6 @@ FAANG_COMPANIES = {
         ("anthropic", "Anthropic"),
         ("meta", "Meta"),
         ("apple", "Apple"),
-    ],
-    "lever": []
-}
-
-# Quant = Quantitative trading firms and hedge funds
-QUANT_COMPANIES = {
-    "greenhouse": [
-        ("citaborxw1", "Citadel"),
-        ("citadelsecurities", "Citadel Securities"),
-        ("twosigma", "Two Sigma"),
-        ("hudsonrivertrading", "Hudson River Trading"),
-        ("imc", "IMC Trading"),
-        ("optaborxver", "Optiver"),
-        ("janestreet", "Jane Street"),
-        ("deshaw", "D. E. Shaw"),
-        ("point72", "Point72"),
-        ("akunacapital", "Akuna Capital"),
-        ("jumptrading", "Jump Trading"),
-        ("oldmissioncapital", "Old Mission Capital"),
-        ("fiverings", "Five Rings"),
-        ("susquehanna", "Susquehanna (SIG)"),
-        ("drweng", "DRW"),
     ],
     "lever": []
 }
@@ -123,7 +104,7 @@ EXCLUDE_KEYWORDS = [
     "director", "head of", "vp ", "vice president",
     "internal systems", "internal tools", "internal audit",
     "internals", "international", "internal engineering",
-    "internal developer"
+    "internal developer", "apprentice", "apprenticeship"
 ]
 
 # Keywords to identify software engineering positions
@@ -136,6 +117,80 @@ SWE_KEYWORDS = [
     "firmware"
 ]
 
+SOFTWARE_ENGINEER_TOKENS = [
+    "software engineer",
+    "software engineering",
+    "swe",
+    "sde"
+]
+
+CALIFORNIA_TOKENS = [
+    "california",
+    "san francisco",
+    "san jose",
+    "palo alto",
+    "menlo park",
+    "mountain view",
+    "sunnyvale",
+    "san mateo",
+    "santa clara",
+    "los angeles",
+    "culver city",
+    "irvine",
+    "pasadena",
+    "santa monica",
+    "san diego",
+    "redwood city",
+    "foster city",
+    "oakland",
+    "berkeley"
+]
+
+SEATTLE_TOKENS = [
+    "seattle",
+    "seattle, wa",
+    "seattle wa"
+]
+
+
+def is_software_engineer_intern(title: str) -> bool:
+    title_lower = title.lower()
+    is_intern = any(kw in title_lower for kw in INTERN_KEYWORDS)
+    is_swe = any(kw in title_lower for kw in SWE_KEYWORDS)
+    is_excluded = any(kw in title_lower for kw in EXCLUDE_KEYWORDS)
+    is_se = any(token in title_lower for token in SOFTWARE_ENGINEER_TOKENS)
+
+    return is_intern and is_swe and is_se and not is_excluded
+
+
+def has_state_token(location_lower: str, state: str) -> bool:
+    return any(
+        token in location_lower
+        for token in [
+            f", {state}",
+            f" {state},",
+            f" {state} ",
+            f"({state}",
+            f"{state})"
+        ]
+    )
+
+
+def location_priority(location: str) -> int:
+    location_lower = location.lower()
+    is_california = any(token in location_lower for token in CALIFORNIA_TOKENS) or has_state_token(location_lower, "ca")
+    is_seattle = any(token in location_lower for token in SEATTLE_TOKENS)
+
+    if is_california:
+        return 0
+    if is_seattle:
+        return 1
+    return 2
+
+
+def should_include_location(location: str) -> bool:
+    return location_priority(location) < 2
+
 
 def fetch_greenhouse_jobs(company_id: str, company_name: str) -> List[Dict]:
     """Fetch jobs from Greenhouse API"""
@@ -146,27 +201,27 @@ def fetch_greenhouse_jobs(company_id: str, company_name: str) -> List[Dict]:
         if response.status_code == 200:
             data = response.json()
             for job in data.get("jobs", []):
-                title = job.get("title", "").lower()
-                # Check if it's a SWE intern position
-                is_intern = any(kw in title for kw in INTERN_KEYWORDS)
-                is_swe = any(kw in title for kw in SWE_KEYWORDS)
-                is_excluded = any(kw in title for kw in EXCLUDE_KEYWORDS)
-                
-                if is_intern and is_swe and not is_excluded:
-                    location = job.get("location", {}).get("name", "N/A")
-                    posted_at = job.get("updated_at", job.get("created_at", ""))
-                    
-                    # Calculate days since posted
-                    days_posted = calculate_days_posted(posted_at)
-                    
-                    jobs.append({
-                        "company": company_name,
-                        "title": job.get("title", ""),
-                        "location": location,
-                        "url": job.get("absolute_url", ""),
-                        "days_posted": days_posted,
-                        "compensation": ""  # Greenhouse doesn't expose compensation
-                    })
+                title = job.get("title", "")
+                if not is_software_engineer_intern(title):
+                    continue
+
+                location = job.get("location", {}).get("name", "N/A")
+                if not should_include_location(location):
+                    continue
+
+                posted_at = job.get("updated_at", job.get("created_at", ""))
+
+                # Calculate days since posted
+                days_posted = calculate_days_posted(posted_at)
+
+                jobs.append({
+                    "company": company_name,
+                    "title": job.get("title", ""),
+                    "location": location,
+                    "url": job.get("absolute_url", ""),
+                    "days_posted": days_posted,
+                    "compensation": ""  # Greenhouse doesn't expose compensation
+                })
     except Exception as e:
         print(f"Error fetching from Greenhouse for {company_name}: {e}")
     return jobs
@@ -181,32 +236,32 @@ def fetch_lever_jobs(company_id: str, company_name: str) -> List[Dict]:
         if response.status_code == 200:
             data = response.json()
             for job in data:
-                title = job.get("text", "").lower()
-                # Check if it's a SWE intern position
-                is_intern = any(kw in title for kw in INTERN_KEYWORDS)
-                is_swe = any(kw in title for kw in SWE_KEYWORDS)
-                is_excluded = any(kw in title for kw in EXCLUDE_KEYWORDS)
-                
-                if is_intern and is_swe and not is_excluded:
-                    categories = job.get("categories", {})
-                    location = categories.get("location", "N/A")
-                    posted_at = job.get("createdAt", 0)
-                    
-                    # Lever uses milliseconds timestamp
-                    if posted_at:
-                        posted_date = datetime.fromtimestamp(posted_at / 1000)
-                        days_posted = (datetime.now() - posted_date).days
-                    else:
-                        days_posted = 0
-                    
-                    jobs.append({
-                        "company": company_name,
-                        "title": job.get("text", ""),
-                        "location": location,
-                        "url": job.get("hostedUrl", ""),
-                        "days_posted": days_posted,
-                        "compensation": ""
-                    })
+                title = job.get("text", "")
+                if not is_software_engineer_intern(title):
+                    continue
+
+                categories = job.get("categories", {})
+                location = categories.get("location", "N/A")
+                if not should_include_location(location):
+                    continue
+
+                posted_at = job.get("createdAt", 0)
+
+                # Lever uses milliseconds timestamp
+                if posted_at:
+                    posted_date = datetime.fromtimestamp(posted_at / 1000)
+                    days_posted = (datetime.now() - posted_date).days
+                else:
+                    days_posted = 0
+
+                jobs.append({
+                    "company": company_name,
+                    "title": job.get("text", ""),
+                    "location": location,
+                    "url": job.get("hostedUrl", ""),
+                    "days_posted": days_posted,
+                    "compensation": ""
+                })
     except Exception as e:
         print(f"Error fetching from Lever for {company_name}: {e}")
     return jobs
@@ -234,42 +289,37 @@ def fetch_all_jobs() -> Dict[str, List[Dict]]:
     """Fetch all jobs from all sources"""
     all_jobs = {
         "faang": [],
-        "quant": [],
         "other": []
     }
-    
+
     print("Fetching FAANG+ jobs...")
     for company_id, company_name in FAANG_COMPANIES.get("greenhouse", []):
         jobs = fetch_greenhouse_jobs(company_id, company_name)
         all_jobs["faang"].extend(jobs)
         print(f"  {company_name}: {len(jobs)} positions")
-    
+
     for company_id, company_name in FAANG_COMPANIES.get("lever", []):
         jobs = fetch_lever_jobs(company_id, company_name)
         all_jobs["faang"].extend(jobs)
         print(f"  {company_name}: {len(jobs)} positions")
-    
-    print("\nFetching Quant jobs...")
-    for company_id, company_name in QUANT_COMPANIES.get("greenhouse", []):
-        jobs = fetch_greenhouse_jobs(company_id, company_name)
-        all_jobs["quant"].extend(jobs)
-        print(f"  {company_name}: {len(jobs)} positions")
-    
+
     print("\nFetching Other company jobs...")
     for company_id, company_name in OTHER_COMPANIES.get("greenhouse", []):
         jobs = fetch_greenhouse_jobs(company_id, company_name)
         all_jobs["other"].extend(jobs)
         print(f"  {company_name}: {len(jobs)} positions")
-    
+
     for company_id, company_name in OTHER_COMPANIES.get("lever", []):
         jobs = fetch_lever_jobs(company_id, company_name)
         all_jobs["other"].extend(jobs)
         print(f"  {company_name}: {len(jobs)} positions")
-    
-    # Sort by days posted (most recent first)
+
+    # Sort by location priority (California, then Seattle), then by recency
     for category in all_jobs:
-        all_jobs[category].sort(key=lambda x: x["days_posted"])
-    
+        all_jobs[category].sort(
+            key=lambda x: (location_priority(x["location"]), x["days_posted"])
+        )
+
     return all_jobs
 
 
@@ -304,28 +354,28 @@ def generate_job_table(jobs: List[Dict]) -> str:
 def generate_readme(all_jobs: Dict[str, List[Dict]]) -> str:
     """Generate the full README content"""
     total_faang = len(all_jobs["faang"])
-    total_quant = len(all_jobs["quant"])
     total_other = len(all_jobs["other"])
-    total = total_faang + total_quant + total_other
-    
+    total = total_faang + total_other
+
     last_updated = datetime.now().strftime("%B %d, %Y at %H:%M UTC")
-    
+
     readme = f"""# 2026 Software Engineering Internship Positions
 
-[![Daily Update](https://github.com/YOUR_USERNAME/2026-SWE-Internships/actions/workflows/update.yml/badge.svg)](https://github.com/YOUR_USERNAME/2026-SWE-Internships/actions/workflows/update.yml)
+[![Daily Update](https://github.com/{REPO_OWNER}/{REPO_NAME}/actions/workflows/update.yml/badge.svg)](https://github.com/{REPO_OWNER}/{REPO_NAME}/actions/workflows/update.yml)
 
 This repository lists the latest Software Engineering Internship openings for 2026. Positions are **automatically updated daily** via GitHub Actions.
 
 **Last Updated:** {last_updated}
 
-**Total Positions:** {total} ({total_faang} FAANG+, {total_quant} Quant, {total_other} Other)
+**Total Positions:** {total} ({total_faang} FAANG+, {total_other} Other)
+
+**Focus:** California (priority) and Seattle, WA
 
 ---
 
 ## 🔎 Quick Links
 
 - [FAANG+](#faang) - {total_faang} positions
-- [Quant](#quant) - {total_quant} positions  
 - [Other](#other) - {total_other} positions
 
 ---
@@ -334,9 +384,6 @@ This repository lists the latest Software Engineering Internship openings for 20
 
 ### FAANG+
 {generate_job_table(all_jobs["faang"])}
-
-### Quant
-{generate_job_table(all_jobs["quant"])}
 
 ### Other
 {generate_job_table(all_jobs["other"])}
@@ -365,7 +412,7 @@ Job listings are scraped from public career pages. Always verify details on the 
 
 *Inspired by [speedyapply/2026-SWE-College-Jobs](https://github.com/speedyapply/2026-SWE-College-Jobs)*
 """
-    
+
     return readme
 
 
@@ -382,7 +429,6 @@ def main():
     print("\n" + "=" * 50)
     print("Summary:")
     print(f"  FAANG+ positions: {len(all_jobs['faang'])}")
-    print(f"  Quant positions: {len(all_jobs['quant'])}")
     print(f"  Other positions: {len(all_jobs['other'])}")
     print("=" * 50)
     
