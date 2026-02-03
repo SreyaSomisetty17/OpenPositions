@@ -15,10 +15,10 @@ GREENHOUSE_API = "https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
 LEVER_API = "https://api.lever.co/v0/postings/{company}"
 
 # Companies to scrape - organized by category
+# FAANG+ = Facebook/Meta, Apple, Amazon, Netflix, Google + top tech companies
 FAANG_COMPANIES = {
     "greenhouse": [
         ("openai", "OpenAI"),
-        ("netflix", "Netflix"),
         ("stripe", "Stripe"),
         ("figma", "Figma"),
         ("ramp", "Ramp"),
@@ -30,26 +30,32 @@ FAANG_COMPANIES = {
         ("robinhood", "Robinhood"),
         ("discord", "Discord"),
         ("databricks", "Databricks"),
-        ("scale", "Scale AI"),
+        ("scaleai", "Scale AI"),
         ("anthropic", "Anthropic"),
+        ("meta", "Meta"),
+        ("apple", "Apple"),
     ],
-    "lever": [
-        ("netflix", "Netflix"),
-    ]
+    "lever": []
 }
 
+# Quant = Quantitative trading firms and hedge funds
 QUANT_COMPANIES = {
     "greenhouse": [
-        ("citadel", "Citadel"),
+        ("citaborxw1", "Citadel"),
+        ("citadelsecurities", "Citadel Securities"),
         ("twosigma", "Two Sigma"),
         ("hudsonrivertrading", "Hudson River Trading"),
         ("imc", "IMC Trading"),
-        ("optiver", "Optiver"),
+        ("optaborxver", "Optiver"),
         ("janestreet", "Jane Street"),
-        ("deshaw", "D.E. Shaw"),
+        ("deshaw", "D. E. Shaw"),
         ("point72", "Point72"),
-        ("akuna", "Akuna Capital"),
+        ("akunacapital", "Akuna Capital"),
         ("jumptrading", "Jump Trading"),
+        ("oldmissioncapital", "Old Mission Capital"),
+        ("fiverings", "Five Rings"),
+        ("susquehanna", "Susquehanna (SIG)"),
+        ("drweng", "DRW"),
     ],
     "lever": []
 }
@@ -101,11 +107,23 @@ OTHER_COMPANIES = {
     ]
 }
 
-# Keywords to identify intern positions
+# Keywords to identify intern positions (must be exact matches or word boundaries)
 INTERN_KEYWORDS = [
-    "intern", "internship", "co-op", "coop", 
+    " intern ", " intern,", " intern)", "(intern ", " intern\n",
+    "intern ", "internship", "co-op", "coop", 
     "summer 2026", "fall 2026", "spring 2026",
-    "2026 intern", "2026 summer", "2026 fall"
+    "2026 intern", "2026 summer", "2026 fall",
+    "summer 2025", "fall 2025",
+    ", intern", "- intern"
+]
+
+# Keywords that indicate this is NOT an intern position
+EXCLUDE_KEYWORDS = [
+    "senior", "staff", "principal", "lead", "manager",
+    "director", "head of", "vp ", "vice president",
+    "internal systems", "internal tools", "internal audit",
+    "internals", "international", "internal engineering",
+    "internal developer"
 ]
 
 # Keywords to identify software engineering positions
@@ -113,8 +131,9 @@ SWE_KEYWORDS = [
     "software", "engineer", "developer", "swe", "sde",
     "backend", "frontend", "full stack", "fullstack",
     "mobile", "ios", "android", "web", "platform",
-    "infrastructure", "devops", "systems", "data",
-    "machine learning", "ml", "ai", "embedded"
+    "infrastructure", "devops", "systems", "data engineer",
+    "machine learning", "ml engineer", "ai engineer", "embedded",
+    "firmware"
 ]
 
 
@@ -131,8 +150,9 @@ def fetch_greenhouse_jobs(company_id: str, company_name: str) -> List[Dict]:
                 # Check if it's a SWE intern position
                 is_intern = any(kw in title for kw in INTERN_KEYWORDS)
                 is_swe = any(kw in title for kw in SWE_KEYWORDS)
+                is_excluded = any(kw in title for kw in EXCLUDE_KEYWORDS)
                 
-                if is_intern and is_swe:
+                if is_intern and is_swe and not is_excluded:
                     location = job.get("location", {}).get("name", "N/A")
                     posted_at = job.get("updated_at", job.get("created_at", ""))
                     
@@ -165,8 +185,9 @@ def fetch_lever_jobs(company_id: str, company_name: str) -> List[Dict]:
                 # Check if it's a SWE intern position
                 is_intern = any(kw in title for kw in INTERN_KEYWORDS)
                 is_swe = any(kw in title for kw in SWE_KEYWORDS)
+                is_excluded = any(kw in title for kw in EXCLUDE_KEYWORDS)
                 
-                if is_intern and is_swe:
+                if is_intern and is_swe and not is_excluded:
                     categories = job.get("categories", {})
                     location = categories.get("location", "N/A")
                     posted_at = job.get("createdAt", 0)
