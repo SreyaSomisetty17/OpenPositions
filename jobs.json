@@ -1,0 +1,864 @@
+{
+  "faang": [
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, Intern (Summer)",
+      "location": "San Francisco, Seattle, New York City",
+      "url": "https://stripe.com/jobs/search?gh_jid=7210115",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Coinbase",
+      "title": "Software Engineer, Backend (Consumer - International)",
+      "location": "Remote - Brazil",
+      "url": "https://www.coinbase.com/careers/positions/7583999?gh_jid=7583999",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, Internal Systems",
+      "location": "Seattle, San Francisco, New York City ",
+      "url": "https://stripe.com/jobs/search?gh_jid=7009186",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": "PhD GenAI Research Scientist Intern",
+      "location": "San Francisco, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": "Senior Software Engineer - Database Engine Internals",
+      "location": "Mountain View, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544383002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": "Senior Software Engineer - Database Engine Internals",
+      "location": "Belgrade, Serbia",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012809002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": "Senior Software Engineer - Database Engine Internals",
+      "location": "San Francisco, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5048461002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": "Software Engineer - Database Engine Internals",
+      "location": "Belgrade, Serbia",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012658002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": "Software Engineering Intern (2026)",
+      "location": "Belgrade, Serbia",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7640764002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": " Staff Software Engineer - Database Engine Internals",
+      "location": "Mountain View, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6544386002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": "Staff Software Engineer - Database Engine Internals",
+      "location": "San Francisco, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=5646866002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Databricks",
+      "title": "Staff Software Engineer - Database Engine Internals",
+      "location": "Belgrade, Serbia",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8012818002",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Data Analyst, Intern (Master's degree)",
+      "location": "Toronto, Ontario, Canada",
+      "url": "https://stripe.com/jobs/search?gh_jid=7285986",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Internal Audit - Data Analytics",
+      "location": "Bengaluru, Singapore",
+      "url": "https://stripe.com/jobs/search?gh_jid=7493138",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "PhD Data Scientist, Intern",
+      "location": "Toronto, Ontario, Canada",
+      "url": "https://stripe.com/jobs/search?gh_jid=7285974",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "PhD Machine Learning Engineer, Intern",
+      "location": "San Francisco, New York City, Seattle",
+      "url": "https://stripe.com/jobs/search?gh_jid=7216664",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, Intern",
+      "location": "London",
+      "url": "https://stripe.com/jobs/search?gh_jid=7360840",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, Intern",
+      "location": "Toronto",
+      "url": "https://stripe.com/jobs/search?gh_jid=7206389",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, Intern",
+      "location": "Singapore",
+      "url": "https://stripe.com/jobs/search?gh_jid=7206401",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, Intern",
+      "location": "Dublin",
+      "url": "https://stripe.com/jobs/search?gh_jid=7206494",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, Internal Systems",
+      "location": "Bengaluru, India",
+      "url": "https://stripe.com/jobs/search?gh_jid=7543868",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Coinbase",
+      "title": "Machine Learning Engineer Intern",
+      "location": "Hybrid - San Francisco, CA",
+      "url": "https://www.coinbase.com/careers/positions/7294075?gh_jid=7294075",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Coinbase",
+      "title": "Software Engineer Intern",
+      "location": "Hybrid - San Francisco, CA",
+      "url": "https://www.coinbase.com/careers/positions/7268895?gh_jid=7268895",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Instacart",
+      "title": "Machine Learning Engineer, PhD Intern",
+      "location": "United States - Remote",
+      "url": "https://instacart.careers/job/?gh_jid=5917202",
+      "days_posted": 13,
+      "compensation": ""
+    },
+    {
+      "company": "Instacart",
+      "title": "Machine Learning PhD Intern, Economics",
+      "location": "United States - Remote",
+      "url": "https://instacart.careers/job/?gh_jid=7532267",
+      "days_posted": 20,
+      "compensation": ""
+    },
+    {
+      "company": "Robinhood",
+      "title": "Software Developer Intern, Backend (Summer 2026)",
+      "location": "Toronto, Canada",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7235228?t=gh_src=&gh_jid=7235228",
+      "days_posted": 28,
+      "compensation": ""
+    },
+    {
+      "company": "Robinhood",
+      "title": "Software Developer Intern, Web (Summer 2026)",
+      "location": "Toronto, Canada",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7238998?t=gh_src=&gh_jid=7238998",
+      "days_posted": 28,
+      "compensation": ""
+    },
+    {
+      "company": "Robinhood",
+      "title": "Software Engineering Intern, Android (Summer 2026)",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7239199?t=gh_src=&gh_jid=7239199",
+      "days_posted": 28,
+      "compensation": ""
+    },
+    {
+      "company": "Robinhood",
+      "title": "Software Engineering Intern, iOS (Summer 2026)",
+      "location": "Menlo Park, CA",
+      "url": "https://boards.greenhouse.io/robinhood/jobs/7239268?t=gh_src=&gh_jid=7239268",
+      "days_posted": 28,
+      "compensation": ""
+    },
+    {
+      "company": "Coinbase",
+      "title": "Senior Software Engineer, Backend (Consumer -  International)",
+      "location": "Remote - Canada",
+      "url": "https://www.coinbase.com/careers/positions/7012102?gh_jid=7012102",
+      "days_posted": 54,
+      "compensation": ""
+    },
+    {
+      "company": "Coinbase",
+      "title": "Staff Software Engineer, Backend (Consumer - International)",
+      "location": "Remote - Brazil",
+      "url": "https://www.coinbase.com/careers/positions/6377946?gh_jid=6377946",
+      "days_posted": 54,
+      "compensation": ""
+    },
+    {
+      "company": "Coinbase",
+      "title": "Staff Software Engineer, Backend (Consumer - International)",
+      "location": "Remote - Canada",
+      "url": "https://www.coinbase.com/careers/positions/7292997?gh_jid=7292997",
+      "days_posted": 54,
+      "compensation": ""
+    },
+    {
+      "company": "Figma",
+      "title": "Software Engineer Intern, Developer Tools (2026) (London, United Kingdom)",
+      "location": "London, England",
+      "url": "https://boards.greenhouse.io/figma/jobs/5621177004?gh_jid=5621177004",
+      "days_posted": 76,
+      "compensation": ""
+    }
+  ],
+  "quant": [
+    {
+      "company": "IMC Trading",
+      "title": "Hardware Engineer Intern 2026/27",
+      "location": "Sydney,  Australia",
+      "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4742629101",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "IMC Trading",
+      "title": "Software Engineer Intern 2026/27",
+      "location": "Sydney,  Australia",
+      "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4629144101",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus Software Engineer (Dec 2026 - Feb 2027 Intern)",
+      "location": "Sydney; Singapore",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7543377",
+      "days_posted": 6,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus Tech Ops Engineer (Dec 2026 - Feb 2027 Intern)",
+      "location": "Sydney",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7543260",
+      "days_posted": 6,
+      "compensation": ""
+    },
+    {
+      "company": "Point72",
+      "title": "International Sector Analyst, Market Intelligence (MI)-Data Research",
+      "location": "Singapore / Hong Kong",
+      "url": "https://boards.greenhouse.io/point72/jobs/8377772002?gh_jid=8377772002",
+      "days_posted": 18,
+      "compensation": ""
+    },
+    {
+      "company": "IMC Trading",
+      "title": "Machine Learning Intern (2026)",
+      "location": "Amsterdam, Netherlands",
+      "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4635937101",
+      "days_posted": 25,
+      "compensation": ""
+    },
+    {
+      "company": "IMC Trading",
+      "title": "Software Engineer Intern (2026)",
+      "location": "Amsterdam, Netherlands",
+      "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4563168101",
+      "days_posted": 25,
+      "compensation": ""
+    },
+    {
+      "company": "IMC Trading",
+      "title": "Machine Learning Research Intern - Summer 2026",
+      "location": "Chicago, United States",
+      "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4608584101",
+      "days_posted": 53,
+      "compensation": ""
+    },
+    {
+      "company": "Point72",
+      "title": "2026 Summer Internship \u2013 Data Engineer, Long/Short Equities",
+      "location": "London",
+      "url": "https://boards.greenhouse.io/point72/jobs/8183047002?gh_jid=8183047002",
+      "days_posted": 74,
+      "compensation": ""
+    },
+    {
+      "company": "Point72",
+      "title": "2026 Summer Internship - Data Engineer, Proprietary Research",
+      "location": "New York, NY",
+      "url": "https://boards.greenhouse.io/point72/jobs/8150825002?gh_jid=8150825002",
+      "days_posted": 74,
+      "compensation": ""
+    },
+    {
+      "company": "Point72",
+      "title": "Machine Learning Researcher - Intern",
+      "location": "New York",
+      "url": "https://boards.greenhouse.io/point72/jobs/7302611002?gh_jid=7302611002",
+      "days_posted": 77,
+      "compensation": ""
+    },
+    {
+      "company": "Point72",
+      "title": "Quantitative Developer Intern",
+      "location": "New York",
+      "url": "https://boards.greenhouse.io/point72/jobs/7609197002?gh_jid=7609197002",
+      "days_posted": 77,
+      "compensation": ""
+    },
+    {
+      "company": "Point72",
+      "title": "Quantitative Software Developer Intern",
+      "location": "New York, London, or Paris",
+      "url": "https://boards.greenhouse.io/point72/jobs/7297666002?gh_jid=7297666002",
+      "days_posted": 77,
+      "compensation": ""
+    },
+    {
+      "company": "Point72",
+      "title": "Summer 2026 Quantitative Developer Internship",
+      "location": "New York",
+      "url": "https://boards.greenhouse.io/point72/jobs/7297613002?gh_jid=7297613002",
+      "days_posted": 77,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus AI/ML Researcher (Fall 2025/Spring 2026 Intern) ",
+      "location": "Shanghai; Singapore; Hong Kong",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7282220",
+      "days_posted": 81,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus AI Researcher, PhD/Postdoc (Intern)",
+      "location": "Chicago; New York",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7141699",
+      "days_posted": 81,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus AI Researcher, PhD/Postdoc (Intern)",
+      "location": "London",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7141685",
+      "days_posted": 81,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus C++ Software Engineer (Intern)",
+      "location": "Shanghai",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7123068",
+      "days_posted": 81,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus ML Research Engineer (Intern)",
+      "location": "London",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7141601",
+      "days_posted": 81,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus Python Software Engineer (Intern)",
+      "location": "Shanghai",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7123075",
+      "days_posted": 81,
+      "compensation": ""
+    },
+    {
+      "company": "Jump Trading",
+      "title": "Campus Tech Ops Engineer (Intern)",
+      "location": "Shanghai",
+      "url": "https://www.jumptrading.com/hr/job?gh_jid=7081994",
+      "days_posted": 81,
+      "compensation": ""
+    }
+  ],
+  "other": [
+    {
+      "company": "Airtable",
+      "title": "Internal Airtable Solution Architect",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/airtable/jobs/8227686002",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "MongoDB",
+      "title": "2026 - GTM Engineering Intern, Palo Alto",
+      "location": "Palo Alto",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7335935",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "MongoDB",
+      "title": "2026 - Information Security Engineering Intern, Seattle",
+      "location": "Seattle",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7292751",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "MongoDB",
+      "title": "2026 - Internal AI Product Management Intern, Palo Alto",
+      "location": "Palo Alto",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7336095",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "MongoDB",
+      "title": "2026 - Software Engineering Intern, Toronto",
+      "location": "Toronto",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7239049",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "MongoDB",
+      "title": "Product Manager 3, Internal AI",
+      "location": "Palo Alto; San Francisco",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7276451",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "MongoDB",
+      "title": "Senior Engineer, Internal Engineering",
+      "location": "Gurugram",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7557673",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "MongoDB",
+      "title": "Software Engineer 3, Internal Engineering",
+      "location": "Gurugram",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7543827",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Squarespace",
+      "title": "Software Engineering Intern - Summer 2026",
+      "location": "New York City",
+      "url": "http://www.squarespace.com/about/careers?gh_jid=7567536",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "iOS Engineering Intern - Native Streaming Clients Team 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5038878007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Zscaler",
+      "title": "Staff Software Development Engineer(System Internals/Cloud Infra)",
+      "location": "Bangalore, IND",
+      "url": "https://job-boards.greenhouse.io/zscaler/jobs/4994292007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Asana",
+      "title": "Software Engineering Intern - Summer 2026 (Reykjavik)",
+      "location": "Reykjav\u00edk",
+      "url": "https://www.asana.com/jobs/apply/7490314?gh_jid=7490314",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Asana",
+      "title": "Software Engineering Intern - Summer 2026 (Warsaw)",
+      "location": "Warsaw",
+      "url": "https://www.asana.com/jobs/apply/7490274?gh_jid=7490274",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Backend Software Engineering Intern 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026094007",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Frontend Software Engineering Intern 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5024322007",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Hardware Engineer (Summer Co-op)",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/4135120007",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Product Design Mechanical Engineer (Summer Co-op)",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/4084333007",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Security Embedded Software Engineering Intern 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026086007",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Technical Support Engineering Intern - Fall 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5017082007",
+      "days_posted": 3,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Fullstack (Servicing International)",
+      "location": "Remote Spain",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7119420003",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Fullstack (Servicing International)",
+      "location": "Remote Poland",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7119422003",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Chime",
+      "title": "Product Manager, Internal AI",
+      "location": "San Francisco, CA; New York, NY; Chicago, IL",
+      "url": "https://boards.greenhouse.io/chime/jobs/8332735002?gh_jid=8332735002",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "Data Science Engineer Intern (Summer 2026)",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7527941?gh_jid=7527941",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "Data Science Intern (Summer 2026)",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7527921?gh_jid=7527921",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "PhD Machine Learning Intern (Summer 2026)",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7368677?gh_jid=7368677",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "PhD Systems & AI/ML Research Intern (Summer 2026)",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7462813?gh_jid=7462813",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "Software Engineer Intern (Summer 2026)",
+      "location": "Remote - Poland",
+      "url": "https://jobs.dropbox.com/listing/7362887?gh_jid=7362887",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "Support Enablement Engineer Intern  (Summer 2026)",
+      "location": "Remote - Canada: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7531481?gh_jid=7531481",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "Support Enablement Engineer Intern  (Summer 2026)",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7531477?gh_jid=7531477",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Okta",
+      "title": "Site Reliability Engineer Intern (Summer 2026)",
+      "location": "Bellevue, Washington",
+      "url": "https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798",
+      "days_posted": 6,
+      "compensation": ""
+    },
+    {
+      "company": "Gusto",
+      "title": "Software Engineering Apprenticeship (Summer 2026)",
+      "location": "San Francisco, CA - Hybrid; New York, NY - Hybrid",
+      "url": "https://job-boards.greenhouse.io/gusto/jobs/7551561",
+      "days_posted": 7,
+      "compensation": ""
+    },
+    {
+      "company": "Pinterest",
+      "title": "Machine Learning Intern Fall 2026 (Toronto)",
+      "location": "Toronto, ON, CA",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7268778",
+      "days_posted": 10,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Software Engineering Intern - Summer 2026",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7528020003",
+      "days_posted": 12,
+      "compensation": ""
+    },
+    {
+      "company": "Twitch",
+      "title": "Graduate Data Science Intern",
+      "location": "San Francisco, CA",
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8221777002",
+      "days_posted": 20,
+      "compensation": ""
+    },
+    {
+      "company": "Twitch",
+      "title": "Undergrad Security Engineering Intern",
+      "location": "San Francisco, CA",
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8216024002",
+      "days_posted": 20,
+      "compensation": ""
+    },
+    {
+      "company": "Twitch",
+      "title": "Undergrad Software Engineering Intern",
+      "location": "San Francisco, CA",
+      "url": "https://job-boards.greenhouse.io/twitch/jobs/8174019002",
+      "days_posted": 20,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Fullstack (Servicing International)",
+      "location": "Remote Poland",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7118737003",
+      "days_posted": 24,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Fullstack (Servicing International)",
+      "location": "Remote Spain",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7118739003",
+      "days_posted": 24,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Software Engineer II, Fullstack (Servicing International)",
+      "location": "Remote Spain",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7119446003",
+      "days_posted": 24,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Software Engineer II, Fullstack (Servicing International)",
+      "location": "Remote Poland",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7119444003",
+      "days_posted": 24,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Frontend (Checkout Experience International)",
+      "location": "Remote Spain",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/6688438003",
+      "days_posted": 26,
+      "compensation": ""
+    },
+    {
+      "company": "Affirm",
+      "title": "Senior Software Engineer, Frontend (Checkout Experience International)",
+      "location": "Remote Poland",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/6688440003",
+      "days_posted": 26,
+      "compensation": ""
+    },
+    {
+      "company": "Lyft",
+      "title": "Paid Media Marketing Intern (MBA) (Summer 2026)",
+      "location": "Toronto, Canada",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8250434002?gh_jid=8250434002",
+      "days_posted": 28,
+      "compensation": ""
+    },
+    {
+      "company": "Grammarly",
+      "title": "Software Engineer Intern (Summer 2026)",
+      "location": "Berlin; Hybrid",
+      "url": "https://job-boards.greenhouse.io/grammarly/jobs/7491439",
+      "days_posted": 42,
+      "compensation": ""
+    },
+    {
+      "company": "Lyft",
+      "title": "Industrialization Engineer Intern (Summer 2026)",
+      "location": "Longueuil, Canada",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8331996002?gh_jid=8331996002",
+      "days_posted": 53,
+      "compensation": ""
+    },
+    {
+      "company": "Pinterest",
+      "title": "IT Systems Engineer Intern",
+      "location": "Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7262769",
+      "days_posted": 61,
+      "compensation": ""
+    },
+    {
+      "company": "Pinterest",
+      "title": "IT Systems Engineer Intern",
+      "location": "Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7262750",
+      "days_posted": 62,
+      "compensation": ""
+    },
+    {
+      "company": "Pinterest",
+      "title": "UX Engineer Intern",
+      "location": "San Francisco, CA, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7253053",
+      "days_posted": 70,
+      "compensation": ""
+    },
+    {
+      "company": "Lyft",
+      "title": "Hardware Supply Chain Program Manager Intern (Summer 2026)",
+      "location": "San Francisco, CA",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8290361002?gh_jid=8290361002",
+      "days_posted": 74,
+      "compensation": ""
+    },
+    {
+      "company": "Pinterest",
+      "title": "Master's Machine Learning Internship Summer Term 2026 (Toronto)",
+      "location": "Toronto, ON, CA",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7268767",
+      "days_posted": 75,
+      "compensation": ""
+    },
+    {
+      "company": "Pinterest",
+      "title": "Software Engineering Intern 2026 (Mexico City)",
+      "location": "Mexico City, MX",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7263499",
+      "days_posted": 75,
+      "compensation": ""
+    },
+    {
+      "company": "Pinterest",
+      "title": "PhD Machine Learning Internship 2026 (USA) ",
+      "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7211004",
+      "days_posted": 80,
+      "compensation": ""
+    },
+    {
+      "company": "Lyft",
+      "title": "Software Engineer Intern, Mobile iOS (Summer 2026)",
+      "location": "San Francisco, CA",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8215921002?gh_jid=8215921002",
+      "days_posted": 105,
+      "compensation": ""
+    }
+  ]
+}

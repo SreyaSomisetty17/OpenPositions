@@ -1,0 +1,385 @@
+#!/usr/bin/env python3
+"""
+Job Scraper for Software Engineering Internship Positions
+Fetches job listings from multiple sources and updates README.md
+"""
+
+import requests
+import json
+from datetime import datetime, timedelta
+from typing import List, Dict
+import os
+
+# Job board APIs and sources
+GREENHOUSE_API = "https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
+LEVER_API = "https://api.lever.co/v0/postings/{company}"
+
+# Companies to scrape - organized by category
+FAANG_COMPANIES = {
+    "greenhouse": [
+        ("openai", "OpenAI"),
+        ("netflix", "Netflix"),
+        ("stripe", "Stripe"),
+        ("figma", "Figma"),
+        ("ramp", "Ramp"),
+        ("notion", "Notion"),
+        ("plaid", "Plaid"),
+        ("coinbase", "Coinbase"),
+        ("instacart", "Instacart"),
+        ("doordash", "DoorDash"),
+        ("robinhood", "Robinhood"),
+        ("discord", "Discord"),
+        ("databricks", "Databricks"),
+        ("scale", "Scale AI"),
+        ("anthropic", "Anthropic"),
+    ],
+    "lever": [
+        ("netflix", "Netflix"),
+    ]
+}
+
+QUANT_COMPANIES = {
+    "greenhouse": [
+        ("citadel", "Citadel"),
+        ("twosigma", "Two Sigma"),
+        ("hudsonrivertrading", "Hudson River Trading"),
+        ("imc", "IMC Trading"),
+        ("optiver", "Optiver"),
+        ("janestreet", "Jane Street"),
+        ("deshaw", "D.E. Shaw"),
+        ("point72", "Point72"),
+        ("akuna", "Akuna Capital"),
+        ("jumptrading", "Jump Trading"),
+    ],
+    "lever": []
+}
+
+OTHER_COMPANIES = {
+    "greenhouse": [
+        ("affirm", "Affirm"),
+        ("airbnb", "Airbnb"),
+        ("airtable", "Airtable"),
+        ("asana", "Asana"),
+        ("brex", "Brex"),
+        ("chime", "Chime"),
+        ("cockroachlabs", "Cockroach Labs"),
+        ("dropbox", "Dropbox"),
+        ("grammarly", "Grammarly"),
+        ("gusto", "Gusto"),
+        ("hashicorp", "HashiCorp"),
+        ("hubspot", "HubSpot"),
+        ("lyft", "Lyft"),
+        ("mongodb", "MongoDB"),
+        ("nvidia", "NVIDIA"),
+        ("okta", "Okta"),
+        ("palantir", "Palantir"),
+        ("pinterest", "Pinterest"),
+        ("reddit", "Reddit"),
+        ("salesforce", "Salesforce"),
+        ("shopify", "Shopify"),
+        ("slack", "Slack"),
+        ("snap", "Snap"),
+        ("snowflake", "Snowflake"),
+        ("splunk", "Splunk"),
+        ("spotify", "Spotify"),
+        ("square", "Square"),
+        ("squarespace", "Squarespace"),
+        ("tesla", "Tesla"),
+        ("twitch", "Twitch"),
+        ("uber", "Uber"),
+        ("verkada", "Verkada"),
+        ("wayfair", "Wayfair"),
+        ("zoom", "Zoom"),
+        ("zscaler", "Zscaler"),
+    ],
+    "lever": [
+        ("anduril", "Anduril"),
+        ("benchling", "Benchling"),
+        ("woven", "Woven by Toyota"),
+        ("ripple", "Ripple"),
+        ("gemini", "Gemini"),
+    ]
+}
+
+# Keywords to identify intern positions
+INTERN_KEYWORDS = [
+    "intern", "internship", "co-op", "coop", 
+    "summer 2026", "fall 2026", "spring 2026",
+    "2026 intern", "2026 summer", "2026 fall"
+]
+
+# Keywords to identify software engineering positions
+SWE_KEYWORDS = [
+    "software", "engineer", "developer", "swe", "sde",
+    "backend", "frontend", "full stack", "fullstack",
+    "mobile", "ios", "android", "web", "platform",
+    "infrastructure", "devops", "systems", "data",
+    "machine learning", "ml", "ai", "embedded"
+]
+
+
+def fetch_greenhouse_jobs(company_id: str, company_name: str) -> List[Dict]:
+    """Fetch jobs from Greenhouse API"""
+    jobs = []
+    try:
+        url = GREENHOUSE_API.format(company=company_id)
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            for job in data.get("jobs", []):
+                title = job.get("title", "").lower()
+                # Check if it's a SWE intern position
+                is_intern = any(kw in title for kw in INTERN_KEYWORDS)
+                is_swe = any(kw in title for kw in SWE_KEYWORDS)
+                
+                if is_intern and is_swe:
+                    location = job.get("location", {}).get("name", "N/A")
+                    posted_at = job.get("updated_at", job.get("created_at", ""))
+                    
+                    # Calculate days since posted
+                    days_posted = calculate_days_posted(posted_at)
+                    
+                    jobs.append({
+                        "company": company_name,
+                        "title": job.get("title", ""),
+                        "location": location,
+                        "url": job.get("absolute_url", ""),
+                        "days_posted": days_posted,
+                        "compensation": ""  # Greenhouse doesn't expose compensation
+                    })
+    except Exception as e:
+        print(f"Error fetching from Greenhouse for {company_name}: {e}")
+    return jobs
+
+
+def fetch_lever_jobs(company_id: str, company_name: str) -> List[Dict]:
+    """Fetch jobs from Lever API"""
+    jobs = []
+    try:
+        url = LEVER_API.format(company=company_id)
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            for job in data:
+                title = job.get("text", "").lower()
+                # Check if it's a SWE intern position
+                is_intern = any(kw in title for kw in INTERN_KEYWORDS)
+                is_swe = any(kw in title for kw in SWE_KEYWORDS)
+                
+                if is_intern and is_swe:
+                    categories = job.get("categories", {})
+                    location = categories.get("location", "N/A")
+                    posted_at = job.get("createdAt", 0)
+                    
+                    # Lever uses milliseconds timestamp
+                    if posted_at:
+                        posted_date = datetime.fromtimestamp(posted_at / 1000)
+                        days_posted = (datetime.now() - posted_date).days
+                    else:
+                        days_posted = 0
+                    
+                    jobs.append({
+                        "company": company_name,
+                        "title": job.get("text", ""),
+                        "location": location,
+                        "url": job.get("hostedUrl", ""),
+                        "days_posted": days_posted,
+                        "compensation": ""
+                    })
+    except Exception as e:
+        print(f"Error fetching from Lever for {company_name}: {e}")
+    return jobs
+
+
+def calculate_days_posted(date_string: str) -> int:
+    """Calculate days since job was posted"""
+    if not date_string:
+        return 0
+    try:
+        # Handle ISO format dates
+        if "T" in date_string:
+            posted_date = datetime.fromisoformat(date_string.replace("Z", "+00:00"))
+            posted_date = posted_date.replace(tzinfo=None)
+        else:
+            posted_date = datetime.strptime(date_string[:10], "%Y-%m-%d")
+        
+        days = (datetime.now() - posted_date).days
+        return max(0, days)
+    except:
+        return 0
+
+
+def fetch_all_jobs() -> Dict[str, List[Dict]]:
+    """Fetch all jobs from all sources"""
+    all_jobs = {
+        "faang": [],
+        "quant": [],
+        "other": []
+    }
+    
+    print("Fetching FAANG+ jobs...")
+    for company_id, company_name in FAANG_COMPANIES.get("greenhouse", []):
+        jobs = fetch_greenhouse_jobs(company_id, company_name)
+        all_jobs["faang"].extend(jobs)
+        print(f"  {company_name}: {len(jobs)} positions")
+    
+    for company_id, company_name in FAANG_COMPANIES.get("lever", []):
+        jobs = fetch_lever_jobs(company_id, company_name)
+        all_jobs["faang"].extend(jobs)
+        print(f"  {company_name}: {len(jobs)} positions")
+    
+    print("\nFetching Quant jobs...")
+    for company_id, company_name in QUANT_COMPANIES.get("greenhouse", []):
+        jobs = fetch_greenhouse_jobs(company_id, company_name)
+        all_jobs["quant"].extend(jobs)
+        print(f"  {company_name}: {len(jobs)} positions")
+    
+    print("\nFetching Other company jobs...")
+    for company_id, company_name in OTHER_COMPANIES.get("greenhouse", []):
+        jobs = fetch_greenhouse_jobs(company_id, company_name)
+        all_jobs["other"].extend(jobs)
+        print(f"  {company_name}: {len(jobs)} positions")
+    
+    for company_id, company_name in OTHER_COMPANIES.get("lever", []):
+        jobs = fetch_lever_jobs(company_id, company_name)
+        all_jobs["other"].extend(jobs)
+        print(f"  {company_name}: {len(jobs)} positions")
+    
+    # Sort by days posted (most recent first)
+    for category in all_jobs:
+        all_jobs[category].sort(key=lambda x: x["days_posted"])
+    
+    return all_jobs
+
+
+def generate_job_table(jobs: List[Dict]) -> str:
+    """Generate markdown table for jobs"""
+    if not jobs:
+        return "| Company | Title | Location | Compensation | Apply | Days Posted |\n|---------|-------|----------|--------------|-------|-------------|\n| *No positions available* | - | - | - | - | - |"
+    
+    table = "| Company | Title | Location | Compensation | Apply | Days Posted |\n"
+    table += "|---------|-------|----------|--------------|-------|-------------|\n"
+    
+    for job in jobs:
+        company = job["company"]
+        title = job["title"]
+        location = job["location"]
+        compensation = job.get("compensation", "")
+        url = job["url"]
+        days = f"{job['days_posted']}d"
+        
+        # Truncate long titles
+        if len(title) > 70:
+            title = title[:67] + "..."
+        
+        # Create apply button
+        apply_link = f"[Apply]({url})" if url else "N/A"
+        
+        table += f"| {company} | {title} | {location} | {compensation} | {apply_link} | {days} |\n"
+    
+    return table
+
+
+def generate_readme(all_jobs: Dict[str, List[Dict]]) -> str:
+    """Generate the full README content"""
+    total_faang = len(all_jobs["faang"])
+    total_quant = len(all_jobs["quant"])
+    total_other = len(all_jobs["other"])
+    total = total_faang + total_quant + total_other
+    
+    last_updated = datetime.now().strftime("%B %d, %Y at %H:%M UTC")
+    
+    readme = f"""# 2026 Software Engineering Internship Positions
+
+[![Daily Update](https://github.com/YOUR_USERNAME/2026-SWE-Internships/actions/workflows/update.yml/badge.svg)](https://github.com/YOUR_USERNAME/2026-SWE-Internships/actions/workflows/update.yml)
+
+This repository lists the latest Software Engineering Internship openings for 2026. Positions are **automatically updated daily** via GitHub Actions.
+
+**Last Updated:** {last_updated}
+
+**Total Positions:** {total} ({total_faang} FAANG+, {total_quant} Quant, {total_other} Other)
+
+---
+
+## 🔎 Quick Links
+
+- [FAANG+](#faang) - {total_faang} positions
+- [Quant](#quant) - {total_quant} positions  
+- [Other](#other) - {total_other} positions
+
+---
+
+## USA Internships 🦅
+
+### FAANG+
+{generate_job_table(all_jobs["faang"])}
+
+### Quant
+{generate_job_table(all_jobs["quant"])}
+
+### Other
+{generate_job_table(all_jobs["other"])}
+
+---
+
+## 📋 About
+
+This list is automatically scraped from company career pages and job boards including:
+- Greenhouse
+- Lever
+- Workday
+- Company career pages
+
+Positions within the last 120 days are included.
+
+## 🤝 Contributing
+
+Found a missing company or position? Open an issue or PR!
+
+## ⚠️ Disclaimer
+
+Job listings are scraped from public career pages. Always verify details on the official company website before applying.
+
+---
+
+*Inspired by [speedyapply/2026-SWE-College-Jobs](https://github.com/speedyapply/2026-SWE-College-Jobs)*
+"""
+    
+    return readme
+
+
+def main():
+    """Main function to scrape jobs and update README"""
+    print("=" * 50)
+    print("2026 SWE Internship Scraper")
+    print("=" * 50)
+    print()
+    
+    # Fetch all jobs
+    all_jobs = fetch_all_jobs()
+    
+    print("\n" + "=" * 50)
+    print("Summary:")
+    print(f"  FAANG+ positions: {len(all_jobs['faang'])}")
+    print(f"  Quant positions: {len(all_jobs['quant'])}")
+    print(f"  Other positions: {len(all_jobs['other'])}")
+    print("=" * 50)
+    
+    # Generate README
+    readme_content = generate_readme(all_jobs)
+    
+    # Write to README.md
+    with open("README.md", "w") as f:
+        f.write(readme_content)
+    
+    print("\n✅ README.md updated successfully!")
+    
+    # Also save raw job data as JSON for debugging
+    with open("jobs.json", "w") as f:
+        json.dump(all_jobs, f, indent=2)
+    
+    print("✅ jobs.json saved for reference")
+
+
+if __name__ == "__main__":
+    main()
