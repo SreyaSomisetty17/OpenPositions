@@ -1,6 +1,6 @@
 # 2026 Software Engineering Internship Positions
 
-[![Daily Update](https://github.com/YOUR_USERNAME/2026-SWE-Internships/actions/workflows/update.yml/badge.svg)](https://github.com/YOUR_USERNAME/2026-SWE-Internships/actions/workflows/update.yml)
+[![Daily Update](https://github.com/SreyaSomisetty17/OpenPositions/actions/workflows/update.yml/badge.svg)](https://github.com/SreyaSomisetty17/OpenPositions/actions/workflows/update.yml)
 
 This repository lists the latest Software Engineering Internship openings for 2026. Positions are **automatically updated daily** via GitHub Actions.
 
