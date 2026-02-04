@@ -187,6 +187,14 @@
       "compensation": ""
     },
     {
+      "company": "Nuro",
+      "title": "Systems Test Engineering Intern",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7587180",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
       "company": "Roblox",
       "title": "[2026 Canada] Software Engineer, Geometry - Early Career",
       "location": "Vancouver, British Columbia, Canada",
@@ -232,46 +240,6 @@
       "location": "San Mateo, CA United States",
       "url": "https://job-boards.greenhouse.io/verkada/jobs/5038878007",
       "days_posted": 1,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Cell Engineering, Summer 2026 ",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922163007",
-      "days_posted": 3,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Complex Systems Diagnostics and Prognostics Design, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4953722007",
-      "days_posted": 3,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Power Electronics Engineer, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922185007",
-      "days_posted": 3,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Power Electronics Mechanical Engineer, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922169007",
-      "days_posted": 3,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Powertrain Engineering, Efficiency and EV Systems, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922189007",
-      "days_posted": 3,
       "compensation": ""
     },
     {
@@ -364,46 +332,6 @@
     },
     {
       "company": "Nuro",
-      "title": "Embedded Software Engineer Intern",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7532060",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Nuro",
-      "title": "Machine Learning intern, Behavior Planning",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7309261",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Nuro",
-      "title": "Software Engineer, AI Platform - Intern",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7351061",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Nuro",
-      "title": "Software Engineer, AI Platform - New Grad",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7351066",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Nuro",
-      "title": "Software Engineer, Autonomy-New Grad",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=6932596",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Nuro",
       "title": "Software Engineer Intern, Pose (Vehicle State Estimation)",
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=7545444",
@@ -411,18 +339,18 @@
       "compensation": ""
     },
     {
-      "company": "Nuro",
-      "title": "Software Engineer, ML Infrastructure - Internship",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7366266",
+      "company": "Lucid Motors",
+      "title": "Intern, Cell Engineering, Summer 2026 ",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922163007",
       "days_posted": 4,
       "compensation": ""
     },
     {
-      "company": "Nuro",
-      "title": "Systems Engineering Intern, Compliance Coverage ML",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7562197",
+      "company": "Lucid Motors",
+      "title": "Intern, Complex Systems Diagnostics and Prognostics Design, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4953722007",
       "days_posted": 4,
       "compensation": ""
     },
@@ -431,6 +359,30 @@
       "title": "Intern, HVAC and Thermal Systems, Summer 2026",
       "location": "Newark, CA",
       "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4969388007",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "title": "Intern, Power Electronics Engineer, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922185007",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "title": "Intern, Power Electronics Mechanical Engineer, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922169007",
+      "days_posted": 4,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "title": "Intern, Powertrain Engineering, Efficiency and EV Systems, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922189007",
       "days_posted": 4,
       "compensation": ""
     },
@@ -447,6 +399,62 @@
       "title": "Software Engineer, Summer Undergraduate Intern",
       "location": "San Francisco, CA",
       "url": "https://www.fastly.com/about/jobs/apply?gh_jid=7512114",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Nuro",
+      "title": "Embedded Software Engineer Intern",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7532060",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Nuro",
+      "title": "Machine Learning intern, Behavior Planning",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7309261",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Nuro",
+      "title": "Software Engineer, AI Platform - Intern",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7351061",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Nuro",
+      "title": "Software Engineer, AI Platform - New Grad",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7351066",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Nuro",
+      "title": "Software Engineer, Autonomy-New Grad",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=6932596",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Nuro",
+      "title": "Software Engineer, ML Infrastructure - Internship",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7366266",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Nuro",
+      "title": "Systems Engineering Intern, Compliance Coverage ML",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7562197",
       "days_posted": 5,
       "compensation": ""
     },
@@ -636,14 +644,6 @@
     },
     {
       "company": "10x Genomics",
-      "title": "Chemical Engineering Intern",
-      "location": "Pleasanton, California, USA HQ",
-      "url": "https://boards.greenhouse.io/10xgenomics/jobs/7528498?gh_jid=7528498",
-      "days_posted": 25,
-      "compensation": ""
-    },
-    {
-      "company": "10x Genomics",
       "title": "Fluidics Engineering Intern, Instrument",
       "location": "Pleasanton, California, USA HQ",
       "url": "https://boards.greenhouse.io/10xgenomics/jobs/7525609?gh_jid=7525609",
@@ -719,7 +719,7 @@
       "title": "Site Reliability Engineer Intern (Summer 2026)",
       "location": "Bellevue, Washington",
       "url": "https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798",
-      "days_posted": 6,
+      "days_posted": 7,
       "compensation": ""
     },
     {
@@ -733,16 +733,16 @@
     {
       "company": "Dropbox",
       "title": "CX Technical Content Design Intern (Summer 2026)",
-      "location": "Remote - Canada: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7558516?gh_jid=7558516",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7558512?gh_jid=7558512",
       "days_posted": 4,
       "compensation": ""
     },
     {
       "company": "Dropbox",
       "title": "CX Technical Content Design Intern (Summer 2026)",
-      "location": "Remote - US: All locations",
-      "url": "https://jobs.dropbox.com/listing/7558512?gh_jid=7558512",
+      "location": "Remote - Canada: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7558516?gh_jid=7558516",
       "days_posted": 4,
       "compensation": ""
     },
@@ -789,16 +789,16 @@
     {
       "company": "Dropbox",
       "title": "Research and Insights Intern (Summer 2026)",
-      "location": "Remote - US: All locations",
-      "url": "https://jobs.dropbox.com/listing/7558568?gh_jid=7558568",
+      "location": "Remote - Canada: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7558572?gh_jid=7558572",
       "days_posted": 6,
       "compensation": ""
     },
     {
       "company": "Dropbox",
       "title": "Research and Insights Intern (Summer 2026)",
-      "location": "Remote - Canada: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7558572?gh_jid=7558572",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7558568?gh_jid=7558568",
       "days_posted": 6,
       "compensation": ""
     },

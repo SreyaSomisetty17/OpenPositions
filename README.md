@@ -4,7 +4,7 @@
 
 This repository lists the latest Software Engineering Internship openings for 2026. Positions are **automatically updated daily** via GitHub Actions.
 
-**Last Updated:** February 03, 2026 at 21:48 UTC
+**Last Updated:** February 04, 2026 at 06:35 UTC
 
 **Total Positions:** 112 (20 FAANG+, 92 Other)
 
@@ -52,17 +52,13 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Affirm | Software Engineer, Early Career | San Francisco, California, United States |  | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) | 0d |
 | Okta | TDI Security Program Management Intern (Summer 2026) | San Francisco, California |  | [Apply](https://www.okta.com/company/careers/opportunity/7551656?gh_jid=7551656) | 0d |
 | Verkada | Computer Vision Software Engineer - University Graduate 2026 | San Mateo, CA United States |  | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5040765007) | 0d |
+| Nuro | Systems Test Engineering Intern | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7587180) | 0d |
 | Roblox | [2026 Canada] Software Engineer, Geometry - Early Career | Vancouver, British Columbia, Canada |  | [Apply](https://careers.roblox.com/jobs/7558821?gh_jid=7558821) | 0d |
 | Roblox | [2026] Security Software Engineer - Early Career | San Mateo, CA, United States |  | [Apply](https://careers.roblox.com/jobs/7357095?gh_jid=7357095) | 0d |
 | Roblox | [2026] Software Engineer, Creator - Early Career | San Mateo, CA, United States |  | [Apply](https://careers.roblox.com/jobs/7557909?gh_jid=7557909) | 0d |
 | MongoDB | 2026 - GTM Engineering Intern, Palo Alto | Palo Alto |  | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7335935) | 1d |
 | Pinterest | University Grad Software Engineer (Toronto) | Toronto, ON, CA |  | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7247113) | 1d |
 | Verkada | iOS Engineering Intern - Native Streaming Clients Team 2026 | San Mateo, CA United States |  | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5038878007) | 1d |
-| Lucid Motors | Intern, Cell Engineering, Summer 2026  | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4922163007) | 3d |
-| Lucid Motors | Intern, Complex Systems Diagnostics and Prognostics Design, Summer ... | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4953722007) | 3d |
-| Lucid Motors | Intern, Power Electronics Engineer, Summer 2026 | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4922185007) | 3d |
-| Lucid Motors | Intern, Power Electronics Mechanical Engineer, Summer 2026 | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4922169007) | 3d |
-| Lucid Motors | Intern, Powertrain Engineering, Efficiency and EV Systems, Summer 2026 | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4922189007) | 3d |
 | Verkada | Backend Software Engineering Intern 2026 | San Mateo, CA United States |  | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5026094007) | 4d |
 | Verkada | Backend Software Engineer - University Graduate 2026 | San Mateo, CA United States |  | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5026066007) | 4d |
 | Verkada | Frontend Software Engineering Intern 2026 | San Mateo, CA United States |  | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5024322007) | 4d |
@@ -74,17 +70,22 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Verkada | Security Software Engineer - University Graduate 2026 | San Mateo, CA United States |  | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5026072007) | 4d |
 | Verkada | Technical Support Engineering Intern - Fall 2026 | San Mateo, CA United States |  | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5017082007) | 4d |
 | Verkada | Technical Support Engineer - University Graduate 2026 | San Mateo, CA United States |  | [Apply](https://job-boards.greenhouse.io/verkada/jobs/4715534007) | 4d |
-| Nuro | Embedded Software Engineer Intern | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7532060) | 4d |
-| Nuro | Machine Learning intern, Behavior Planning | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7309261) | 4d |
-| Nuro | Software Engineer, AI Platform - Intern | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7351061) | 4d |
-| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) | 4d |
-| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) | 4d |
 | Nuro | Software Engineer Intern, Pose (Vehicle State Estimation) | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7545444) | 4d |
-| Nuro | Software Engineer, ML Infrastructure - Internship | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7366266) | 4d |
-| Nuro | Systems Engineering Intern, Compliance Coverage ML | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7562197) | 4d |
+| Lucid Motors | Intern, Cell Engineering, Summer 2026  | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4922163007) | 4d |
+| Lucid Motors | Intern, Complex Systems Diagnostics and Prognostics Design, Summer ... | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4953722007) | 4d |
 | Lucid Motors | Intern, HVAC and Thermal Systems, Summer 2026 | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4969388007) | 4d |
+| Lucid Motors | Intern, Power Electronics Engineer, Summer 2026 | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4922185007) | 4d |
+| Lucid Motors | Intern, Power Electronics Mechanical Engineer, Summer 2026 | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4922169007) | 4d |
+| Lucid Motors | Intern, Powertrain Engineering, Efficiency and EV Systems, Summer 2026 | Newark, CA |  | [Apply](https://job-boards.greenhouse.io/lucidmotors/jobs/4922189007) | 4d |
 | AppLovin | Backend Engineer, New Grad  | Palo Alto, CA |  | [Apply](https://boards.greenhouse.io/applovin/jobs/4451556006?gh_jid=4451556006) | 4d |
 | Fastly | Software Engineer, Summer Undergraduate Intern | San Francisco, CA |  | [Apply](https://www.fastly.com/about/jobs/apply?gh_jid=7512114) | 5d |
+| Nuro | Embedded Software Engineer Intern | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7532060) | 5d |
+| Nuro | Machine Learning intern, Behavior Planning | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7309261) | 5d |
+| Nuro | Software Engineer, AI Platform - Intern | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7351061) | 5d |
+| Nuro | Software Engineer, AI Platform - New Grad | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7351066) | 5d |
+| Nuro | Software Engineer, Autonomy-New Grad | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=6932596) | 5d |
+| Nuro | Software Engineer, ML Infrastructure - Internship | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7366266) | 5d |
+| Nuro | Systems Engineering Intern, Compliance Coverage ML | Mountain View, California (HQ) |  | [Apply](https://nuro.ai/careersitem?gh_jid=7562197) | 5d |
 | 10x Genomics | Manufacturing / Industrial Engineering Intern, Material Flow (P-4938) | Pleasanton, California, USA HQ |  | [Apply](https://boards.greenhouse.io/10xgenomics/jobs/7527107?gh_jid=7527107) | 5d |
 | Waymo | 2026 Summer Intern, MS/PhD, Software Engineer, Simulation | Mountain View, CA, USA |  | [Apply](https://careers.withwaymo.com/jobs?gh_jid=7565624) | 7d |
 | Affirm | Security Intern - Summer 2026 | San Francisco, California, United States |  | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7519403003) | 8d |
@@ -108,7 +109,6 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Twitch | Graduate Data Science Intern | San Francisco, CA |  | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8221777002) | 21d |
 | Twitch | Undergrad Security Engineering Intern | San Francisco, CA |  | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8216024002) | 21d |
 | Twitch | Undergrad Software Engineering Intern | San Francisco, CA |  | [Apply](https://job-boards.greenhouse.io/twitch/jobs/8174019002) | 21d |
-| 10x Genomics | Chemical Engineering Intern | Pleasanton, California, USA HQ |  | [Apply](https://boards.greenhouse.io/10xgenomics/jobs/7528498?gh_jid=7528498) | 25d |
 | 10x Genomics | Fluidics Engineering Intern, Instrument | Pleasanton, California, USA HQ |  | [Apply](https://boards.greenhouse.io/10xgenomics/jobs/7525609?gh_jid=7525609) | 25d |
 | 10x Genomics | Fluidics Engineering Intern, Spatial | Pleasanton, California, USA HQ |  | [Apply](https://boards.greenhouse.io/10xgenomics/jobs/7525607?gh_jid=7525607) | 25d |
 | Lyft | Industrialization Engineer Intern (Summer 2026) | Longueuil, Canada |  | [Apply](https://app.careerpuck.com/job-board/lyft/job/8331996002?gh_jid=8331996002) | 54d |
@@ -118,17 +118,17 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Pinterest | 	PhD University Grad Machine Learning Engineer 2026 (USA) | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US |  | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7252807) | 81d |
 | Lyft | Software Engineer Intern, Mobile iOS (Summer 2026) | San Francisco, CA |  | [Apply](https://app.careerpuck.com/job-board/lyft/job/8215921002?gh_jid=8215921002) | 106d |
 | MongoDB | 2026 - Information Security Engineering Intern, Seattle | Seattle |  | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7292751) | 1d |
-| Okta | Site Reliability Engineer Intern (Summer 2026) | Bellevue, Washington |  | [Apply](https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798) | 6d |
+| Okta | Site Reliability Engineer Intern (Summer 2026) | Bellevue, Washington |  | [Apply](https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798) | 7d |
 | Airbnb | Advanced Analytics Intern (MS) | United States |  | [Apply](https://careers.airbnb.com/positions/7556971?gh_jid=7556971) | 4d |
-| Dropbox | CX Technical Content Design Intern (Summer 2026) | Remote - Canada: Select locations |  | [Apply](https://jobs.dropbox.com/listing/7558516?gh_jid=7558516) | 4d |
 | Dropbox | CX Technical Content Design Intern (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7558512?gh_jid=7558512) | 4d |
+| Dropbox | CX Technical Content Design Intern (Summer 2026) | Remote - Canada: Select locations |  | [Apply](https://jobs.dropbox.com/listing/7558516?gh_jid=7558516) | 4d |
 | Airbnb | Strategic Finance & Analytics Intern (MBA/MS) | United States |  | [Apply](https://careers.airbnb.com/positions/7488879?gh_jid=7488879) | 5d |
 | Dropbox | Data Science Engineer Intern (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7527941?gh_jid=7527941) | 6d |
 | Dropbox | Data Science Intern (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7527921?gh_jid=7527921) | 6d |
 | Dropbox | PhD Machine Learning Intern (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7368677?gh_jid=7368677) | 6d |
 | Dropbox | PhD Systems & AI/ML Research Intern (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7462813?gh_jid=7462813) | 6d |
-| Dropbox | Research and Insights Intern (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7558568?gh_jid=7558568) | 6d |
 | Dropbox | Research and Insights Intern (Summer 2026) | Remote - Canada: Select locations |  | [Apply](https://jobs.dropbox.com/listing/7558572?gh_jid=7558572) | 6d |
+| Dropbox | Research and Insights Intern (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7558568?gh_jid=7558568) | 6d |
 | Dropbox | Software Engineer Intern (Summer 2026) | Remote - Poland |  | [Apply](https://jobs.dropbox.com/listing/7362887?gh_jid=7362887) | 6d |
 | Dropbox | Support Enablement Engineer Intern  (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7531477?gh_jid=7531477) | 6d |
 | Dropbox | Support Enablement Engineer Intern  (Summer 2026) | Remote - Canada: Select locations |  | [Apply](https://jobs.dropbox.com/listing/7531481?gh_jid=7531481) | 6d |
