@@ -982,41 +982,71 @@ def calculate_match(resume: dict, job: dict) -> dict:
     elif len(resume_skills) < 10:
         final_score *= 0.90
     
-    # Realistic floor and ceiling
-    # Very few candidates score >80% realistically
-    final_score = max(15, min(88, final_score))
+    # ========================================
+    # ROUND TO REALISTIC WHOLE NUMBERS
+    # ========================================
+    # Real ATS systems use 5-point increments, not decimals
+    
+    # Apply reality check penalties
+    if core_match_ratio < 0.5:
+        final_score *= 0.70  # Major penalty
+    elif core_match_ratio < 0.75:
+        final_score *= 0.85
+    
+    if len(resume_skills) < 5:
+        final_score *= 0.75
+    elif len(resume_skills) < 10:
+        final_score *= 0.90
     
     # Additional ceiling for lacking experience
     if not exp["has_internship"] and not exp["has_top_company"]:
-        final_score = min(final_score, 65)
+        final_score = min(final_score, 60)
     
-    # Quality labels (more conservative)
+    # Realistic floor and ceiling
+    final_score = max(20, min(85, final_score))
+    
+    # ROUND TO NEAREST 5 (like real ATS: 50, 55, 60, 65, 70, 75, 80)
+    final_score = round(final_score / 5) * 5
+    
+    # ATS Match Categories (industry standard)
     if final_score >= 75:
-        quality = "⭐ Strong Match"
-    elif final_score >= 60:
-        quality = "✓ Good Match"
-    elif final_score >= 45:
-        quality = "~ Fair Match"
-    elif final_score >= 30:
-        quality = "⚠ Weak Match"
+        quality = "Strong Match"
+        match_tier = "Top Candidate"
+    elif final_score >= 65:
+        quality = "Good Match"
+        match_tier = "Qualified"
+    elif final_score >= 50:
+        quality = "Fair Match"
+        match_tier = "Consider"
+    elif final_score >= 35:
+        quality = "Weak Match"
+        match_tier = "Not Recommended"
     else:
-        quality = "✗ Poor Match"
+        quality = "Poor Match"
+        match_tier = "Not Qualified"
     
     # Missing skills
     missing = list(job_skills - resume_skills - related_matches)[:5]
     
+    # Component scores also rounded
+    skill_pct = round(skill_score * 100 / 5) * 5
+    exp_pct = round(exp_score * 100 / 5) * 5
+    edu_pct = round(edu_score * 100 / 5) * 5
+    text_pct = round(text_score * 100 / 5) * 5
+    
     return {
-        "score": round(final_score, 1),
+        "score": int(final_score),  # Whole number only
         "quality": quality,
+        "match_tier": match_tier,
         "breakdown": {
-            "Skills": round(skill_score * 100, 1),
-            "Experience": round(exp_score * 100, 1),
-            "Education": round(edu_score * 100, 1),
-            "Relevance": round(text_score * 100, 1)
+            "Skills": skill_pct,
+            "Experience": exp_pct,
+            "Education": edu_pct,
+            "Relevance": text_pct
         },
-        "matched_skills": list(direct_matches)[:10],
-        "related_skills": list(related_matches)[:5],
-        "missing_skills": missing
+        "matched_skills": sorted(list(direct_matches))[:10],
+        "related_skills": sorted(list(related_matches))[:5],
+        "missing_skills": sorted(missing)
     }
 
 
@@ -1188,38 +1218,66 @@ def main():
         st.warning("No matches found with current filters.")
         return
     
-    # Stats
+    # Stats - show whole numbers
     col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Total", len(results))
-    col2.metric("Average", f"{sum(r['score'] for r in results) / len(results):.1f}%")
-    col3.metric("Excellent (≥75%)", len([r for r in results if r["score"] >= 75]))
-    col4.metric("Best", f"{results[0]['score']}%")
+    col1.metric("Total Matches", len(results))
+    avg_score = int(sum(r['score'] for r in results) / len(results))
+    col2.metric("Average Score", f"{avg_score}%")
+    col3.metric("Strong Match (≥75%)", len([r for r in results if r["score"] >= 75]))
+    col4.metric("Top Score", f"{results[0]['score']}%")
     
     st.markdown("---")
     
-    # Results
+    # Results with tier-based icons
     for i, r in enumerate(results):
-        icon = "🟢" if r["score"] >= 75 else "🟡" if r["score"] >= 50 else "🔴"
+        # Icon based on tier (like real ATS)
+        if r["score"] >= 75:
+            icon = "⭐"
+            color = "green"
+        elif r["score"] >= 65:
+            icon = "✓"
+            color = "blue"
+        elif r["score"] >= 50:
+            icon = "○"
+            color = "orange"
+        else:
+            icon = "◯"
+            color = "gray"
         
-        with st.expander(f"{icon} **{r['score']}%** | {r['company']} - {r['title']}", expanded=(i < 3)):
+        with st.expander(
+            f"{icon} **{r['score']}%** - {r['match_tier']} | {r['company']} - {r['title']}", 
+            expanded=(i < 3)
+        ):
             c1, c2 = st.columns([3, 1])
             
             with c1:
-                st.markdown(f"**{r['company']}** — {r['title']}")
-                st.markdown(f"📍 {r['location']} | {r['quality']}")
+                st.markdown(f"### {r['company']}")
+                st.markdown(f"**{r['title']}**")
+                st.markdown(f"📍 {r['location']}")
                 
-                # Breakdown
-                st.markdown("**Score Breakdown:**")
+                # Match quality badge
+                if r["score"] >= 75:
+                    st.success(f"✨ {r['quality']} - {r['match_tier']}")
+                elif r["score"] >= 65:
+                    st.info(f"✓ {r['quality']} - {r['match_tier']}")
+                elif r["score"] >= 50:
+                    st.warning(f"○ {r['quality']} - {r['match_tier']}")
+                else:
+                    st.error(f"◯ {r['quality']} - {r['match_tier']}")
+                
+                # Breakdown - clean integers
+                st.markdown("**Component Scores:**")
                 cols = st.columns(4)
                 for idx, (k, v) in enumerate(r["breakdown"].items()):
-                    cols[idx].metric(k, f"{v}%")
+                    cols[idx].metric(k, f"{v}%", help=f"{k} match percentage")
                 
                 # Skills
                 if r["matched_skills"]:
-                    st.markdown(f"✅ **Matched:** {', '.join(r['matched_skills'])}")
+                    st.markdown(f"✅ **Your Matching Skills:** {', '.join(r['matched_skills'][:8])}")
                 if r["related_skills"]:
-                    st.markdown(f"🔗 **Related:** {', '.join(r['related_skills'])}")
+                    st.markdown(f"🔗 **Related Skills:** {', '.join(r['related_skills'][:5])}")
                 if r["missing_skills"]:
+                    st.markdown(f"📝 **Could Strengthen:** {', '.join(r['missing_skills'])}")
                     st.markdown(f"📝 **Consider adding:** {', '.join(r['missing_skills'])}")
             
             with c2:
