@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Advanced Resume Matcher with Accurate Parsing
-Comprehensive skill detection and genuine matching scores.
+Professional Resume Matcher with ATS-Grade Parsing
+Industry-standard scoring methodology for realistic match percentages.
 """
 
 import streamlit as st
@@ -15,14 +15,39 @@ from collections import defaultdict
 import io
 
 # ============================================================================
-# PDF AND DOCX PARSING - MULTIPLE METHODS FOR ACCURACY
+# PDF AND DOCX PARSING - PROFESSIONAL GRADE EXTRACTION
 # ============================================================================
 
 def extract_text_from_pdf(file) -> str:
-    """Extract text from PDF using multiple methods for best results."""
+    """Extract text from PDF using professional-grade methods."""
     text = ""
     
-    # Method 1: PyPDF2
+    # Method 1: Try pdfplumber (best for tables and formatting)
+    try:
+        import pdfplumber
+        file.seek(0)
+        with pdfplumber.open(file) as pdf:
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    text += page_text + "\n"
+                
+                # Extract tables (skills often in tables)
+                tables = page.extract_tables()
+                for table in tables:
+                    for row in table:
+                        if row:
+                            row_text = " | ".join([str(cell) if cell else "" for cell in row])
+                            text += row_text + "\n"
+        
+        if text and len(text.strip()) > 100:
+            return clean_extracted_text(text)
+    except ImportError:
+        pass
+    except Exception as e:
+        st.warning(f"pdfplumber failed: {e}")
+    
+    # Fallback: PyPDF2
     try:
         import PyPDF2
         file.seek(0)
@@ -32,13 +57,9 @@ def extract_text_from_pdf(file) -> str:
             if page_text:
                 text += page_text + "\n"
     except Exception as e:
-        st.warning(f"PyPDF2 extraction partial: {e}")
+        st.error(f"PDF extraction failed: {e}")
     
-    # Clean up the text
-    if text:
-        text = clean_extracted_text(text)
-    
-    return text
+    return clean_extracted_text(text)
 
 
 def extract_text_from_docx(file) -> str:
@@ -70,7 +91,7 @@ def extract_text_from_docx(file) -> str:
 
 
 def clean_extracted_text(text: str) -> str:
-    """Clean and normalize extracted text."""
+    """Clean and normalize extracted text like professional ATS systems."""
     if not text:
         return ""
     
@@ -78,19 +99,26 @@ def clean_extracted_text(text: str) -> str:
     text = text.replace('\x00', '')
     text = re.sub(r'[\x01-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]', '', text)
     
-    # Fix common OCR/extraction issues
+    # CRITICAL: Normalize special characters that affect C++, C#, F# detection
+    # Common PDF issues: C++ might appear as C＋＋, C＋+, C + +, etc.
+    text = re.sub(r'[＋+]{2}', '++', text)  # Normalize plus signs
+    text = re.sub(r'c\s*[+＋]{2}', 'c++', text, flags=re.IGNORECASE)
+    text = re.sub(r'c\s*#', 'c#', text, flags=re.IGNORECASE)
+    text = re.sub(r'f\s*#', 'f#', text, flags=re.IGNORECASE)
+    
+    # Fix common OCR/extraction issues AFTER special char normalization
     text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)  # camelCase to spaces
     text = re.sub(r'(\d)([A-Za-z])', r'\1 \2', text)  # 3years -> 3 years
     text = re.sub(r'([A-Za-z])(\d)', r'\1 \2', text)  # Python3 -> Python 3
     
-    # Normalize whitespace
-    text = re.sub(r'\s+', ' ', text)
-    text = re.sub(r'\n\s*\n', '\n', text)
+    # Normalize whitespace but preserve newlines for section detection
+    text = re.sub(r'[ \t]+', ' ', text)
+    text = re.sub(r'\n\s*\n\s*\n+', '\n\n', text)
     
     # Fix common ligatures
     replacements = {
         'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬀ': 'ff', 'ﬃ': 'ffi', 'ﬄ': 'ffl',
-        '•': ' ', '●': ' ', '○': ' ', '■': ' ', '□': ' ',
+        '•': ' • ', '●': ' • ', '○': ' ○ ', '■': ' ■ ', '□': ' □ ',
         '–': '-', '—': '-', ''': "'", ''': "'", '"': '"', '"': '"',
     }
     for old, new in replacements.items():
@@ -105,12 +133,15 @@ def clean_extracted_text(text: str) -> str:
 
 # All skills with variations for accurate matching
 SKILLS_DATABASE = {
-    # Programming Languages - Classic
-    "c": [r"\bc\b", r"\bc programming\b", r"\bc language\b"],
-    "c++": [r"\bc\+\+\b", r"\bcpp\b", r"\bc plus plus\b"],
-    "c#": [r"\bc#\b", r"\bcsharp\b", r"\bc sharp\b"],
-    "java": [r"\bjava\b(?!\s*script)"],
-    "python": [r"\bpython\b", r"\bpython3\b", r"\bpy\b"],
+    # Programming Languages - Classic (with ALL common variations)
+    "c": [r"\bc\b", r"\bc programming\b", r"\bc language\b", r"\bc lang\b"],
+    "c++": [
+        r"c\+\+", r"cpp\b", r"c plus plus", r"cplusplus",
+        r"c＋＋", r"c \+ \+", r"c\+",  # Common PDF artifacts
+    ],
+    "c#": [r"c#", r"csharp\b", r"c sharp", r"c＃", r"c-sharp"],
+    "java": [r"\bjava\b(?!\s*script)", r"\bjava[,\s]", r"java\s*(?:programming|lang)"],
+    "python": [r"\bpython\b", r"python\s*3", r"\bpy\b", r"python[,\s]"],
     "javascript": [r"\bjavascript\b", r"\bjs\b", r"\becmascript\b", r"\bes6\b", r"\bes2015\b"],
     "typescript": [r"\btypescript\b", r"\bts\b"],
     "ruby": [r"\bruby\b"],
@@ -491,25 +522,58 @@ TOP_COMPANIES = [
 # ============================================================================
 
 def extract_skills(text: str) -> tuple:
-    """Extract skills from text using regex patterns."""
+    """Extract skills from text using multiple methods like professional ATS."""
     text_lower = text.lower()
     found_skills = set()
     skills_by_category = defaultdict(list)
+    skill_contexts = {}  # Track where skills were found
     
+    # Method 1: Pattern matching with context
     for skill_name, patterns in SKILLS_DATABASE.items():
+        skill_found = False
         for pattern in patterns:
             try:
-                if re.search(pattern, text_lower, re.IGNORECASE):
+                matches = list(re.finditer(pattern, text_lower, re.IGNORECASE))
+                if matches:
                     found_skills.add(skill_name)
+                    # Store context for debugging
+                    for match in matches[:1]:
+                        start = max(0, match.start() - 25)
+                        end = min(len(text), match.end() + 25)
+                        skill_contexts[skill_name] = text[start:end].strip()
+                    
                     # Find category
                     for category, skills in SKILL_CATEGORIES.items():
                         if skill_name in skills:
                             if skill_name not in skills_by_category[category]:
                                 skills_by_category[category].append(skill_name)
                             break
+                    skill_found = True
                     break
             except re.error:
                 continue
+    
+    # Method 2: Exact word matching for problematic skills (C++, C#, etc.)
+    # This catches cases where regex fails due to special characters
+    exact_matches = {
+        'c++': ['c++', 'cpp', 'c plus plus', 'cplusplus'],
+        'c#': ['c#', 'csharp', 'c sharp', 'c-sharp'],
+        'f#': ['f#', 'fsharp', 'f sharp', 'f-sharp'],
+    }
+    
+    for skill_name, variants in exact_matches.items():
+        if skill_name not in found_skills:
+            for variant in variants:
+                if variant in text_lower:
+                    found_skills.add(skill_name)
+                    skill_contexts[skill_name] = f"Found: '{variant}'"
+                    # Add to category
+                    for category, skills in SKILL_CATEGORIES.items():
+                        if skill_name in skills:
+                            if skill_name not in skills_by_category[category]:
+                                skills_by_category[category].append(skill_name)
+                            break
+                    break
     
     return found_skills, dict(skills_by_category)
 
@@ -731,29 +795,51 @@ def analyze_resume(text: str) -> dict:
 # ============================================================================
 
 def calculate_match(resume: dict, job: dict) -> dict:
-    """Calculate match score between resume and job."""
+    """
+    Calculate realistic ATS-style match score between resume and job.
+    Uses industry-standard scoring with conservative percentages.
+    """
     job_title = job.get("title", "").lower()
     job_desc = job.get("description", "").lower()
     company = job.get("company", "")
     job_text = f"{job_title} {job_desc}"
     
-    # Extract job skills
+    # Extract job requirements
     job_skills, _ = extract_skills(job_text)
     
-    # If job has no specific skills, use generic SWE requirements
+    # Baseline SWE intern skills if job description is generic
+    baseline_swe_skills = {"python", "java", "c++", "javascript", "data structures", "algorithms", "git", "sql"}
     if len(job_skills) < 3:
-        job_skills = {"python", "java", "javascript", "sql", "git", "data structures", "algorithms"}
+        job_skills = baseline_swe_skills
     
     resume_skills = resume["skills"]
     
-    # =====================
-    # SKILL MATCHING (40%)
-    # =====================
+    # ========================================
+    # 1. REQUIRED SKILLS MATCHING (50%)
+    # ========================================
+    # This is the most critical factor for ATS systems
     
-    # Direct matches
+    # Core requirements (must-haves)
+    core_requirements = job_skills & baseline_swe_skills
+    if not core_requirements:
+        core_requirements = {"python", "java", "data structures", "algorithms"}
+    
     direct_matches = resume_skills & job_skills
+    core_matches = resume_skills & core_requirements
     
-    # Related skill matches (50% credit)
+    # Penalize heavily for missing core skills
+    if core_requirements:
+        core_match_ratio = len(core_matches) / len(core_requirements)
+    else:
+        core_match_ratio = 0.7
+    
+    # Overall skill match
+    if job_skills:
+        skill_match_ratio = len(direct_matches) / len(job_skills)
+    else:
+        skill_match_ratio = 0.5
+    
+    # Related skills (partial credit)
     related_matches = set()
     for skill in resume_skills:
         if skill in RELATED_SKILLS:
@@ -761,120 +847,160 @@ def calculate_match(resume: dict, job: dict) -> dict:
                 if related in job_skills and related not in direct_matches:
                     related_matches.add(related)
     
-    # Calculate skill score
-    if job_skills:
-        direct_score = len(direct_matches) / len(job_skills)
-        related_score = (len(related_matches) * 0.5) / len(job_skills)
-        skill_score = min(direct_score + related_score, 1.0)
-    else:
-        skill_score = 0.5
+    related_bonus = min(len(related_matches) * 0.03, 0.15)
     
-    # Bonus for having many skills
-    skill_count = len(resume_skills)
-    if skill_count >= 20:
-        skill_score = min(skill_score + 0.15, 1.0)
-    elif skill_count >= 15:
-        skill_score = min(skill_score + 0.10, 1.0)
-    elif skill_count >= 10:
-        skill_score = min(skill_score + 0.05, 1.0)
+    # CONSERVATIVE skill scoring
+    skill_score = (
+        core_match_ratio * 0.50 +      # 50% weight on core skills
+        skill_match_ratio * 0.40 +      # 40% weight on all skills
+        related_bonus                    # Up to 15% for related skills
+    )
     
-    # ========================
-    # EXPERIENCE MATCHING (30%)
-    # ========================
+    # No bonus for skill quantity - only what matches matters
+    skill_score = min(skill_score, 1.0)
+    
+    # ========================================
+    # 2. EXPERIENCE QUALITY (30%)
+    # ========================================
+    # Realistic: most interns have LIMITED experience
     
     exp = resume["experience"]
-    exp_score = 0.4  # Base score
+    exp_score = 0.3  # Lower baseline (most students are early career)
     
-    # Internship experience
+    # Internship experience (realistic weight)
     if exp["has_internship"]:
-        exp_score += 0.15
+        exp_score += 0.20
         if exp["internship_count"] >= 2:
-            exp_score += 0.10
+            exp_score += 0.15
+        elif exp["internship_count"] >= 3:
+            exp_score += 0.10  # Diminishing returns
     
-    # Top company experience
+    # FAANG/top company (significant but not overwhelming)
     if exp["has_top_company"]:
-        exp_score += 0.15
-        # Bonus if worked at same company
+        exp_score += 0.20
+        # Same company bonus
         for top_co in exp["top_companies_worked"]:
             if top_co.lower() in company.lower():
-                exp_score += 0.10
+                exp_score += 0.05
                 break
     
-    # Projects
-    if exp["project_count"] >= 5:
+    # Projects (moderate weight)
+    if exp["project_count"] >= 8:
         exp_score += 0.10
+    elif exp["project_count"] >= 5:
+        exp_score += 0.07
     elif exp["project_count"] >= 3:
-        exp_score += 0.05
+        exp_score += 0.04
     
-    # Research (especially for ML/AI roles)
+    # Research/publications (niche benefit)
     if exp["has_research"]:
-        if any(kw in job_title for kw in ["research", "ml", "machine learning", "ai", "data"]):
-            exp_score += 0.10
+        if any(kw in job_title for kw in ["research", "ml", "machine learning", "ai", "data", "scientist"]):
+            exp_score += 0.08
         else:
-            exp_score += 0.05
+            exp_score += 0.03
     
-    # Leadership
-    if exp["has_leadership"]:
+    if exp["has_publications"]:
         exp_score += 0.05
+    
+    # Leadership (small bonus)
+    if exp["has_leadership"]:
+        exp_score += 0.03
     
     exp_score = min(exp_score, 1.0)
     
-    # ========================
-    # EDUCATION MATCHING (20%)
-    # ========================
+    # ========================================
+    # 3. EDUCATION QUALIFICATIONS (15%)
+    # ========================================
+    # Important but not decisive for interns
     
     edu = resume["education"]
-    edu_score = edu["degree_score"]
+    edu_score = edu["degree_score"] * 0.5  # Reduce base impact
     
-    # CS-related major bonus
+    # CS major (essential for SWE)
     if edu["is_cs_related"]:
-        edu_score = min(edu_score + 0.10, 1.0)
+        edu_score += 0.30
+    else:
+        edu_score += 0.10  # Small credit for any degree
     
-    # GPA bonus
+    # GPA (matters but not everything)
     if edu["gpa"]:
-        if edu["gpa"] >= 3.8:
-            edu_score = min(edu_score + 0.10, 1.0)
+        if edu["gpa"] >= 3.9:
+            edu_score += 0.15
+        elif edu["gpa"] >= 3.7:
+            edu_score += 0.10
         elif edu["gpa"] >= 3.5:
-            edu_score = min(edu_score + 0.05, 1.0)
+            edu_score += 0.05
+        elif edu["gpa"] >= 3.0:
+            edu_score += 0.02
     
-    # Top university bonus
+    # Top university (competitive advantage)
     if edu["is_top_university"]:
-        edu_score = min(edu_score + 0.05, 1.0)
+        edu_score += 0.08
     
-    # =======================
-    # TEXT SIMILARITY (10%)
-    # =======================
+    edu_score = min(edu_score, 1.0)
+    
+    # ========================================
+    # 4. SEMANTIC FIT (5%)
+    # ========================================
+    # Least important - skills and experience matter more
     
     try:
-        vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1, 2), max_features=3000)
-        tfidf = vectorizer.fit_transform([resume["text"], job_text])
+        vectorizer = TfidfVectorizer(
+            stop_words='english',
+            ngram_range=(1, 2),
+            max_features=500,
+            min_df=1
+        )
+        docs = [resume["text"][:10000], job_text[:5000]]  # Limit size
+        tfidf = vectorizer.fit_transform(docs)
         text_score = cosine_similarity(tfidf[0:1], tfidf[1:2])[0][0]
     except:
-        text_score = 0.3
+        text_score = 0.2
     
-    # ====================
-    # FINAL SCORE
-    # ====================
+    # ========================================
+    # FINAL REALISTIC SCORE
+    # ========================================
     
     final_score = (
-        skill_score * 0.40 +
-        exp_score * 0.30 +
-        edu_score * 0.20 +
-        text_score * 0.10
+        skill_score * 0.50 +    # Skills are king for ATS
+        exp_score * 0.30 +      # Experience is important
+        edu_score * 0.15 +      # Education matters moderately
+        text_score * 0.05       # Semantic fit is minor
     ) * 100
     
-    # Floor and ceiling
-    final_score = max(20, min(95, final_score))
+    # Apply reality check penalties
     
-    # Quality label
+    # Penalty for missing core skills
+    if core_match_ratio < 0.5:
+        final_score *= 0.75  # 25% penalty
+    elif core_match_ratio < 0.75:
+        final_score *= 0.90  # 10% penalty
+    
+    # Penalty for having few total skills
+    if len(resume_skills) < 5:
+        final_score *= 0.80
+    elif len(resume_skills) < 10:
+        final_score *= 0.90
+    
+    # Realistic floor and ceiling
+    # Very few candidates score >80% realistically
+    final_score = max(15, min(88, final_score))
+    
+    # Additional ceiling for lacking experience
+    if not exp["has_internship"] and not exp["has_top_company"]:
+        final_score = min(final_score, 65)
+    
+    # Quality labels (more conservative)
     if final_score >= 75:
-        quality = "Excellent Match"
+        quality = "⭐ Strong Match"
     elif final_score >= 60:
-        quality = "Good Match"
+        quality = "✓ Good Match"
     elif final_score >= 45:
-        quality = "Fair Match"
+        quality = "~ Fair Match"
+    elif final_score >= 30:
+        quality = "⚠ Weak Match"
     else:
-        quality = "Low Match"
+        quality = "✗ Poor Match"
     
     # Missing skills
     missing = list(job_skills - resume_skills - related_matches)[:5]
@@ -959,6 +1085,11 @@ def main():
             if text and len(text.strip()) > 50:
                 resume_analysis = analyze_resume(text)
                 st.success(f"✅ Parsed {resume_analysis['word_count']} words")
+                
+                # DEBUG: Show raw extracted text preview
+                with st.expander("🔍 Debug: View Extracted Text"):
+                    st.text_area("Raw Text (first 1500 chars)", text[:1500], height=200)
+                    st.caption("Check if your skills appear here. If C++ is missing, the PDF extraction failed.")
                 
                 # Show parsed data
                 st.markdown("---")
