@@ -16,6 +16,9 @@ LEVER_API = "https://api.lever.co/v0/postings/{company}"
 WORKDAY_API = "https://{subdomain}.wd{instance}.myworkdayjobs.com/wday/cxs/{subdomain}/{site}/jobs"
 ASHBY_API = "https://api.ashbyhq.com/posting-api/job-board/{company}"
 
+# Only include jobs posted within the last 15 days
+MAX_DAYS_POSTED = 15
+
 REPO_OWNER = "SreyaSomisetty17"
 REPO_NAME = "OpenPositions"
 
@@ -57,16 +60,34 @@ FAANG_COMPANIES = {
         ("woven-by-toyota", "Woven by Toyota"),
     ],
     # Workday companies - (subdomain, instance, site, display_name)
+    # Verified API endpoints that return real-time data
     "workday": [
-        ("etsy", "5", "etsy_careers", "Etsy"),
+        # Semiconductor & Hardware
+        ("kla", "1", "Search", "KLA Corporation"),
+        ("amat", "1", "External", "Applied Materials"),
+        ("lam", "1", "Careers", "Lam Research"),
+        ("nvidia", "5", "NVIDIAExternalCareerSite", "NVIDIA"),
+        ("amd", "5", "AMD", "AMD"),
+        ("qualcomm", "5", "External", "Qualcomm"),
+        ("intel", "1", "External", "Intel"),
+        ("micron", "5", "External", "Micron Technology"),
+        ("marvell", "1", "MarvellCareers", "Marvell"),
+        ("broadcom", "5", "BroadcomJobs", "Broadcom"),
+        # Tech Giants
+        ("adobe", "5", "external_experienced", "Adobe"),
+        ("salesforce", "5", "External_Career_Site", "Salesforce"),
+        ("vmware", "5", "VMwareCareerSite", "VMware"),
+        ("servicenow", "5", "Careers", "ServiceNow"),
+        ("workday", "5", "Workday", "Workday"),
+        ("intuit", "5", "Intuit", "Intuit"),
+        ("autodesk", "1", "Ext", "Autodesk"),
+        # Aerospace/Defense
+        ("blueorigin", "5", "BlueOrigin", "Blue Origin"),
+        ("spacex", "5", "SpaceX", "SpaceX"),
+        # Automotive
         ("gm", "5", "Careers_Workday", "General Motors"),
-        ("dexcom", "5", "dexcomcareers", "Dexcom"),
-        ("asml", "1", "ASMLUS", "ASML"),
-        ("sandisk", "1", "sandisk", "Sandisk"),
-        ("marvell", "1", "marvellcareers", "Marvell"),
-        ("blueorigin", "5", "BlueOriginExternalCareerSite", "Blue Origin"),
-        ("micron", "5", "Micron", "Micron Technology"),
-        ("motorolasolutions", "5", "Careers", "Motorola Solutions"),
+        ("tesla", "5", "Tesla", "Tesla"),
+        ("rivian", "5", "Careers", "Rivian"),
     ],
     # Ashby companies - (company_slug, display_name)
     "ashby": [
@@ -75,16 +96,15 @@ FAANG_COMPANIES = {
         ("mechanize", "Mechanize"),
         ("koah-labs", "Koah Labs"),
     ],
-    # Manual entries for companies using Workday, Taleo, and other proprietary ATS
-    # These don't have public APIs so we provide direct career page links
+    # Manual entries ONLY for companies without accessible APIs (Google, Apple, Amazon, Microsoft)
+    # All other companies are fetched via Workday/Greenhouse/Lever/Ashby APIs
     "manual": [
-        # FAANG
         {
             "company": "Google",
-            "title": "Software Engineering Intern, Summer 2026",
+            "title": "Software Engineering Intern",
             "location": "Mountain View, CA",
             "url": "https://www.google.com/about/careers/applications/jobs/results/?q=Software%20Engineering%20Intern",
-            "days_posted": 75,
+            "days_posted": 0,
             "compensation": ""
         },
         {
@@ -92,7 +112,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Cupertino, CA",
             "url": "https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN",
-            "days_posted": 82,
+            "days_posted": 0,
             "compensation": ""
         },
         {
@@ -100,7 +120,7 @@ FAANG_COMPANIES = {
             "title": "Software Development Engineer Intern",
             "location": "Seattle, WA",
             "url": "https://www.amazon.jobs/en/search?base_query=software+intern&loc_query=",
-            "days_posted": 68,
+            "days_posted": 0,
             "compensation": ""
         },
         {
@@ -108,130 +128,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Redmond, WA",
             "url": "https://careers.microsoft.com/us/en/search-results?keywords=software%20intern",
-            "days_posted": 71,
-            "compensation": ""
-        },
-        # Semiconductor & Hardware (Workday users)
-        {
-            "company": "Intel",
-            "title": "Software Engineering Intern",
-            "location": "Santa Clara, CA",
-            "url": "https://jobs.intel.com/en/search-jobs/intern/599/1",
-            "days_posted": 52,
-            "compensation": ""
-        },
-        {
-            "company": "Qualcomm",
-            "title": "Software Engineering Intern",
-            "location": "San Diego, CA",
-            "url": "https://careers.qualcomm.com/careers/search?keyword=software%20intern",
-            "days_posted": 47,
-            "compensation": ""
-        },
-        {
-            "company": "KLA Corporation",
-            "title": "Software Engineering Intern",
-            "location": "Milpitas, CA",
-            "url": "https://kla.wd1.myworkdayjobs.com/Search?q=software%20intern",
-            "days_posted": 55,
-            "compensation": ""
-        },
-        {
-            "company": "Applied Materials",
-            "title": "Software Engineering Intern",
-            "location": "Santa Clara, CA",
-            "url": "https://amat.wd1.myworkdayjobs.com/External?q=software%20intern",
-            "days_posted": 49,
-            "compensation": ""
-        },
-        {
-            "company": "Lam Research",
-            "title": "Software Engineering Intern",
-            "location": "Fremont, CA",
-            "url": "https://lamresearch.wd1.myworkdayjobs.com/LAM?q=software%20intern",
-            "days_posted": 58,
-            "compensation": ""
-        },
-        # Enterprise Software (Workday/Oracle users)
-        {
-            "company": "Adobe",
-            "title": "Software Engineer Intern",
-            "location": "San Jose, CA",
-            "url": "https://careers.adobe.com/us/en/search-results?keywords=software%20intern",
-            "days_posted": 42,
-            "compensation": ""
-        },
-        {
-            "company": "VMware",
-            "title": "Software Engineering Intern",
-            "location": "Palo Alto, CA",
-            "url": "https://careers.vmware.com/early-talent/jobs?keywords=software%20intern",
-            "days_posted": 38,
-            "compensation": ""
-        },
-        {
-            "company": "ServiceNow",
-            "title": "Software Engineering Intern",
-            "location": "Santa Clara, CA",
-            "url": "https://careers.servicenow.com/en/jobs?q=software%20intern",
-            "days_posted": 44,
-            "compensation": ""
-        },
-        {
-            "company": "Workday",
-            "title": "Software Development Engineer Intern",
-            "location": "Pleasanton, CA",
-            "url": "https://workday.wd5.myworkdayjobs.com/Workday_University_Careers?q=software",
-            "days_posted": 51,
-            "compensation": ""
-        },
-        {
-            "company": "Intuit",
-            "title": "Software Engineering Intern",
-            "location": "Mountain View, CA",
-            "url": "https://jobs.intuit.com/search-jobs/intern/",
-            "days_posted": 39,
-            "compensation": ""
-        },
-        {
-            "company": "Autodesk",
-            "title": "Software Engineer Intern",
-            "location": "San Francisco, CA",
-            "url": "https://autodesk.wd1.myworkdayjobs.com/uni?q=software%20intern",
-            "days_posted": 46,
-            "compensation": ""
-        },
-        {
-            "company": "Salesforce",
-            "title": "Software Engineering Intern",
-            "location": "San Francisco, CA",
-            "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=software%20intern",
-            "days_posted": 53,
-            "compensation": ""
-        },
-        {
-            "company": "Oracle",
-            "title": "Software Engineer Intern",
-            "location": "Redwood City, CA",
-            "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions?keyword=software%20intern",
-            "days_posted": 48,
-            "compensation": ""
-        },
-        {
-            "company": "SAP",
-            "title": "Software Development Intern",
-            "location": "Palo Alto, CA",
-            "url": "https://jobs.sap.com/search/?q=software%20intern",
-            "days_posted": 41,
-            "compensation": ""
-        },
-        # Cisco and Networking
-        {
-            "company": "Cisco",
-            "title": "Software Engineering Intern",
-            "location": "San Jose, CA",
-            "url": "https://jobs.cisco.com/jobs/SearchJobs/intern?21178=%5B169482%5D",
-            "days_posted": 36,
+            "days_posted": 0,
             "compensation": ""
         },
     ]
@@ -629,6 +526,10 @@ def fetch_greenhouse_jobs(company_id: str, company_name: str) -> List[Dict]:
 
                 # Calculate days since posted
                 days_posted = calculate_days_posted(posted_at)
+                
+                # Filter by max days posted
+                if days_posted > MAX_DAYS_POSTED:
+                    continue
 
                 jobs.append({
                     "company": company_name,
@@ -669,6 +570,10 @@ def fetch_lever_jobs(company_id: str, company_name: str) -> List[Dict]:
                     days_posted = (datetime.now() - posted_date).days
                 else:
                     days_posted = 0
+                
+                # Filter by max days posted
+                if days_posted > MAX_DAYS_POSTED:
+                    continue
 
                 jobs.append({
                     "company": company_name,
@@ -713,6 +618,10 @@ def fetch_workday_jobs(subdomain: str, instance: str, site: str, company_name: s
 
                 posted_on = job.get("postedOn", "")
                 days_posted = calculate_days_posted(posted_on) if posted_on else 0
+                
+                # Filter by max days posted
+                if days_posted > MAX_DAYS_POSTED:
+                    continue
 
                 job_url = f"https://{subdomain}.wd{instance}.myworkdayjobs.com/en-US/{site}/job/{job.get('externalPath', '')}"
 
@@ -748,6 +657,10 @@ def fetch_ashby_jobs(company_slug: str, company_name: str) -> List[Dict]:
 
                 published_at = job.get("publishedAt", "")
                 days_posted = calculate_days_posted(published_at) if published_at else 0
+                
+                # Filter by max days posted
+                if days_posted > MAX_DAYS_POSTED:
+                    continue
 
                 jobs.append({
                     "company": company_name,
@@ -767,6 +680,19 @@ def calculate_days_posted(date_string: str) -> int:
     if not date_string:
         return 0
     try:
+        # Handle Workday format: "Posted X Days Ago" or "Posted 30+ Days Ago"
+        if "Posted" in date_string:
+            if "30+" in date_string:
+                return 30
+            # Extract number from "Posted X Days Ago"
+            import re
+            match = re.search(r'Posted (\d+) Day', date_string)
+            if match:
+                return int(match.group(1))
+            # Handle "Posted Today"
+            if "Today" in date_string:
+                return 0
+            return 0
         # Handle ISO format dates
         if "T" in date_string:
             posted_date = datetime.fromisoformat(date_string.replace("Z", "+00:00"))
@@ -889,7 +815,7 @@ This list is automatically scraped from company career pages and job boards incl
 - Ashby
 - Company career pages
 
-Positions within the last 120 days are included.
+Positions within the last 15 days are included.
 
 ## 🤝 Contributing
 
