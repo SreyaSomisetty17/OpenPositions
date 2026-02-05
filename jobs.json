@@ -2,9 +2,41 @@
   "faang": [
     {
       "company": "Stripe",
+      "title": "PhD Machine Learning Engineer, Intern",
+      "location": "San Francisco, New York City, Seattle",
+      "url": "https://stripe.com/jobs/search?gh_jid=7216664",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "PhD Machine Learning Engineer, New Grad",
+      "location": "San Francisco, New York City, Seattle",
+      "url": "https://stripe.com/jobs/search?gh_jid=7216668",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Security Engineer, New Grad ",
+      "location": "Seattle, WA; San Francisco, CA; Toronto, CAN",
+      "url": "https://stripe.com/jobs/search?gh_jid=7477571",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
       "title": "Software Engineer, Intern (Summer)",
       "location": "San Francisco, Seattle, New York City",
       "url": "https://stripe.com/jobs/search?gh_jid=7210115",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Stripe",
+      "title": "Software Engineer, New Grad",
+      "location": "San Francisco, Seattle",
+      "url": "https://stripe.com/jobs/search?gh_jid=7210112",
       "days_posted": 0,
       "compensation": ""
     },
@@ -13,7 +45,7 @@
       "title": "PhD GenAI Research Scientist Intern",
       "location": "San Francisco, California",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002",
-      "days_posted": 4,
+      "days_posted": 5,
       "compensation": ""
     },
     {
@@ -21,38 +53,6 @@
       "title": "Software Engineer - New Grad (2026 Start)",
       "location": "Vancouver, Canada",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6866542002",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Stripe",
-      "title": "PhD Machine Learning Engineer, Intern",
-      "location": "San Francisco, New York City, Seattle",
-      "url": "https://stripe.com/jobs/search?gh_jid=7216664",
-      "days_posted": 5,
-      "compensation": ""
-    },
-    {
-      "company": "Stripe",
-      "title": "PhD Machine Learning Engineer, New Grad",
-      "location": "San Francisco, New York City, Seattle",
-      "url": "https://stripe.com/jobs/search?gh_jid=7216668",
-      "days_posted": 5,
-      "compensation": ""
-    },
-    {
-      "company": "Stripe",
-      "title": "Security Engineer, New Grad ",
-      "location": "Seattle, WA; San Francisco, CA; Toronto, CAN",
-      "url": "https://stripe.com/jobs/search?gh_jid=7477571",
-      "days_posted": 5,
-      "compensation": ""
-    },
-    {
-      "company": "Stripe",
-      "title": "Software Engineer, New Grad",
-      "location": "San Francisco, Seattle",
-      "url": "https://stripe.com/jobs/search?gh_jid=7210112",
       "days_posted": 5,
       "compensation": ""
     },
@@ -61,7 +61,7 @@
       "title": "Machine Learning Engineer Intern",
       "location": "Hybrid - San Francisco, CA",
       "url": "https://www.coinbase.com/careers/positions/7294075?gh_jid=7294075",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -69,7 +69,7 @@
       "title": "Software Engineer Intern",
       "location": "Hybrid - San Francisco, CA",
       "url": "https://www.coinbase.com/careers/positions/7268895?gh_jid=7268895",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -77,7 +77,7 @@
       "title": "User Researcher Intern",
       "location": "Hybrid - San Francisco, CA",
       "url": "https://www.coinbase.com/careers/positions/7269775?gh_jid=7269775",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -85,7 +85,7 @@
       "title": "Software Engineer - New Grad",
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/scaleai/jobs/4605996005",
-      "days_posted": 18,
+      "days_posted": 19,
       "compensation": ""
     },
     {
@@ -93,7 +93,7 @@
       "title": "Machine Learning Research Intern (Summer 2026)",
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/scaleai/jobs/4606060005",
-      "days_posted": 21,
+      "days_posted": 22,
       "compensation": ""
     },
     {
@@ -101,7 +101,7 @@
       "title": "Software Engineering Intern (Summer 2026) ",
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/scaleai/jobs/4606014005",
-      "days_posted": 21,
+      "days_posted": 22,
       "compensation": ""
     },
     {
@@ -109,7 +109,7 @@
       "title": "Technical Advisor Intern - GenAI (Winter/Spring 2026)",
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/scaleai/jobs/4611533005",
-      "days_posted": 21,
+      "days_posted": 22,
       "compensation": ""
     },
     {
@@ -117,7 +117,7 @@
       "title": "Software Developer Intern, Backend (Summer 2026)",
       "location": "Toronto, Canada",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7235228?t=gh_src=&gh_jid=7235228",
-      "days_posted": 29,
+      "days_posted": 30,
       "compensation": ""
     },
     {
@@ -125,7 +125,7 @@
       "title": "Software Developer Intern, Web (Summer 2026)",
       "location": "Toronto, Canada",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7238998?t=gh_src=&gh_jid=7238998",
-      "days_posted": 29,
+      "days_posted": 30,
       "compensation": ""
     },
     {
@@ -133,7 +133,7 @@
       "title": "Software Engineering Intern, Android (Summer 2026)",
       "location": "Menlo Park, CA",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7239199?t=gh_src=&gh_jid=7239199",
-      "days_posted": 29,
+      "days_posted": 30,
       "compensation": ""
     },
     {
@@ -141,7 +141,7 @@
       "title": "Software Engineering Intern, iOS (Summer 2026)",
       "location": "Menlo Park, CA",
       "url": "https://boards.greenhouse.io/robinhood/jobs/7239268?t=gh_src=&gh_jid=7239268",
-      "days_posted": 29,
+      "days_posted": 30,
       "compensation": ""
     },
     {
@@ -149,7 +149,7 @@
       "title": "Machine Learning Engineer, PhD Intern",
       "location": "United States - Remote",
       "url": "https://instacart.careers/job/?gh_jid=5917202",
-      "days_posted": 14,
+      "days_posted": 15,
       "compensation": ""
     },
     {
@@ -157,24 +157,32 @@
       "title": "Machine Learning PhD Intern, Economics",
       "location": "United States - Remote",
       "url": "https://instacart.careers/job/?gh_jid=7532267",
-      "days_posted": 21,
+      "days_posted": 22,
       "compensation": ""
     }
   ],
   "other": [
     {
-      "company": "Affirm",
-      "title": "Software Engineer, Early Career",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7485068003",
+      "company": "MongoDB",
+      "title": "2026 - GTM Engineering Intern, Palo Alto",
+      "location": "Palo Alto",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7335935",
       "days_posted": 0,
       "compensation": ""
     },
     {
-      "company": "Okta",
-      "title": "TDI Security Program Management Intern (Summer 2026)",
-      "location": "San Francisco, California",
-      "url": "https://www.okta.com/company/careers/opportunity/7551656?gh_jid=7551656",
+      "company": "Verkada",
+      "title": "Backend Software Engineering Intern 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026094007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Backend Software Engineer - University Graduate 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026066007",
       "days_posted": 0,
       "compensation": ""
     },
@@ -187,6 +195,94 @@
       "compensation": ""
     },
     {
+      "company": "Verkada",
+      "title": "Frontend Software Engineering Intern 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5024322007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Frontend Software Engineer - University Graduate 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026067007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Hardware Engineer, New Grad 2025",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5036396007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Hardware Engineer (Summer Co-op)",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/4135120007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "iOS Engineering Intern - Native Streaming Clients Team 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5038878007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Product Design Mechanical Engineer (Summer Co-op)",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/4084333007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Security Embedded Software Engineering Intern 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026086007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Security Software Engineer - University Graduate 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026072007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Technical Support Engineering Intern - Fall 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/5017082007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Verkada",
+      "title": "Technical Support Engineer - University Graduate 2026",
+      "location": "San Mateo, CA United States",
+      "url": "https://job-boards.greenhouse.io/verkada/jobs/4715534007",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
+      "company": "Faire",
+      "title": "Data Science Intern",
+      "location": "Kitchener-Waterloo, ON; San Francisco, CA; Toronto, ON",
+      "url": "https://boards.greenhouse.io/faire/jobs/8376377002?gh_jid=8376377002",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
       "company": "Nuro",
       "title": "Systems Test Engineering Intern",
       "location": "Mountain View, California (HQ)",
@@ -195,11 +291,27 @@
       "compensation": ""
     },
     {
+      "company": "Affirm",
+      "title": "Software Engineer, Early Career",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7485068003",
+      "days_posted": 1,
+      "compensation": ""
+    },
+    {
+      "company": "Okta",
+      "title": "TDI Security Program Management Intern (Summer 2026)",
+      "location": "San Francisco, California",
+      "url": "https://www.okta.com/company/careers/opportunity/7551656?gh_jid=7551656",
+      "days_posted": 1,
+      "compensation": ""
+    },
+    {
       "company": "Roblox",
       "title": "[2026 Canada] Software Engineer, Geometry - Early Career",
       "location": "Vancouver, British Columbia, Canada",
       "url": "https://careers.roblox.com/jobs/7558821?gh_jid=7558821",
-      "days_posted": 0,
+      "days_posted": 1,
       "compensation": ""
     },
     {
@@ -207,7 +319,7 @@
       "title": "[2026] Security Software Engineer - Early Career",
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7357095?gh_jid=7357095",
-      "days_posted": 0,
+      "days_posted": 1,
       "compensation": ""
     },
     {
@@ -215,14 +327,6 @@
       "title": "[2026] Software Engineer, Creator - Early Career",
       "location": "San Mateo, CA, United States",
       "url": "https://careers.roblox.com/jobs/7557909?gh_jid=7557909",
-      "days_posted": 0,
-      "compensation": ""
-    },
-    {
-      "company": "MongoDB",
-      "title": "2026 - GTM Engineering Intern, Palo Alto",
-      "location": "Palo Alto",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7335935",
       "days_posted": 1,
       "compensation": ""
     },
@@ -231,111 +335,7 @@
       "title": "University Grad Software Engineer (Toronto)",
       "location": "Toronto, ON, CA",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7247113",
-      "days_posted": 1,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "iOS Engineering Intern - Native Streaming Clients Team 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5038878007",
-      "days_posted": 1,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Backend Software Engineering Intern 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026094007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Backend Software Engineer - University Graduate 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026066007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Frontend Software Engineering Intern 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5024322007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Frontend Software Engineer - University Graduate 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026067007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Hardware Engineer, New Grad 2025",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5036396007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Hardware Engineer (Summer Co-op)",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/4135120007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Product Design Mechanical Engineer (Summer Co-op)",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/4084333007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Security Embedded Software Engineering Intern 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026086007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Security Software Engineer - University Graduate 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5026072007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Technical Support Engineering Intern - Fall 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/5017082007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Verkada",
-      "title": "Technical Support Engineer - University Graduate 2026",
-      "location": "San Mateo, CA United States",
-      "url": "https://job-boards.greenhouse.io/verkada/jobs/4715534007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Nuro",
-      "title": "Software Engineer Intern, Pose (Vehicle State Estimation)",
-      "location": "Mountain View, California (HQ)",
-      "url": "https://nuro.ai/careersitem?gh_jid=7545444",
-      "days_posted": 4,
+      "days_posted": 2,
       "compensation": ""
     },
     {
@@ -351,14 +351,6 @@
       "title": "Intern, Complex Systems Diagnostics and Prognostics Design, Summer 2026",
       "location": "Newark, CA",
       "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4953722007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, HVAC and Thermal Systems, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4969388007",
       "days_posted": 4,
       "compensation": ""
     },
@@ -387,11 +379,27 @@
       "compensation": ""
     },
     {
+      "company": "Nuro",
+      "title": "Software Engineer Intern, Pose (Vehicle State Estimation)",
+      "location": "Mountain View, California (HQ)",
+      "url": "https://nuro.ai/careersitem?gh_jid=7545444",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "title": "Intern, HVAC and Thermal Systems, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4969388007",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
       "company": "AppLovin",
       "title": "Backend Engineer, New Grad ",
       "location": "Palo Alto, CA",
       "url": "https://boards.greenhouse.io/applovin/jobs/4451556006?gh_jid=4451556006",
-      "days_posted": 4,
+      "days_posted": 5,
       "compensation": ""
     },
     {
@@ -399,7 +407,7 @@
       "title": "Software Engineer, Summer Undergraduate Intern",
       "location": "San Francisco, CA",
       "url": "https://www.fastly.com/about/jobs/apply?gh_jid=7512114",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -407,7 +415,7 @@
       "title": "Embedded Software Engineer Intern",
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=7532060",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -415,7 +423,7 @@
       "title": "Machine Learning intern, Behavior Planning",
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=7309261",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -423,7 +431,7 @@
       "title": "Software Engineer, AI Platform - Intern",
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=7351061",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -431,7 +439,7 @@
       "title": "Software Engineer, AI Platform - New Grad",
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=7351066",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -439,7 +447,7 @@
       "title": "Software Engineer, Autonomy-New Grad",
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=6932596",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -447,7 +455,7 @@
       "title": "Software Engineer, ML Infrastructure - Internship",
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=7366266",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -455,7 +463,7 @@
       "title": "Systems Engineering Intern, Compliance Coverage ML",
       "location": "Mountain View, California (HQ)",
       "url": "https://nuro.ai/careersitem?gh_jid=7562197",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -463,15 +471,7 @@
       "title": "Manufacturing / Industrial Engineering Intern, Material Flow (P-4938)",
       "location": "Pleasanton, California, USA HQ",
       "url": "https://boards.greenhouse.io/10xgenomics/jobs/7527107?gh_jid=7527107",
-      "days_posted": 5,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, MS/PhD, Software Engineer, Simulation",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7565624",
-      "days_posted": 7,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -479,7 +479,7 @@
       "title": "Security Intern - Summer 2026",
       "location": "San Francisco, California, United States",
       "url": "https://job-boards.greenhouse.io/affirm/jobs/7519403003",
-      "days_posted": 8,
+      "days_posted": 9,
       "compensation": ""
     },
     {
@@ -487,7 +487,7 @@
       "title": "Machine Learning Intern Fall 2026 (Toronto)",
       "location": "Toronto, ON, CA",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7268778",
-      "days_posted": 11,
+      "days_posted": 12,
       "compensation": ""
     },
     {
@@ -495,7 +495,7 @@
       "title": "Software Engineering Intern - Summer 2026",
       "location": "San Francisco, California, United States",
       "url": "https://job-boards.greenhouse.io/affirm/jobs/7528020003",
-      "days_posted": 13,
+      "days_posted": 14,
       "compensation": ""
     },
     {
@@ -503,7 +503,7 @@
       "title": "Master's University Grad Machine Learning Engineer 2026 (USA)",
       "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7211014",
-      "days_posted": 14,
+      "days_posted": 15,
       "compensation": ""
     },
     {
@@ -511,111 +511,7 @@
       "title": "Intern, Instrument Hardware Engineering",
       "location": "Pleasanton, California, USA HQ",
       "url": "https://boards.greenhouse.io/10xgenomics/jobs/7525613?gh_jid=7525613",
-      "days_posted": 18,
-      "compensation": ""
-    },
-    {
-      "company": "Faire",
-      "title": "Data Science Intern",
-      "location": "Kitchener-Waterloo, ON; San Francisco, CA; Toronto, ON",
-      "url": "https://boards.greenhouse.io/faire/jobs/8376377002?gh_jid=8376377002",
       "days_posted": 19,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Intern, PhD, Machine Learning Engineer, Simulation",
-      "location": "Mountain View, CA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7252833",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, MS/PhD, Software Engineer, Planner Reasoning ML/DL",
-      "location": "Mountain View, CA USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7393132",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, MS/PhD, Software Engineer, Predictive Planner Research ",
-      "location": "Mountain View, CA USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7357510",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, PhD, Machine Learning Research, Planning/Prediction",
-      "location": "Mountain View, CA USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7357493",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, PhD, Research, 3D/4D Scene Reconstruction and Understanding",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7280172",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, PhD, Research, Perception Foundation Models",
-      "location": "Mountain View, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7274784",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, PhD, Software Engineer, Predictive Planner ML/DL",
-      "location": "Mountain View, CA,  USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7368864",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, PhD, Software Engineer, Release Evaluation",
-      "location": "San Francisco, CA, USA",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7263750",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "2026 Summer Intern, PhD, Software Engineer, Strategic Selection",
-      "location": "Mountain View, CA, USA ",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7342413",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "Applied Research Scientist, 3D Object Detection  (PhD New Grad)",
-      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7467839",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "Applied Research Scientist, Perception LLM/VLM (PhD, New Grad)",
-      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7488508",
-      "days_posted": 20,
-      "compensation": ""
-    },
-    {
-      "company": "Waymo",
-      "title": "Machine Learning Engineer, 3D Object Detection  (PhD New Grad)",
-      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
-      "url": "https://careers.withwaymo.com/jobs?gh_jid=7539786",
-      "days_posted": 20,
       "compensation": ""
     },
     {
@@ -623,7 +519,7 @@
       "title": "Graduate Data Science Intern",
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/twitch/jobs/8221777002",
-      "days_posted": 21,
+      "days_posted": 22,
       "compensation": ""
     },
     {
@@ -631,7 +527,7 @@
       "title": "Undergrad Security Engineering Intern",
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/twitch/jobs/8216024002",
-      "days_posted": 21,
+      "days_posted": 22,
       "compensation": ""
     },
     {
@@ -639,7 +535,7 @@
       "title": "Undergrad Software Engineering Intern",
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/twitch/jobs/8174019002",
-      "days_posted": 21,
+      "days_posted": 22,
       "compensation": ""
     },
     {
@@ -647,7 +543,7 @@
       "title": "Fluidics Engineering Intern, Instrument",
       "location": "Pleasanton, California, USA HQ",
       "url": "https://boards.greenhouse.io/10xgenomics/jobs/7525609?gh_jid=7525609",
-      "days_posted": 25,
+      "days_posted": 26,
       "compensation": ""
     },
     {
@@ -655,7 +551,7 @@
       "title": "Fluidics Engineering Intern, Spatial",
       "location": "Pleasanton, California, USA HQ",
       "url": "https://boards.greenhouse.io/10xgenomics/jobs/7525607?gh_jid=7525607",
-      "days_posted": 25,
+      "days_posted": 26,
       "compensation": ""
     },
     {
@@ -663,7 +559,7 @@
       "title": "Industrialization Engineer Intern (Summer 2026)",
       "location": "Longueuil, Canada",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8331996002?gh_jid=8331996002",
-      "days_posted": 54,
+      "days_posted": 55,
       "compensation": ""
     },
     {
@@ -671,7 +567,7 @@
       "title": "UX Engineer Intern",
       "location": "San Francisco, CA, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7253053",
-      "days_posted": 71,
+      "days_posted": 72,
       "compensation": ""
     },
     {
@@ -679,7 +575,7 @@
       "title": "Master's Machine Learning Internship Summer Term 2026 (Toronto)",
       "location": "Toronto, ON, CA",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7268767",
-      "days_posted": 76,
+      "days_posted": 77,
       "compensation": ""
     },
     {
@@ -687,7 +583,7 @@
       "title": "PhD Machine Learning Internship 2026 (USA) ",
       "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7211004",
-      "days_posted": 81,
+      "days_posted": 82,
       "compensation": ""
     },
     {
@@ -695,7 +591,7 @@
       "title": "\tPhD University Grad Machine Learning Engineer 2026 (USA)",
       "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7252807",
-      "days_posted": 81,
+      "days_posted": 82,
       "compensation": ""
     },
     {
@@ -703,7 +599,7 @@
       "title": "Software Engineer Intern, Mobile iOS (Summer 2026)",
       "location": "San Francisco, CA",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8215921002?gh_jid=8215921002",
-      "days_posted": 106,
+      "days_posted": 107,
       "compensation": ""
     },
     {
@@ -711,7 +607,7 @@
       "title": "2026 - Information Security Engineering Intern, Seattle",
       "location": "Seattle",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7292751",
-      "days_posted": 1,
+      "days_posted": 0,
       "compensation": ""
     },
     {
@@ -719,7 +615,7 @@
       "title": "Site Reliability Engineer Intern (Summer 2026)",
       "location": "Bellevue, Washington",
       "url": "https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798",
-      "days_posted": 7,
+      "days_posted": 8,
       "compensation": ""
     },
     {
@@ -727,15 +623,7 @@
       "title": "Advanced Analytics Intern (MS)",
       "location": "United States",
       "url": "https://careers.airbnb.com/positions/7556971?gh_jid=7556971",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Dropbox",
-      "title": "CX Technical Content Design Intern (Summer 2026)",
-      "location": "Remote - US: All locations",
-      "url": "https://jobs.dropbox.com/listing/7558512?gh_jid=7558512",
-      "days_posted": 4,
+      "days_posted": 5,
       "compensation": ""
     },
     {
@@ -743,7 +631,15 @@
       "title": "CX Technical Content Design Intern (Summer 2026)",
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7558516?gh_jid=7558516",
-      "days_posted": 4,
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "CX Technical Content Design Intern (Summer 2026)",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7558512?gh_jid=7558512",
+      "days_posted": 5,
       "compensation": ""
     },
     {
@@ -751,7 +647,7 @@
       "title": "Strategic Finance & Analytics Intern (MBA/MS)",
       "location": "United States",
       "url": "https://careers.airbnb.com/positions/7488879?gh_jid=7488879",
-      "days_posted": 5,
+      "days_posted": 6,
       "compensation": ""
     },
     {
@@ -759,7 +655,7 @@
       "title": "Data Science Engineer Intern (Summer 2026)",
       "location": "Remote - US: All locations",
       "url": "https://jobs.dropbox.com/listing/7527941?gh_jid=7527941",
-      "days_posted": 6,
+      "days_posted": 7,
       "compensation": ""
     },
     {
@@ -767,7 +663,7 @@
       "title": "Data Science Intern (Summer 2026)",
       "location": "Remote - US: All locations",
       "url": "https://jobs.dropbox.com/listing/7527921?gh_jid=7527921",
-      "days_posted": 6,
+      "days_posted": 7,
       "compensation": ""
     },
     {
@@ -775,7 +671,7 @@
       "title": "PhD Machine Learning Intern (Summer 2026)",
       "location": "Remote - US: All locations",
       "url": "https://jobs.dropbox.com/listing/7368677?gh_jid=7368677",
-      "days_posted": 6,
+      "days_posted": 7,
       "compensation": ""
     },
     {
@@ -783,15 +679,7 @@
       "title": "PhD Systems & AI/ML Research Intern (Summer 2026)",
       "location": "Remote - US: All locations",
       "url": "https://jobs.dropbox.com/listing/7462813?gh_jid=7462813",
-      "days_posted": 6,
-      "compensation": ""
-    },
-    {
-      "company": "Dropbox",
-      "title": "Research and Insights Intern (Summer 2026)",
-      "location": "Remote - Canada: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7558572?gh_jid=7558572",
-      "days_posted": 6,
+      "days_posted": 7,
       "compensation": ""
     },
     {
@@ -799,7 +687,15 @@
       "title": "Research and Insights Intern (Summer 2026)",
       "location": "Remote - US: All locations",
       "url": "https://jobs.dropbox.com/listing/7558568?gh_jid=7558568",
-      "days_posted": 6,
+      "days_posted": 7,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "Research and Insights Intern (Summer 2026)",
+      "location": "Remote - Canada: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7558572?gh_jid=7558572",
+      "days_posted": 7,
       "compensation": ""
     },
     {
@@ -807,15 +703,7 @@
       "title": "Software Engineer Intern (Summer 2026)",
       "location": "Remote - Poland",
       "url": "https://jobs.dropbox.com/listing/7362887?gh_jid=7362887",
-      "days_posted": 6,
-      "compensation": ""
-    },
-    {
-      "company": "Dropbox",
-      "title": "Support Enablement Engineer Intern  (Summer 2026)",
-      "location": "Remote - US: All locations",
-      "url": "https://jobs.dropbox.com/listing/7531477?gh_jid=7531477",
-      "days_posted": 6,
+      "days_posted": 7,
       "compensation": ""
     },
     {
@@ -823,7 +711,15 @@
       "title": "Support Enablement Engineer Intern  (Summer 2026)",
       "location": "Remote - Canada: Select locations",
       "url": "https://jobs.dropbox.com/listing/7531481?gh_jid=7531481",
-      "days_posted": 6,
+      "days_posted": 7,
+      "compensation": ""
+    },
+    {
+      "company": "Dropbox",
+      "title": "Support Enablement Engineer Intern  (Summer 2026)",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7531477?gh_jid=7531477",
+      "days_posted": 7,
       "compensation": ""
     },
     {
@@ -831,14 +727,6 @@
       "title": "Hardware Systems Engineer Intern (Spring / Summer 2026)",
       "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/7436125?gh_jid=7436125",
-      "days_posted": 6,
-      "compensation": ""
-    },
-    {
-      "company": "Affirm",
-      "title": "Software Engineer, Early Career",
-      "location": "New York, New York, United States",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7485072003",
       "days_posted": 7,
       "compensation": ""
     },
@@ -847,7 +735,7 @@
       "title": "Data Science Intern",
       "location": "United States | Remote",
       "url": "https://careers.upstart.com/jobs?gh_jid=7338780",
-      "days_posted": 8,
+      "days_posted": 9,
       "compensation": ""
     },
     {
@@ -855,7 +743,7 @@
       "title": "Machine Learning Engineer Intern",
       "location": "United States | Remote",
       "url": "https://careers.upstart.com/jobs?gh_jid=7409227",
-      "days_posted": 10,
+      "days_posted": 11,
       "compensation": ""
     },
     {
@@ -863,7 +751,7 @@
       "title": "Software Engineer, Early Career",
       "location": "Chicago, Illinois, United States",
       "url": "https://job-boards.greenhouse.io/affirm/jobs/7566696003",
-      "days_posted": 11,
+      "days_posted": 12,
       "compensation": ""
     },
     {
@@ -871,7 +759,7 @@
       "title": "Software Engineer Intern (Summer 2026)",
       "location": "Berlin; Hybrid",
       "url": "https://job-boards.greenhouse.io/grammarly/jobs/7491439",
-      "days_posted": 43,
+      "days_posted": 44,
       "compensation": ""
     },
     {
@@ -879,7 +767,7 @@
       "title": "IT Systems Engineer Intern",
       "location": "Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7262769",
-      "days_posted": 62,
+      "days_posted": 63,
       "compensation": ""
     },
     {
@@ -887,7 +775,7 @@
       "title": "IT Systems Engineer Intern",
       "location": "Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7262750",
-      "days_posted": 63,
+      "days_posted": 64,
       "compensation": ""
     },
     {
@@ -895,7 +783,7 @@
       "title": "UX Quantitative Research Intern",
       "location": "Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=7253124",
-      "days_posted": 81,
+      "days_posted": 82,
       "compensation": ""
     }
   ]
