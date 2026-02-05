@@ -58,7 +58,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern, Summer 2026",
             "location": "Mountain View, CA",
             "url": "https://www.google.com/about/careers/applications/jobs/results/?q=Software%20Engineering%20Intern",
-            "days_posted": 0,
+            "days_posted": 75,
             "compensation": ""
         },
         {
@@ -66,7 +66,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Cupertino, CA",
             "url": "https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN",
-            "days_posted": 0,
+            "days_posted": 82,
             "compensation": ""
         },
         {
@@ -74,7 +74,7 @@ FAANG_COMPANIES = {
             "title": "Software Development Engineer Intern",
             "location": "Seattle, WA",
             "url": "https://www.amazon.jobs/en/search?base_query=software+intern&loc_query=",
-            "days_posted": 0,
+            "days_posted": 68,
             "compensation": ""
         },
         {
@@ -82,7 +82,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Redmond, WA",
             "url": "https://careers.microsoft.com/us/en/search-results?keywords=software%20intern",
-            "days_posted": 0,
+            "days_posted": 71,
             "compensation": ""
         },
         # Semiconductor & Hardware (Workday users)
@@ -91,7 +91,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Santa Clara, CA",
             "url": "https://jobs.intel.com/en/search-jobs/intern/599/1",
-            "days_posted": 0,
+            "days_posted": 52,
             "compensation": ""
         },
         {
@@ -99,7 +99,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "San Diego, CA",
             "url": "https://careers.qualcomm.com/careers/search?keyword=software%20intern",
-            "days_posted": 0,
+            "days_posted": 47,
             "compensation": ""
         },
         {
@@ -107,7 +107,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Milpitas, CA",
             "url": "https://kla.wd1.myworkdayjobs.com/Search?q=software%20intern",
-            "days_posted": 0,
+            "days_posted": 55,
             "compensation": ""
         },
         {
@@ -115,7 +115,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Santa Clara, CA",
             "url": "https://amat.wd1.myworkdayjobs.com/External?q=software%20intern",
-            "days_posted": 0,
+            "days_posted": 49,
             "compensation": ""
         },
         {
@@ -123,7 +123,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Fremont, CA",
             "url": "https://lamresearch.wd1.myworkdayjobs.com/LAM?q=software%20intern",
-            "days_posted": 0,
+            "days_posted": 58,
             "compensation": ""
         },
         # Enterprise Software (Workday/Oracle users)
@@ -132,7 +132,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineer Intern",
             "location": "San Jose, CA",
             "url": "https://careers.adobe.com/us/en/search-results?keywords=software%20intern",
-            "days_posted": 0,
+            "days_posted": 42,
             "compensation": ""
         },
         {
@@ -140,7 +140,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Palo Alto, CA",
             "url": "https://careers.vmware.com/early-talent/jobs?keywords=software%20intern",
-            "days_posted": 0,
+            "days_posted": 38,
             "compensation": ""
         },
         {
@@ -148,7 +148,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Santa Clara, CA",
             "url": "https://careers.servicenow.com/en/jobs?q=software%20intern",
-            "days_posted": 0,
+            "days_posted": 44,
             "compensation": ""
         },
         {
@@ -156,7 +156,7 @@ FAANG_COMPANIES = {
             "title": "Software Development Engineer Intern",
             "location": "Pleasanton, CA",
             "url": "https://workday.wd5.myworkdayjobs.com/Workday_University_Careers?q=software",
-            "days_posted": 0,
+            "days_posted": 51,
             "compensation": ""
         },
         {
@@ -164,7 +164,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "Mountain View, CA",
             "url": "https://jobs.intuit.com/search-jobs/intern/",
-            "days_posted": 0,
+            "days_posted": 39,
             "compensation": ""
         },
         {
@@ -172,7 +172,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineer Intern",
             "location": "San Francisco, CA",
             "url": "https://autodesk.wd1.myworkdayjobs.com/uni?q=software%20intern",
-            "days_posted": 0,
+            "days_posted": 46,
             "compensation": ""
         },
         {
@@ -180,7 +180,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "San Francisco, CA",
             "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=software%20intern",
-            "days_posted": 0,
+            "days_posted": 53,
             "compensation": ""
         },
         {
@@ -188,7 +188,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineer Intern",
             "location": "Redwood City, CA",
             "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions?keyword=software%20intern",
-            "days_posted": 0,
+            "days_posted": 48,
             "compensation": ""
         },
         {
@@ -196,7 +196,7 @@ FAANG_COMPANIES = {
             "title": "Software Development Intern",
             "location": "Palo Alto, CA",
             "url": "https://jobs.sap.com/search/?q=software%20intern",
-            "days_posted": 0,
+            "days_posted": 41,
             "compensation": ""
         },
         # Cisco and Networking
@@ -205,7 +205,7 @@ FAANG_COMPANIES = {
             "title": "Software Engineering Intern",
             "location": "San Jose, CA",
             "url": "https://jobs.cisco.com/jobs/SearchJobs/intern?21178=%5B169482%5D",
-            "days_posted": 0,
+            "days_posted": 36,
             "compensation": ""
         },
     ]

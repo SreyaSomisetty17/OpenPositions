@@ -4,7 +4,7 @@
 
 This repository lists the latest Software Engineering Internship openings for 2026. Positions are **automatically updated daily** via GitHub Actions.
 
-**Last Updated:** February 05, 2026 at 11:20 UTC
+**Last Updated:** February 05, 2026 at 11:25 UTC
 
 **Total Positions:** 147 (47 FAANG+, 100 Other)
 
@@ -24,23 +24,6 @@ This repository lists the latest Software Engineering Internship openings for 20
 ### FAANG+
 | Company | Title | Location | Compensation | Apply | Days Posted |
 |---------|-------|----------|--------------|-------|-------------|
-| Google | Software Engineering Intern, Summer 2026 | Mountain View, CA |  | [Apply](https://www.google.com/about/careers/applications/jobs/results/?q=Software%20Engineering%20Intern) | 0d |
-| Apple | Software Engineering Intern | Cupertino, CA |  | [Apply](https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN) | 0d |
-| Intel | Software Engineering Intern | Santa Clara, CA |  | [Apply](https://jobs.intel.com/en/search-jobs/intern/599/1) | 0d |
-| Qualcomm | Software Engineering Intern | San Diego, CA |  | [Apply](https://careers.qualcomm.com/careers/search?keyword=software%20intern) | 0d |
-| KLA Corporation | Software Engineering Intern | Milpitas, CA |  | [Apply](https://kla.wd1.myworkdayjobs.com/Search?q=software%20intern) | 0d |
-| Applied Materials | Software Engineering Intern | Santa Clara, CA |  | [Apply](https://amat.wd1.myworkdayjobs.com/External?q=software%20intern) | 0d |
-| Lam Research | Software Engineering Intern | Fremont, CA |  | [Apply](https://lamresearch.wd1.myworkdayjobs.com/LAM?q=software%20intern) | 0d |
-| Adobe | Software Engineer Intern | San Jose, CA |  | [Apply](https://careers.adobe.com/us/en/search-results?keywords=software%20intern) | 0d |
-| VMware | Software Engineering Intern | Palo Alto, CA |  | [Apply](https://careers.vmware.com/early-talent/jobs?keywords=software%20intern) | 0d |
-| ServiceNow | Software Engineering Intern | Santa Clara, CA |  | [Apply](https://careers.servicenow.com/en/jobs?q=software%20intern) | 0d |
-| Workday | Software Development Engineer Intern | Pleasanton, CA |  | [Apply](https://workday.wd5.myworkdayjobs.com/Workday_University_Careers?q=software) | 0d |
-| Intuit | Software Engineering Intern | Mountain View, CA |  | [Apply](https://jobs.intuit.com/search-jobs/intern/) | 0d |
-| Autodesk | Software Engineer Intern | San Francisco, CA |  | [Apply](https://autodesk.wd1.myworkdayjobs.com/uni?q=software%20intern) | 0d |
-| Salesforce | Software Engineering Intern | San Francisco, CA |  | [Apply](https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=software%20intern) | 0d |
-| Oracle | Software Engineer Intern | Redwood City, CA |  | [Apply](https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions?keyword=software%20intern) | 0d |
-| SAP | Software Development Intern | Palo Alto, CA |  | [Apply](https://jobs.sap.com/search/?q=software%20intern) | 0d |
-| Cisco | Software Engineering Intern | San Jose, CA |  | [Apply](https://jobs.cisco.com/jobs/SearchJobs/intern?21178=%5B169482%5D) | 0d |
 | Stripe | Data Analyst, Intern (Master's degree) | Toronto, Ontario, Canada |  | [Apply](https://stripe.com/jobs/search?gh_jid=7285986) | 0d |
 | Stripe | PhD Data Scientist, Intern | Toronto, Ontario, Canada |  | [Apply](https://stripe.com/jobs/search?gh_jid=7285974) | 0d |
 | Stripe | PhD Machine Learning Engineer, Intern | San Francisco, New York City, Seattle |  | [Apply](https://stripe.com/jobs/search?gh_jid=7216664) | 0d |
@@ -63,8 +46,25 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Robinhood | Software Developer Intern, Web (Summer 2026) | Toronto, Canada |  | [Apply](https://boards.greenhouse.io/robinhood/jobs/7238998?t=gh_src=&gh_jid=7238998) | 30d |
 | Robinhood | Software Engineering Intern, Android (Summer 2026) | Menlo Park, CA |  | [Apply](https://boards.greenhouse.io/robinhood/jobs/7239199?t=gh_src=&gh_jid=7239199) | 30d |
 | Robinhood | Software Engineering Intern, iOS (Summer 2026) | Menlo Park, CA |  | [Apply](https://boards.greenhouse.io/robinhood/jobs/7239268?t=gh_src=&gh_jid=7239268) | 30d |
-| Amazon | Software Development Engineer Intern | Seattle, WA |  | [Apply](https://www.amazon.jobs/en/search?base_query=software+intern&loc_query=) | 0d |
-| Microsoft | Software Engineering Intern | Redmond, WA |  | [Apply](https://careers.microsoft.com/us/en/search-results?keywords=software%20intern) | 0d |
+| Cisco | Software Engineering Intern | San Jose, CA |  | [Apply](https://jobs.cisco.com/jobs/SearchJobs/intern?21178=%5B169482%5D) | 36d |
+| VMware | Software Engineering Intern | Palo Alto, CA |  | [Apply](https://careers.vmware.com/early-talent/jobs?keywords=software%20intern) | 38d |
+| Intuit | Software Engineering Intern | Mountain View, CA |  | [Apply](https://jobs.intuit.com/search-jobs/intern/) | 39d |
+| SAP | Software Development Intern | Palo Alto, CA |  | [Apply](https://jobs.sap.com/search/?q=software%20intern) | 41d |
+| Adobe | Software Engineer Intern | San Jose, CA |  | [Apply](https://careers.adobe.com/us/en/search-results?keywords=software%20intern) | 42d |
+| ServiceNow | Software Engineering Intern | Santa Clara, CA |  | [Apply](https://careers.servicenow.com/en/jobs?q=software%20intern) | 44d |
+| Autodesk | Software Engineer Intern | San Francisco, CA |  | [Apply](https://autodesk.wd1.myworkdayjobs.com/uni?q=software%20intern) | 46d |
+| Qualcomm | Software Engineering Intern | San Diego, CA |  | [Apply](https://careers.qualcomm.com/careers/search?keyword=software%20intern) | 47d |
+| Oracle | Software Engineer Intern | Redwood City, CA |  | [Apply](https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions?keyword=software%20intern) | 48d |
+| Applied Materials | Software Engineering Intern | Santa Clara, CA |  | [Apply](https://amat.wd1.myworkdayjobs.com/External?q=software%20intern) | 49d |
+| Workday | Software Development Engineer Intern | Pleasanton, CA |  | [Apply](https://workday.wd5.myworkdayjobs.com/Workday_University_Careers?q=software) | 51d |
+| Intel | Software Engineering Intern | Santa Clara, CA |  | [Apply](https://jobs.intel.com/en/search-jobs/intern/599/1) | 52d |
+| Salesforce | Software Engineering Intern | San Francisco, CA |  | [Apply](https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=software%20intern) | 53d |
+| KLA Corporation | Software Engineering Intern | Milpitas, CA |  | [Apply](https://kla.wd1.myworkdayjobs.com/Search?q=software%20intern) | 55d |
+| Lam Research | Software Engineering Intern | Fremont, CA |  | [Apply](https://lamresearch.wd1.myworkdayjobs.com/LAM?q=software%20intern) | 58d |
+| Google | Software Engineering Intern, Summer 2026 | Mountain View, CA |  | [Apply](https://www.google.com/about/careers/applications/jobs/results/?q=Software%20Engineering%20Intern) | 75d |
+| Apple | Software Engineering Intern | Cupertino, CA |  | [Apply](https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN) | 82d |
+| Amazon | Software Development Engineer Intern | Seattle, WA |  | [Apply](https://www.amazon.jobs/en/search?base_query=software+intern&loc_query=) | 68d |
+| Microsoft | Software Engineering Intern | Redmond, WA |  | [Apply](https://careers.microsoft.com/us/en/search-results?keywords=software%20intern) | 71d |
 | Coinbase | Software Engineer, Backend (Consumer - International) | Remote - Brazil |  | [Apply](https://www.coinbase.com/careers/positions/7583999?gh_jid=7583999) | 2d |
 | Coinbase | Institutional Sales, RFP Associate | Remote - USA |  | [Apply](https://www.coinbase.com/careers/positions/7421527?gh_jid=7421527) | 15d |
 | Datadog | Technical Escalations Engineer 3 (Internal Developer Portal) - US-East | Boston, Massachusetts, USA; New York, New York, USA |  | [Apply](https://careers.datadoghq.com/detail/7536159/?gh_jid=7536159) | 15d |
