@@ -7,7 +7,7 @@ Fetches job listings from multiple sources and updates README.md
 import requests
 import json
 from datetime import datetime, timedelta
-from typing import List, Dict
+from typing import List, Dict, Set
 import os
 
 # Job board APIs and sources
@@ -15,9 +15,6 @@ GREENHOUSE_API = "https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
 LEVER_API = "https://api.lever.co/v0/postings/{company}"
 WORKDAY_API = "https://{subdomain}.wd{instance}.myworkdayjobs.com/wday/cxs/{subdomain}/{site}/jobs"
 ASHBY_API = "https://api.ashbyhq.com/posting-api/job-board/{company}"
-
-# Only include jobs posted within the last 15 days
-MAX_DAYS_POSTED = 15
 
 REPO_OWNER = "SreyaSomisetty17"
 REPO_NAME = "OpenPositions"
@@ -75,7 +72,7 @@ FAANG_COMPANIES = {
         ("broadcom", "5", "BroadcomJobs", "Broadcom"),
         # Tech Giants
         ("adobe", "5", "external_experienced", "Adobe"),
-        ("salesforce", "5", "External_Career_Site", "Salesforce"),
+        ("salesforce", "12", "External_Career_Site", "Salesforce"),
         ("vmware", "5", "VMwareCareerSite", "VMware"),
         ("servicenow", "5", "Careers", "ServiceNow"),
         ("workday", "5", "Workday", "Workday"),
@@ -526,10 +523,6 @@ def fetch_greenhouse_jobs(company_id: str, company_name: str) -> List[Dict]:
 
                 # Calculate days since posted
                 days_posted = calculate_days_posted(posted_at)
-                
-                # Filter by max days posted
-                if days_posted > MAX_DAYS_POSTED:
-                    continue
 
                 jobs.append({
                     "company": company_name,
@@ -570,10 +563,6 @@ def fetch_lever_jobs(company_id: str, company_name: str) -> List[Dict]:
                     days_posted = (datetime.now() - posted_date).days
                 else:
                     days_posted = 0
-                
-                # Filter by max days posted
-                if days_posted > MAX_DAYS_POSTED:
-                    continue
 
                 jobs.append({
                     "company": company_name,
@@ -589,52 +578,94 @@ def fetch_lever_jobs(company_id: str, company_name: str) -> List[Dict]:
 
 
 def fetch_workday_jobs(subdomain: str, instance: str, site: str, company_name: str) -> List[Dict]:
-    """Fetch jobs from Workday API"""
-    jobs = []
+    """Fetch jobs from Workday API (supports pagination and multiple search terms)"""
+    jobs: List[Dict] = []
+    seen_ids: Set[str] = set()
+    search_terms = [
+        "software engineering intern",
+        "software intern",
+        "software developer intern",
+        "swe intern",
+        "full stack intern"
+    ]
+
+    headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    }
+    base_url = f"https://{subdomain}.wd{instance}.myworkdayjobs.com/wday/cxs/{subdomain}/{site}/jobs"
+
+    debug = os.environ.get("DEBUG_WORKDAY")
+
     try:
-        url = f"https://{subdomain}.wd{instance}.myworkdayjobs.com/wday/cxs/{subdomain}/{site}/jobs"
-        headers = {
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        }
-        # Workday uses POST with search criteria
-        payload = {
-            "appliedFacets": {},
-            "limit": 100,
-            "offset": 0,
-            "searchText": "software intern"
-        }
-        response = requests.post(url, json=payload, headers=headers, timeout=15)
-        if response.status_code == 200:
-            data = response.json()
-            for job in data.get("jobPostings", []):
-                title = job.get("title", "")
-                if not is_software_engineer_intern(title):
-                    continue
+        for term in search_terms:
+            offset = 0
+            limit = 20
 
-                location = job.get("locationsText", "N/A")
-                if not should_include_location(location):
-                    continue
+            while True:
+                payload = {
+                    "appliedFacets": {},
+                    "limit": limit,
+                    "offset": offset,
+                    "searchText": term
+                }
 
-                posted_on = job.get("postedOn", "")
-                days_posted = calculate_days_posted(posted_on) if posted_on else 0
-                
-                # Filter by max days posted
-                if days_posted > MAX_DAYS_POSTED:
-                    continue
+                response = requests.post(base_url, json=payload, headers=headers, timeout=15)
+                if debug:
+                    print(f"    Workday query {company_name} term='{term}' offset={offset} status={response.status_code}")
+                if response.status_code != 200:
+                    if debug:
+                        try:
+                            print("      response:", response.text[:200])
+                        except Exception:
+                            pass
+                    break
 
-                job_url = f"https://{subdomain}.wd{instance}.myworkdayjobs.com/en-US/{site}/job/{job.get('externalPath', '')}"
+                data = response.json()
+                postings = data.get("jobPostings", [])
+                if debug:
+                    print(f"      found {len(postings)} postings (total={data.get('total')})")
+                if not postings:
+                    break
 
-                jobs.append({
-                    "company": company_name,
-                    "title": title,
-                    "location": location,
-                    "url": job_url,
-                    "days_posted": days_posted,
-                    "compensation": ""
-                })
+                for job in postings:
+                    title = job.get("title", "")
+                    if not is_software_engineer_intern(title):
+                        continue
+
+                    location = job.get("locationsText", "N/A")
+                    if not should_include_location(location):
+                        continue
+
+                    unique_id = job.get("externalPath") or "".join(job.get("bulletFields", []))
+                    if not unique_id or unique_id in seen_ids:
+                        continue
+
+                    seen_ids.add(unique_id)
+
+                    posted_on = job.get("postedOn", "")
+                    days_posted = calculate_days_posted(posted_on) if posted_on else 0
+
+                    job_url = f"https://{subdomain}.wd{instance}.myworkdayjobs.com/en-US/{site}/job/{job.get('externalPath', '').lstrip('/')}"
+
+                    jobs.append({
+                        "company": company_name,
+                        "title": title,
+                        "location": location,
+                        "url": job_url,
+                        "days_posted": days_posted,
+                        "compensation": ""
+                    })
+
+                offset += limit
+                total = data.get("total")
+                if total is not None and offset >= total:
+                    break
+                if len(postings) < limit:
+                    break
     except Exception as e:
         print(f"Error fetching from Workday for {company_name}: {e}")
+
     return jobs
 
 
@@ -657,10 +688,6 @@ def fetch_ashby_jobs(company_slug: str, company_name: str) -> List[Dict]:
 
                 published_at = job.get("publishedAt", "")
                 days_posted = calculate_days_posted(published_at) if published_at else 0
-                
-                # Filter by max days posted
-                if days_posted > MAX_DAYS_POSTED:
-                    continue
 
                 jobs.append({
                     "company": company_name,
@@ -815,7 +842,7 @@ This list is automatically scraped from company career pages and job boards incl
 - Ashby
 - Company career pages
 
-Positions within the last 15 days are included.
+Positions posted within roughly the last 120 days are included.
 
 ## 🤝 Contributing
 
