@@ -339,46 +339,6 @@
       "compensation": ""
     },
     {
-      "company": "Lucid Motors",
-      "title": "Intern, Cell Engineering, Summer 2026 ",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922163007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Complex Systems Diagnostics and Prognostics Design, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4953722007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Power Electronics Engineer, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922185007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Power Electronics Mechanical Engineer, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922169007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
-      "company": "Lucid Motors",
-      "title": "Intern, Powertrain Engineering, Efficiency and EV Systems, Summer 2026",
-      "location": "Newark, CA",
-      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922189007",
-      "days_posted": 4,
-      "compensation": ""
-    },
-    {
       "company": "Nuro",
       "title": "Software Engineer Intern, Pose (Vehicle State Estimation)",
       "location": "Mountain View, California (HQ)",
@@ -388,9 +348,49 @@
     },
     {
       "company": "Lucid Motors",
+      "title": "Intern, Cell Engineering, Summer 2026 ",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922163007",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "title": "Intern, Complex Systems Diagnostics and Prognostics Design, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4953722007",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
       "title": "Intern, HVAC and Thermal Systems, Summer 2026",
       "location": "Newark, CA",
       "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4969388007",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "title": "Intern, Power Electronics Engineer, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922185007",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "title": "Intern, Power Electronics Mechanical Engineer, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922169007",
+      "days_posted": 5,
+      "compensation": ""
+    },
+    {
+      "company": "Lucid Motors",
+      "title": "Intern, Powertrain Engineering, Efficiency and EV Systems, Summer 2026",
+      "location": "Newark, CA",
+      "url": "https://job-boards.greenhouse.io/lucidmotors/jobs/4922189007",
       "days_posted": 5,
       "compensation": ""
     },
@@ -475,6 +475,14 @@
       "compensation": ""
     },
     {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, MS/PhD, Software Engineer, Simulation",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7565624",
+      "days_posted": 8,
+      "compensation": ""
+    },
+    {
       "company": "Affirm",
       "title": "Security Intern - Summer 2026",
       "location": "San Francisco, California, United States",
@@ -512,6 +520,102 @@
       "location": "Pleasanton, California, USA HQ",
       "url": "https://boards.greenhouse.io/10xgenomics/jobs/7525613?gh_jid=7525613",
       "days_posted": 19,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Intern, PhD, Machine Learning Engineer, Simulation",
+      "location": "Mountain View, CA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7252833",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, MS/PhD, Software Engineer, Planner Reasoning ML/DL",
+      "location": "Mountain View, CA USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7393132",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, MS/PhD, Software Engineer, Predictive Planner Research ",
+      "location": "Mountain View, CA USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7357510",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, PhD, Machine Learning Research, Planning/Prediction",
+      "location": "Mountain View, CA USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7357493",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, PhD, Research, 3D/4D Scene Reconstruction and Understanding",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7280172",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, PhD, Research, Perception Foundation Models",
+      "location": "Mountain View, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7274784",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, PhD, Software Engineer, Predictive Planner ML/DL",
+      "location": "Mountain View, CA,  USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7368864",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, PhD, Software Engineer, Release Evaluation",
+      "location": "San Francisco, CA, USA",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7263750",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "2026 Summer Intern, PhD, Software Engineer, Strategic Selection",
+      "location": "Mountain View, CA, USA ",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7342413",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "Applied Research Scientist, 3D Object Detection  (PhD New Grad)",
+      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7467839",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "Applied Research Scientist, Perception LLM/VLM (PhD, New Grad)",
+      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7488508",
+      "days_posted": 21,
+      "compensation": ""
+    },
+    {
+      "company": "Waymo",
+      "title": "Machine Learning Engineer, 3D Object Detection  (PhD New Grad)",
+      "location": "Mountain View, CA USA;  San Francisco, CA USA;",
+      "url": "https://careers.withwaymo.com/jobs?gh_jid=7539786",
+      "days_posted": 21,
       "compensation": ""
     },
     {
@@ -685,16 +789,16 @@
     {
       "company": "Dropbox",
       "title": "Research and Insights Intern (Summer 2026)",
-      "location": "Remote - US: All locations",
-      "url": "https://jobs.dropbox.com/listing/7558568?gh_jid=7558568",
+      "location": "Remote - Canada: Select locations",
+      "url": "https://jobs.dropbox.com/listing/7558572?gh_jid=7558572",
       "days_posted": 7,
       "compensation": ""
     },
     {
       "company": "Dropbox",
       "title": "Research and Insights Intern (Summer 2026)",
-      "location": "Remote - Canada: Select locations",
-      "url": "https://jobs.dropbox.com/listing/7558572?gh_jid=7558572",
+      "location": "Remote - US: All locations",
+      "url": "https://jobs.dropbox.com/listing/7558568?gh_jid=7558568",
       "days_posted": 7,
       "compensation": ""
     },
