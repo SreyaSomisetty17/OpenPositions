@@ -13,6 +13,8 @@ import os
 # Job board APIs and sources
 GREENHOUSE_API = "https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
 LEVER_API = "https://api.lever.co/v0/postings/{company}"
+WORKDAY_API = "https://{subdomain}.wd{instance}.myworkdayjobs.com/wday/cxs/{subdomain}/{site}/jobs"
+ASHBY_API = "https://api.ashbyhq.com/posting-api/job-board/{company}"
 
 REPO_OWNER = "SreyaSomisetty17"
 REPO_NAME = "OpenPositions"
@@ -48,6 +50,30 @@ FAANG_COMPANIES = {
     ],
     "lever": [
         ("netflix", "Netflix"),
+        ("zoox", "Zoox"),
+        ("hermeus", "Hermeus"),
+        ("saviynt", "Saviynt"),
+        ("anduril", "Anduril"),
+        ("woven-by-toyota", "Woven by Toyota"),
+    ],
+    # Workday companies - (subdomain, instance, site, display_name)
+    "workday": [
+        ("etsy", "5", "etsy_careers", "Etsy"),
+        ("gm", "5", "Careers_Workday", "General Motors"),
+        ("dexcom", "5", "dexcomcareers", "Dexcom"),
+        ("asml", "1", "ASMLUS", "ASML"),
+        ("sandisk", "1", "sandisk", "Sandisk"),
+        ("marvell", "1", "marvellcareers", "Marvell"),
+        ("blueorigin", "5", "BlueOriginExternalCareerSite", "Blue Origin"),
+        ("micron", "5", "Micron", "Micron Technology"),
+        ("motorolasolutions", "5", "Careers", "Motorola Solutions"),
+    ],
+    # Ashby companies - (company_slug, display_name)
+    "ashby": [
+        ("8vc", "8VC"),
+        ("obsidian-security", "Obsidian Security"),
+        ("mechanize", "Mechanize"),
+        ("koah-labs", "Koah Labs"),
     ],
     # Manual entries for companies using Workday, Taleo, and other proprietary ATS
     # These don't have public APIs so we provide direct career page links
@@ -262,6 +288,31 @@ OTHER_COMPANIES = {
         ("amplitude", "Amplitude"),
         ("mixpanel", "Mixpanel"),
         ("segment", "Segment"),
+        # NEW: Companies from speedyapply that we're missing
+        ("sigmacomputing", "Sigma Computing"),
+        ("harveyai", "Harvey"),
+        ("ironclad", "Ironclad"),
+        ("mach9", "Mach9"),
+        ("gigaml", "GigaML"),
+        ("gemini", "Gemini"),
+        ("mercor", "Mercor"),
+        ("benchling", "Benchling"),
+        ("astranis", "Astranis"),
+        ("zipline", "Zipline"),
+        ("capellaspace", "Capella Space"),
+        ("skydio", "Skydio"),
+        ("jobyaviation", "Joby Aviation"),
+        ("archerltd", "Archer"),
+        ("rocketlab", "Rocket Lab"),
+        ("relativityspace", "Relativity Space"),
+        ("purestorage", "Pure Storage"),
+        ("cadaboratories", "Cadence"),
+        ("cobot", "Cobot"),
+        ("etched", "Etched"),
+        ("modular", "Modular"),
+        ("sambanova", "SambaNova"),
+        ("cerebras", "Cerebras"),
+        ("tenstorrent", "Tenstorrent"),
         ("twilio", "Twilio"),
         ("cloudflare", "Cloudflare"),
         ("fastly", "Fastly"),
@@ -364,6 +415,69 @@ OTHER_COMPANIES = {
         ("streamyard", "StreamYard"),
         ("riverside", "Riverside.fm"),
         ("descript", "Descript"),
+    ],
+    # Workday companies - (subdomain, instance, site, display_name)
+    "workday": [
+        ("draftkings", "1", "Campus", "DraftKings"),
+        ("salesforce", "5", "External_Career_Site", "Salesforce"),
+        ("paypal", "5", "jobs", "PayPal"),
+        ("hpe", "5", "Jobsite", "HP Enterprise"),
+        ("hp", "5", "careers", "HP Inc"),
+        ("cisco", "1", "external", "Cisco"),
+        ("juniper", "1", "JuniperNetworks", "Juniper Networks"),
+        ("arista", "1", "Arista", "Arista Networks"),
+        ("f5", "1", "f5networks", "F5 Networks"),
+        ("fortinet", "1", "Fortinet", "Fortinet"),
+        ("dell", "5", "External_Opportunities", "Dell"),
+        ("westerndigital", "5", "WDC", "Western Digital"),
+        ("seagate", "5", "Seagate", "Seagate"),
+        ("netapp", "5", "NetAppExt", "NetApp"),
+        ("vmware", "1", "External", "VMware"),
+        ("nutanix", "1", "nutanix", "Nutanix"),
+        ("servicenow", "1", "servicenow", "ServiceNow"),
+        ("splunk", "5", "Splunk", "Splunk"),
+        ("tableau", "5", "tableaucareers", "Tableau"),
+        ("mckesson", "5", "McKesson_Careers", "McKesson"),
+        ("cardinal", "5", "jobs", "Cardinal Health"),
+        ("amgen", "5", "careers", "Amgen"),
+        ("abbvie", "5", "abbvie", "AbbVie"),
+        ("biogen", "5", "biogen", "Biogen"),
+        ("regeneron", "5", "Regeneron", "Regeneron"),
+        ("boeing", "5", "external_careers", "Boeing"),
+        ("lockheed", "5", "LMCO", "Lockheed Martin"),
+        ("northropgrumman", "5", "ngc", "Northrop Grumman"),
+        ("raytheon", "5", "rtx", "Raytheon"),
+        ("generaldynamics", "5", "GD", "General Dynamics"),
+        ("leidos", "1", "External", "Leidos"),
+        ("caci", "1", "CACI", "CACI"),
+        ("saic", "1", "saic", "SAIC"),
+        ("baesystems", "1", "BAESystemsInc", "BAE Systems"),
+    ],
+    # Ashby companies - (company_slug, display_name)
+    "ashby": [
+        ("ramp", "Ramp"),
+        ("mercury", "Mercury"),
+        ("warp", "Warp"),
+        ("vercel", "Vercel"),
+        ("replit", "Replit"),
+        ("together-ai", "Together AI"),
+        ("anyscale", "Anyscale"),
+        ("modal", "Modal"),
+        ("temporal", "Temporal"),
+        ("pulumi", "Pulumi"),
+        ("doppler", "Doppler"),
+        ("tinybird", "Tinybird"),
+        ("planetscale", "PlanetScale"),
+        ("neon", "Neon"),
+        ("supabase", "Supabase"),
+        ("resend", "Resend"),
+        ("inngest", "Inngest"),
+        ("dagger", "Dagger"),
+        ("fly", "Fly.io"),
+        ("render", "Render"),
+        ("railway", "Railway"),
+        ("retool", "Retool"),
+        ("appsmith", "Appsmith"),
     ]
 }
 
@@ -569,6 +683,85 @@ def fetch_lever_jobs(company_id: str, company_name: str) -> List[Dict]:
     return jobs
 
 
+def fetch_workday_jobs(subdomain: str, instance: str, site: str, company_name: str) -> List[Dict]:
+    """Fetch jobs from Workday API"""
+    jobs = []
+    try:
+        url = f"https://{subdomain}.wd{instance}.myworkdayjobs.com/wday/cxs/{subdomain}/{site}/jobs"
+        headers = {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        }
+        # Workday uses POST with search criteria
+        payload = {
+            "appliedFacets": {},
+            "limit": 100,
+            "offset": 0,
+            "searchText": "software intern"
+        }
+        response = requests.post(url, json=payload, headers=headers, timeout=15)
+        if response.status_code == 200:
+            data = response.json()
+            for job in data.get("jobPostings", []):
+                title = job.get("title", "")
+                if not is_software_engineer_intern(title):
+                    continue
+
+                location = job.get("locationsText", "N/A")
+                if not should_include_location(location):
+                    continue
+
+                posted_on = job.get("postedOn", "")
+                days_posted = calculate_days_posted(posted_on) if posted_on else 0
+
+                job_url = f"https://{subdomain}.wd{instance}.myworkdayjobs.com/en-US/{site}/job/{job.get('externalPath', '')}"
+
+                jobs.append({
+                    "company": company_name,
+                    "title": title,
+                    "location": location,
+                    "url": job_url,
+                    "days_posted": days_posted,
+                    "compensation": ""
+                })
+    except Exception as e:
+        print(f"Error fetching from Workday for {company_name}: {e}")
+    return jobs
+
+
+def fetch_ashby_jobs(company_slug: str, company_name: str) -> List[Dict]:
+    """Fetch jobs from Ashby API"""
+    jobs = []
+    try:
+        url = f"https://api.ashbyhq.com/posting-api/job-board/{company_slug}"
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            for job in data.get("jobs", []):
+                title = job.get("title", "")
+                if not is_software_engineer_intern(title):
+                    continue
+
+                location = job.get("location", "N/A")
+                if not should_include_location(location):
+                    continue
+
+                published_at = job.get("publishedAt", "")
+                days_posted = calculate_days_posted(published_at) if published_at else 0
+
+                jobs.append({
+                    "company": company_name,
+                    "title": title,
+                    "location": location,
+                    "url": job.get("jobUrl", ""),
+                    "days_posted": days_posted,
+                    "compensation": ""
+                })
+    except Exception as e:
+        print(f"Error fetching from Ashby for {company_name}: {e}")
+    return jobs
+
+
 def calculate_days_posted(date_string: str) -> int:
     """Calculate days since job was posted"""
     if not date_string:
@@ -589,47 +782,46 @@ def calculate_days_posted(date_string: str) -> int:
 
 def fetch_all_jobs() -> Dict[str, List[Dict]]:
     """Fetch all jobs from all sources"""
-    all_jobs = {
-        "faang": [],
-        "other": []
-    }
+    all_jobs = []
 
-    print("Fetching FAANG+ jobs...")
+    print("Fetching jobs from all companies...")
     
-    # Add manual entries for companies using Workday/Taleo/proprietary ATS
-    manual_jobs = FAANG_COMPANIES.get("manual", [])
-    all_jobs["faang"].extend(manual_jobs)
-    if manual_jobs:
-        print(f"  Manual entries (Workday/ATS companies): {len(manual_jobs)} positions")
+    # Combine all company sources
+    all_company_sources = [FAANG_COMPANIES, OTHER_COMPANIES]
     
-    for company_id, company_name in FAANG_COMPANIES.get("greenhouse", []):
-        jobs = fetch_greenhouse_jobs(company_id, company_name)
-        all_jobs["faang"].extend(jobs)
-        print(f"  {company_name}: {len(jobs)} positions")
+    for company_source in all_company_sources:
+        # Add manual entries for companies using Workday/Taleo/proprietary ATS
+        manual_jobs = company_source.get("manual", [])
+        all_jobs.extend(manual_jobs)
+        if manual_jobs:
+            print(f"  Manual entries: {len(manual_jobs)} positions")
+        
+        for company_id, company_name in company_source.get("greenhouse", []):
+            jobs = fetch_greenhouse_jobs(company_id, company_name)
+            all_jobs.extend(jobs)
+            print(f"  {company_name}: {len(jobs)} positions")
 
-    for company_id, company_name in FAANG_COMPANIES.get("lever", []):
-        jobs = fetch_lever_jobs(company_id, company_name)
-        all_jobs["faang"].extend(jobs)
-        print(f"  {company_name}: {len(jobs)} positions")
+        for company_id, company_name in company_source.get("lever", []):
+            jobs = fetch_lever_jobs(company_id, company_name)
+            all_jobs.extend(jobs)
+            print(f"  {company_name}: {len(jobs)} positions")
 
-    print("\nFetching Other company jobs...")
-    for company_id, company_name in OTHER_COMPANIES.get("greenhouse", []):
-        jobs = fetch_greenhouse_jobs(company_id, company_name)
-        all_jobs["other"].extend(jobs)
-        print(f"  {company_name}: {len(jobs)} positions")
+        for workday_info in company_source.get("workday", []):
+            subdomain, instance, site, company_name = workday_info
+            jobs = fetch_workday_jobs(subdomain, instance, site, company_name)
+            all_jobs.extend(jobs)
+            print(f"  {company_name} (Workday): {len(jobs)} positions")
 
-    for company_id, company_name in OTHER_COMPANIES.get("lever", []):
-        jobs = fetch_lever_jobs(company_id, company_name)
-        all_jobs["other"].extend(jobs)
-        print(f"  {company_name}: {len(jobs)} positions")
+        for ashby_info in company_source.get("ashby", []):
+            company_slug, company_name = ashby_info
+            jobs = fetch_ashby_jobs(company_slug, company_name)
+            all_jobs.extend(jobs)
+            print(f"  {company_name} (Ashby): {len(jobs)} positions")
 
-    # Sort by location priority (California, then Seattle), then by recency
-    for category in all_jobs:
-        all_jobs[category].sort(
-            key=lambda x: (location_priority(x["location"]), x["days_posted"])
-        )
+    # Sort by days_posted (newest first - lowest number first)
+    all_jobs.sort(key=lambda x: x["days_posted"])
 
-    return all_jobs
+    return {"companies": all_jobs}
 
 
 def generate_job_table(jobs: List[Dict]) -> str:
@@ -662,9 +854,7 @@ def generate_job_table(jobs: List[Dict]) -> str:
 
 def generate_readme(all_jobs: Dict[str, List[Dict]]) -> str:
     """Generate the full README content"""
-    total_faang = len(all_jobs["faang"])
-    total_other = len(all_jobs["other"])
-    total = total_faang + total_other
+    total = len(all_jobs["companies"])
 
     last_updated = datetime.now().strftime("%B %d, %Y at %H:%M UTC")
 
@@ -676,26 +866,17 @@ This repository lists the latest Software Engineering Internship openings for 20
 
 **Last Updated:** {last_updated}
 
-**Total Positions:** {total} ({total_faang} FAANG+, {total_other} Other)
+**Total Positions:** {total}
 
-**Focus:** California (priority) and Seattle, WA
+**Focus:** California and Seattle, WA
 
----
-
-## 🔎 Quick Links
-
-- [FAANG+](#faang) - {total_faang} positions
-- [Other](#other) - {total_other} positions
+> 📌 Jobs are sorted by **newest first** (most recently posted at the top)
 
 ---
 
-## USA Internships 🦅
+## 🇺🇸 USA Internships
 
-### FAANG+
-{generate_job_table(all_jobs["faang"])}
-
-### Other
-{generate_job_table(all_jobs["other"])}
+{generate_job_table(all_jobs["companies"])}
 
 ---
 
@@ -703,8 +884,9 @@ This repository lists the latest Software Engineering Internship openings for 20
 
 This list is automatically scraped from company career pages and job boards including:
 - Greenhouse
-- Lever
+- Lever  
 - Workday
+- Ashby
 - Company career pages
 
 Positions within the last 120 days are included.
@@ -737,8 +919,7 @@ def main():
     
     print("\n" + "=" * 50)
     print("Summary:")
-    print(f"  FAANG+ positions: {len(all_jobs['faang'])}")
-    print(f"  Other positions: {len(all_jobs['other'])}")
+    print(f"  Total positions: {len(all_jobs['companies'])}")
     print("=" * 50)
     
     # Generate README
