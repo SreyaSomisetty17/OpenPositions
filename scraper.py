@@ -38,14 +38,6 @@ FAANG_COMPANIES = {
         ("meta", "Meta"),
         ("nvidia", "NVIDIA"),
         ("amd", "AMD"),
-        ("intel", "Intel"),
-        ("qualcomm", "Qualcomm"),
-        ("adobe", "Adobe"),
-        ("vmware", "VMware"),
-        ("servicenow", "ServiceNow"),
-        ("workday", "Workday"),
-        ("intuit", "Intuit"),
-        ("autodesk", "Autodesk"),
         ("paloaltonetworks", "Palo Alto Networks"),
         ("crowdstrike", "CrowdStrike"),
         ("datadog", "Datadog"),
@@ -56,6 +48,166 @@ FAANG_COMPANIES = {
     ],
     "lever": [
         ("netflix", "Netflix"),
+    ],
+    # Manual entries for companies using Workday, Taleo, and other proprietary ATS
+    # These don't have public APIs so we provide direct career page links
+    "manual": [
+        # FAANG
+        {
+            "company": "Google",
+            "title": "Software Engineering Intern, Summer 2026",
+            "location": "Mountain View, CA",
+            "url": "https://www.google.com/about/careers/applications/jobs/results/?q=Software%20Engineering%20Intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Apple",
+            "title": "Software Engineering Intern",
+            "location": "Cupertino, CA",
+            "url": "https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Amazon",
+            "title": "Software Development Engineer Intern",
+            "location": "Seattle, WA",
+            "url": "https://www.amazon.jobs/en/search?base_query=software+intern&loc_query=",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Microsoft",
+            "title": "Software Engineering Intern",
+            "location": "Redmond, WA",
+            "url": "https://careers.microsoft.com/us/en/search-results?keywords=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        # Semiconductor & Hardware (Workday users)
+        {
+            "company": "Intel",
+            "title": "Software Engineering Intern",
+            "location": "Santa Clara, CA",
+            "url": "https://jobs.intel.com/en/search-jobs/intern/599/1",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Qualcomm",
+            "title": "Software Engineering Intern",
+            "location": "San Diego, CA",
+            "url": "https://careers.qualcomm.com/careers/search?keyword=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "KLA Corporation",
+            "title": "Software Engineering Intern",
+            "location": "Milpitas, CA",
+            "url": "https://kla.wd1.myworkdayjobs.com/Search?q=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Applied Materials",
+            "title": "Software Engineering Intern",
+            "location": "Santa Clara, CA",
+            "url": "https://amat.wd1.myworkdayjobs.com/External?q=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Lam Research",
+            "title": "Software Engineering Intern",
+            "location": "Fremont, CA",
+            "url": "https://lamresearch.wd1.myworkdayjobs.com/LAM?q=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        # Enterprise Software (Workday/Oracle users)
+        {
+            "company": "Adobe",
+            "title": "Software Engineer Intern",
+            "location": "San Jose, CA",
+            "url": "https://careers.adobe.com/us/en/search-results?keywords=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "VMware",
+            "title": "Software Engineering Intern",
+            "location": "Palo Alto, CA",
+            "url": "https://careers.vmware.com/early-talent/jobs?keywords=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "ServiceNow",
+            "title": "Software Engineering Intern",
+            "location": "Santa Clara, CA",
+            "url": "https://careers.servicenow.com/en/jobs?q=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Workday",
+            "title": "Software Development Engineer Intern",
+            "location": "Pleasanton, CA",
+            "url": "https://workday.wd5.myworkdayjobs.com/Workday_University_Careers?q=software",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Intuit",
+            "title": "Software Engineering Intern",
+            "location": "Mountain View, CA",
+            "url": "https://jobs.intuit.com/search-jobs/intern/",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Autodesk",
+            "title": "Software Engineer Intern",
+            "location": "San Francisco, CA",
+            "url": "https://autodesk.wd1.myworkdayjobs.com/uni?q=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Salesforce",
+            "title": "Software Engineering Intern",
+            "location": "San Francisco, CA",
+            "url": "https://salesforce.wd12.myworkdayjobs.com/External_Career_Site?q=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "Oracle",
+            "title": "Software Engineer Intern",
+            "location": "Redwood City, CA",
+            "url": "https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions?keyword=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        {
+            "company": "SAP",
+            "title": "Software Development Intern",
+            "location": "Palo Alto, CA",
+            "url": "https://jobs.sap.com/search/?q=software%20intern",
+            "days_posted": 0,
+            "compensation": ""
+        },
+        # Cisco and Networking
+        {
+            "company": "Cisco",
+            "title": "Software Engineering Intern",
+            "location": "San Jose, CA",
+            "url": "https://jobs.cisco.com/jobs/SearchJobs/intern?21178=%5B169482%5D",
+            "days_posted": 0,
+            "compensation": ""
+        },
     ]
 }
 
@@ -217,32 +369,45 @@ OTHER_COMPANIES = {
 
 # Keywords to identify intern positions (must be exact matches or word boundaries)
 INTERN_KEYWORDS = [
-    "intern", "internship", "co-op", "coop",
+    "intern", "internship", "co-op", "coop", "co op",
     "summer 2025", "fall 2025", "spring 2025", "winter 2025",
     "summer 2026", "fall 2026", "spring 2026", "winter 2026",
     "new grad", "new college grad", "university grad",
-    "early career", "entry level", "junior"
+    "early career", "entry level", "junior", "associate",
+    "2025", "2026"  # Often appears in title for intern/new grad roles
 ]
 
 # Keywords that indicate this is NOT an intern position
 EXCLUDE_KEYWORDS = [
-    "senior", "staff", "principal", "lead", "manager",
+    "senior", "sr.", "sr ",
+    "staff", "principal", "lead", "manager",
     "director", "head of", "vp ", "vice president",
-    "internal systems", "internal tools", "internal audit",
-    "internals", "international", "internal engineering",
-    "internal developer", "apprentice", "apprenticeship"
+    "iv", " v ", " vi ",  # Senior levels (IV, V, VI)
+    "architect"  # Usually senior role
 ]
 
 # Keywords to identify software engineering positions
 SWE_KEYWORDS = [
-    "software", "engineer", "developer", "swe", "sde",
-    "backend", "frontend", "full stack", "fullstack",
+    "software", "engineer", "developer", "swe", "sde", "sdet",
+    "backend", "frontend", "front-end", "back-end", "front end", "back end",
+    "full stack", "fullstack", "full-stack",
     "mobile", "ios", "android", "web", "platform",
-    "infrastructure", "devops", "systems", "data engineer",
+    "infrastructure", "devops", "dev ops", "systems", "data engineer",
     "machine learning", "ml engineer", "ai engineer", "embedded",
     "firmware", "cloud", "security", "site reliability", "sre",
     "data science", "research", "computer science", "cs ",
-    "programmer", "coding", "tech", "technology"
+    "programmer", "coding", "tech", "technology",
+    "application", "product engineer", "technical",
+    "qa ", "quality assurance", "test", "automation",
+    "game", "graphics", "computer vision", "robotics",
+    "distributed systems", "api", "microservices",
+    "database", "network", "compute", "storage",
+    "java", "python", "c++", "javascript", "react", "node",
+    ".net", "angular", "vue", "typescript",
+    "hardware", "fpga", "verification", "validation",
+    "data", "analytics", "business intelligence", "bi ",
+    "integration", "deployment", "ci/cd", "build",
+    "wireless", "5g", "rf", "signal", "networking"
 ]
 
 SOFTWARE_ENGINEER_TOKENS = [
@@ -430,6 +595,13 @@ def fetch_all_jobs() -> Dict[str, List[Dict]]:
     }
 
     print("Fetching FAANG+ jobs...")
+    
+    # Add manual entries for companies using Workday/Taleo/proprietary ATS
+    manual_jobs = FAANG_COMPANIES.get("manual", [])
+    all_jobs["faang"].extend(manual_jobs)
+    if manual_jobs:
+        print(f"  Manual entries (Workday/ATS companies): {len(manual_jobs)} positions")
+    
     for company_id, company_name in FAANG_COMPANIES.get("greenhouse", []):
         jobs = fetch_greenhouse_jobs(company_id, company_name)
         all_jobs["faang"].extend(jobs)
