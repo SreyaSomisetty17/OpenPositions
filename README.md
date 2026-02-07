@@ -4,9 +4,9 @@
 
 This repository lists the latest Software Engineering Internship openings for 2026. Positions are **automatically updated daily** via GitHub Actions.
 
-**Last Updated:** February 06, 2026 at 23:23 UTC
+**Last Updated:** February 07, 2026 at 06:29 UTC
 
-**Total Positions:** 270
+**Total Positions:** 269
 
 **Focus:** California and Seattle, WA
 
@@ -36,6 +36,7 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Intel | Software Asset Coordinator and Analyst Intern | Costa Rica, San Jose |  | [Apply](https://intel.wd1.myworkdayjobs.com/en-US/External/job/job/Costa-Rica-San-Jose/Software-Asset-Coordinator-and-Analyst_JR0279843-1) | 0d |
 | Marvell | Design/DSP/Verification Intern - PhD Degree | Santa Clara, CA |  | [Apply](https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/job/Santa-Clara-CA/Design-DSP-Verification-Intern---PhD-Degree_2502786-1) | 0d |
 | Blue Origin | Harnessing Technician Intern (Summer 2026) | Greater Seattle Area |  | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/job/Greater-Seattle-Area/Harnessing-Technician-Intern--Summer-2026-_R59523) | 0d |
+| Affirm | Software Engineer, Early Career | San Francisco, California, United States |  | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) | 0d |
 | Airbnb | Strategic Finance & Analytics Intern (MBA/MS) | United States |  | [Apply](https://careers.airbnb.com/positions/7488879?gh_jid=7488879) | 0d |
 | MongoDB | 2026 - GTM Engineering Intern, Palo Alto | Palo Alto |  | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7335935) | 0d |
 | MongoDB | 2026 - Information Security Engineering Intern, Seattle | Seattle |  | [Apply](https://www.mongodb.com/careers/job/?gh_jid=7292751) | 0d |
@@ -56,7 +57,6 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Astranis | Flight Software Intern (Spring 2026) | San Francisco |  | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4619285006) | 0d |
 | Astranis | Guidance, Navigation, and Control Engineer Associate (Summer 2026) | San Francisco |  | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4599611006) | 0d |
 | Astranis | Guidance, Navigation, and Control Engineer Intern (Summer 2026) | San Francisco |  | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4599606006) | 0d |
-| Astranis | Hardware Test Intern (Spring 2026) | San Francisco |  | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4623589006) | 0d |
 | Astranis | Harness Design Engineer Intern (Summer 2026) | San Francisco |  | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4597558006) | 0d |
 | Astranis | Mechanical Engineer Associate (Summer 2026)  | San Francisco |  | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4603495006) | 0d |
 | Astranis | Mechanical Engineer Intern (Summer 2026) | San Francisco |  | [Apply](https://job-boards.greenhouse.io/astranis/jobs/4618033006) | 0d |
@@ -135,7 +135,6 @@ This repository lists the latest Software Engineering Internship openings for 20
 | KLA Corporation | Computer Vision/Machine Learning Intern | Milpitas, CA |  | [Apply](https://kla.wd1.myworkdayjobs.com/en-US/Search/job/job/Milpitas-CA/Computer-Vision-Machine-Learning-Intern_2533046-1) | 3d |
 | Marvell | Engineering Program Management Intern - Bachelor's Degree | Santa Clara, CA |  | [Apply](https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/job/Santa-Clara-CA/Engineering-Program-Management-Intern---Bachelor-s-Degree_2502748) | 3d |
 | Adobe | 2026 AI/ML Intern - Applied Research | San Jose |  | [Apply](https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/job/San-Jose/XMLNAME-2026-AI-ML-Intern---Applied-Research_R161124) | 3d |
-| Affirm | Software Engineer, Early Career | San Francisco, California, United States |  | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7485068003) | 3d |
 | Okta | TDI Security Program Management Intern (Summer 2026) | San Francisco, California |  | [Apply](https://www.okta.com/company/careers/opportunity/7551656?gh_jid=7551656) | 3d |
 | Sigma Computing | Security Engineer Graduate Intern (Summer 2026) | San Francisco, CA |  | [Apply](https://job-boards.greenhouse.io/sigmacomputing/jobs/7613997003) | 3d |
 | Roblox | [2026 Canada] Software Engineer, Geometry - Early Career | Vancouver, British Columbia, Canada |  | [Apply](https://careers.roblox.com/jobs/7558821?gh_jid=7558821) | 3d |
@@ -154,9 +153,9 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Sigma Computing | Software Engineering Intern (Summer 2026) | San Francisco, CA and New York City, NY |  | [Apply](https://job-boards.greenhouse.io/sigmacomputing/jobs/7614004003) | 5d |
 | Sigma Computing | Software Engineer (New Grad Program) | San Francisco, CA |  | [Apply](https://job-boards.greenhouse.io/sigmacomputing/jobs/7614005003) | 5d |
 | Sigma Computing | Technical Writing Intern (Summer 2026) | San Francisco, CA |  | [Apply](https://job-boards.greenhouse.io/sigmacomputing/jobs/7614022003) | 5d |
-| Zoox | Technical Product Management Intern, Operational Tools | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/d6c86c35-b706-4046-9bfe-396114ebddf1) | 6d |
 | Databricks | PhD GenAI Research Scientist Intern | San Francisco, California |  | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002) | 7d |
 | Databricks | Software Engineer - New Grad (2026 Start) | Vancouver, Canada |  | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=6866542002) | 7d |
+| Zoox | Technical Product Management Intern, Operational Tools | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/d6c86c35-b706-4046-9bfe-396114ebddf1) | 7d |
 | Dropbox | CX Technical Content Design Intern (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7558512?gh_jid=7558512) | 7d |
 | Dropbox | CX Technical Content Design Intern (Summer 2026) | Remote - Canada: Select locations |  | [Apply](https://jobs.dropbox.com/listing/7558516?gh_jid=7558516) | 7d |
 | Rocket Lab | Electrical Engineering Intern Summer 2026 | Long Beach, CA |  | [Apply](https://job-boards.greenhouse.io/rocketlab/jobs/7607472003) | 7d |
@@ -180,17 +179,17 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Dropbox | Software Engineer Intern (Summer 2026) | Remote - Poland |  | [Apply](https://jobs.dropbox.com/listing/7362887?gh_jid=7362887) | 9d |
 | Dropbox | Support Enablement Engineer Intern  (Summer 2026) | Remote - Canada: Select locations |  | [Apply](https://jobs.dropbox.com/listing/7531481?gh_jid=7531481) | 9d |
 | Dropbox | Support Enablement Engineer Intern  (Summer 2026) | Remote - US: All locations |  | [Apply](https://jobs.dropbox.com/listing/7531477?gh_jid=7531477) | 9d |
-| Okta | Site Reliability Engineer Intern (Summer 2026) | Bellevue, Washington |  | [Apply](https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798) | 9d |
 | Webflow | Technical Support Associate, EMEA (German Speaking) | Ireland Remote; U.K. Remote |  | [Apply](https://job-boards.greenhouse.io/webflow/jobs/7531244) | 9d |
 | KLA Corporation | Software Engineer Intern | Milpitas, CA |  | [Apply](https://kla.wd1.myworkdayjobs.com/en-US/Search/job/job/Milpitas-CA/Software-Engineer-Intern_2533200) | 10d |
 | Marvell | Photonic Systems Characterization Intern - PhD Degree | Westlake Village, CA |  | [Apply](https://marvell.wd1.myworkdayjobs.com/en-US/MarvellCareers/job/job/Westlake-Village-CA/IC-Validation-Engineer-Intern---Master-s-Degree_2503012-1) | 10d |
 | Autodesk | Intern, Model Based Systems Engineering | Toronto, ON, CAN |  | [Apply](https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/job/Toronto-ON-CAN/Intern--Model-Based-Systems-Engineering_26WD94900) | 10d |
 | Autodesk | Intern, Physics-Based Character Motion Research | Toronto, ON, CAN |  | [Apply](https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/job/Toronto-ON-CAN/Intern--Physics-Based-Character-Motion-Research_26WD95074-1) | 10d |
+| Okta | Site Reliability Engineer Intern (Summer 2026) | Bellevue, Washington |  | [Apply](https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798) | 10d |
 | NVIDIA | Technical Program Management Intern, Deep Learning Software - Summe... | US, CA, Santa Clara |  | [Apply](https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/job/US-CA-Santa-Clara/Technical-Program-Management-Intern--Deep-Learning-Software---Summer-2026_JR2009564) | 11d |
 | Affirm | Security Intern - Summer 2026 | San Francisco, California, United States |  | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7519403003) | 11d |
 | Upstart | Data Science Intern | United States | Remote |  | [Apply](https://careers.upstart.com/jobs?gh_jid=7338780) | 11d |
-| Woven by Toyota | Machine Learning Engineer, Behavior (Internship) | Palo Alto, CA |  | [Apply](https://jobs.lever.co/woven-by-toyota/f324d834-99b1-4cb2-825e-ecc2e0623d57) | 13d |
 | Upstart | Machine Learning Engineer Intern | United States | Remote |  | [Apply](https://careers.upstart.com/jobs?gh_jid=7409227) | 13d |
+| Woven by Toyota | Machine Learning Engineer, Behavior (Internship) | Palo Alto, CA |  | [Apply](https://jobs.lever.co/woven-by-toyota/f324d834-99b1-4cb2-825e-ecc2e0623d57) | 14d |
 | Affirm | Software Engineer, Early Career | Chicago, Illinois, United States |  | [Apply](https://job-boards.greenhouse.io/affirm/jobs/7566696003) | 14d |
 | Pinterest | Machine Learning Intern Fall 2026 (Toronto) | Toronto, ON, CA |  | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7268778) | 14d |
 | Autodesk | Intern, Construction UX Research | Toronto, ON, CAN |  | [Apply](https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/job/Toronto-ON-CAN/Intern--Construction-UX-Research_25WD94406-1) | 15d |
@@ -247,16 +246,16 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Robinhood | Software Developer Intern, Web (Summer 2026) | Toronto, Canada |  | [Apply](https://boards.greenhouse.io/robinhood/jobs/7238998?t=gh_src=&gh_jid=7238998) | 32d |
 | Robinhood | Software Engineering Intern, Android (Summer 2026) | Menlo Park, CA |  | [Apply](https://boards.greenhouse.io/robinhood/jobs/7239199?t=gh_src=&gh_jid=7239199) | 32d |
 | Robinhood | Software Engineering Intern, iOS (Summer 2026) | Menlo Park, CA |  | [Apply](https://boards.greenhouse.io/robinhood/jobs/7239268?t=gh_src=&gh_jid=7239268) | 32d |
-| Zoox | Enterprise Integration Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/0a53e7a7-bbbf-4834-bcd4-f0372e388dfa) | 44d |
-| Zoox | Embedded Software Development Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/1fcd743b-6bba-4e6e-b926-a164fff73654) | 45d |
+| Zoox | Enterprise Integration Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/0a53e7a7-bbbf-4834-bcd4-f0372e388dfa) | 45d |
+| Zoox | Embedded Software Development Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/1fcd743b-6bba-4e6e-b926-a164fff73654) | 46d |
 | Grammarly | Software Engineer Intern (Summer 2026) | Berlin; Hybrid |  | [Apply](https://job-boards.greenhouse.io/grammarly/jobs/7491439) | 46d |
 | Zoox | Data Governance Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/e63f6b8f-bd1a-4822-9b61-22576c01f64f) | 49d |
-| Zoox | Manufacturing Engineering Intern | Hayward, CA |  | [Apply](https://jobs.lever.co/zoox/0b25d6a9-8e85-4b38-aae9-c3699e499b6a) | 49d |
-| Zoox | System Engineering Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/eb2f10b7-300a-46f1-bd35-41167c9f7c63) | 49d |
 | Zoox | Electrical Engineering Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/acbed1ab-29d7-4cda-b28b-0d88baf6e9a5) | 50d |
 | Zoox | Hardware Integration and Test Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/98429957-337e-459f-94b6-fa6acfce82b9) | 50d |
+| Zoox | Manufacturing Engineering Intern | Hayward, CA |  | [Apply](https://jobs.lever.co/zoox/0b25d6a9-8e85-4b38-aae9-c3699e499b6a) | 50d |
 | Zoox | Mechanical Engineering Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/9563a5de-8361-4fd1-946a-be872332ae26) | 50d |
 | Zoox | Quality Engineering Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/499ef1a2-6383-4dd6-b94f-63ce8de6c483) | 50d |
+| Zoox | System Engineering Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/eb2f10b7-300a-46f1-bd35-41167c9f7c63) | 50d |
 | Pure Storage | Software Engineer Intern (Summer 2026) | Santa Clara, California |  | [Apply](https://boards.greenhouse.io/purestorage/jobs/7258723?gh_jid=7258723) | 56d |
 | Zoox | Signal Processing Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/96857e0b-d39c-4505-b0b4-9a14c7d9db58) | 59d |
 | Zoox | Vehicle Engineering Operations Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/64f14dfd-80d0-4169-bf3d-1a95c87b2736) | 59d |
@@ -272,22 +271,22 @@ This repository lists the latest Software Engineering Internship openings for 20
 | Zoox | Machine Learning Engineer Intern, Perception | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/9b3ab3ee-b130-49b6-8413-7d8fd9c33ed3) | 80d |
 | Zoox | Machine Learning Engineer Intern, Simulation | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/f24a2d0c-bda7-48ff-9c83-9a96900128b7) | 80d |
 | Pinterest | PhD Machine Learning Internship 2026 (USA)  | San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US |  | [Apply](https://www.pinterestcareers.com/jobs/?gh_jid=7211004) | 84d |
-| Zoox | Core Software Systems Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/db76eba1-18cb-41f1-ab7e-f4ace0085a68) | 87d |
-| Zoox | Automation & DevOps Tooling Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/fd2be6ec-162d-4955-802f-fb8d2de8b3c0) | 90d |
-| Zoox | Data Engineer Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/b9fb6f1d-31db-4a79-b70b-9396bf01b117) | 90d |
-| Zoox | Data Scientist Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/ab805ec5-1d08-420c-9606-f91825e6a1f9) | 90d |
-| Zoox | Firmware & C++ Development Intern | San Diego, CA |  | [Apply](https://jobs.lever.co/zoox/5b8ec01c-fdc6-4e05-b077-051f28384b6f) | 90d |
-| Zoox | HIL & System Validation Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/07ac26ee-0594-41d8-928e-7cf1e373e2dd) | 90d |
-| Zoox | Test Automation & QA Systems Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/3a7c0c4b-4f23-4136-99a9-df64b341a0fd) | 90d |
-| Saviynt | Software Engineering R&D - Internship | El Segundo, CA |  | [Apply](https://jobs.lever.co/saviynt/17118748-6a11-44e2-9bf9-58badadb6ac0) | 93d |
+| Zoox | Core Software Systems Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/db76eba1-18cb-41f1-ab7e-f4ace0085a68) | 88d |
+| Zoox | Automation & DevOps Tooling Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/fd2be6ec-162d-4955-802f-fb8d2de8b3c0) | 91d |
+| Zoox | Data Engineer Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/b9fb6f1d-31db-4a79-b70b-9396bf01b117) | 91d |
+| Zoox | Data Scientist Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/ab805ec5-1d08-420c-9606-f91825e6a1f9) | 91d |
+| Zoox | Firmware & C++ Development Intern | San Diego, CA |  | [Apply](https://jobs.lever.co/zoox/5b8ec01c-fdc6-4e05-b077-051f28384b6f) | 91d |
+| Zoox | HIL & System Validation Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/07ac26ee-0594-41d8-928e-7cf1e373e2dd) | 91d |
+| Zoox | Test Automation & QA Systems Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/3a7c0c4b-4f23-4136-99a9-df64b341a0fd) | 91d |
+| Saviynt | Software Engineering R&D - Internship | El Segundo, CA |  | [Apply](https://jobs.lever.co/saviynt/17118748-6a11-44e2-9bf9-58badadb6ac0) | 94d |
 | Zoox | Mapping Software Intern | Foster City, CA |  | [Apply](https://jobs.lever.co/zoox/f318f39e-c089-4240-b341-ebb021d86b4f) | 95d |
 | Lyft | Software Engineer Intern, Mobile iOS (Summer 2026) | San Francisco, CA |  | [Apply](https://app.careerpuck.com/job-board/lyft/job/8215921002?gh_jid=8215921002) | 109d |
-| Hermeus | Modeling & Simulation Software Engineering Intern - Summer 2026 | Los Angeles, CA |  | [Apply](https://jobs.lever.co/hermeus/dcd92687-0f98-4288-a68e-403fcd654853) | 128d |
 | Replit | Software Engineering Intern (Summer 2026) | Foster City, CA (Hybrid) In office M,W,F |  | [Apply](https://jobs.ashbyhq.com/replit/12737078-74c7-4e63-98a7-5e8da1e9deb1) | 128d |
 | Replit | Software Engineer - New Grad (Summer 2026) | Foster City, CA (Hybrid) In office M,W,F |  | [Apply](https://jobs.ashbyhq.com/replit/b5e81eae-06f9-4798-8988-2d06ca936dbc) | 128d |
-| Hermeus | Manufacturing Engineering Intern - Summer 2026 | Los Angeles, CA |  | [Apply](https://jobs.lever.co/hermeus/a1f3aa29-72ea-4843-b2ea-801f3bef73ae) | 129d |
+| Hermeus | Modeling & Simulation Software Engineering Intern - Summer 2026 | Los Angeles, CA |  | [Apply](https://jobs.lever.co/hermeus/dcd92687-0f98-4288-a68e-403fcd654853) | 129d |
+| Hermeus | Manufacturing Engineering Intern - Summer 2026 | Los Angeles, CA |  | [Apply](https://jobs.lever.co/hermeus/a1f3aa29-72ea-4843-b2ea-801f3bef73ae) | 130d |
 | Hermeus | Mechanical Engineering Intern  - Summer 2026 | Los Angeles, CA |  | [Apply](https://jobs.lever.co/hermeus/9dd2eef8-f4c6-4127-a007-f3cc16728c49) | 169d |
-| Mechanize | Junior Software Engineer | San Francisco |  | [Apply](https://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490) | 202d |
+| Mechanize | Junior Software Engineer | San Francisco |  | [Apply](https://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490) | 203d |
 
 
 ---

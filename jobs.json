@@ -145,6 +145,14 @@
       "compensation": ""
     },
     {
+      "company": "Affirm",
+      "title": "Software Engineer, Early Career",
+      "location": "San Francisco, California, United States",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7485068003",
+      "days_posted": 0,
+      "compensation": ""
+    },
+    {
       "company": "Airbnb",
       "title": "Strategic Finance & Analytics Intern (MBA/MS)",
       "location": "United States",
@@ -301,14 +309,6 @@
       "title": "Guidance, Navigation, and Control Engineer Intern (Summer 2026)",
       "location": "San Francisco",
       "url": "https://job-boards.greenhouse.io/astranis/jobs/4599606006",
-      "days_posted": 0,
-      "compensation": ""
-    },
-    {
-      "company": "Astranis",
-      "title": "Hardware Test Intern (Spring 2026)",
-      "location": "San Francisco",
-      "url": "https://job-boards.greenhouse.io/astranis/jobs/4623589006",
       "days_posted": 0,
       "compensation": ""
     },
@@ -937,14 +937,6 @@
       "compensation": ""
     },
     {
-      "company": "Affirm",
-      "title": "Software Engineer, Early Career",
-      "location": "San Francisco, California, United States",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7485068003",
-      "days_posted": 3,
-      "compensation": ""
-    },
-    {
       "company": "Okta",
       "title": "TDI Security Program Management Intern (Summer 2026)",
       "location": "San Francisco, California",
@@ -1089,14 +1081,6 @@
       "compensation": ""
     },
     {
-      "company": "Zoox",
-      "title": "Technical Product Management Intern, Operational Tools",
-      "location": "Foster City, CA",
-      "url": "https://jobs.lever.co/zoox/d6c86c35-b706-4046-9bfe-396114ebddf1",
-      "days_posted": 6,
-      "compensation": ""
-    },
-    {
       "company": "Databricks",
       "title": "PhD GenAI Research Scientist Intern",
       "location": "San Francisco, California",
@@ -1109,6 +1093,14 @@
       "title": "Software Engineer - New Grad (2026 Start)",
       "location": "Vancouver, Canada",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6866542002",
+      "days_posted": 7,
+      "compensation": ""
+    },
+    {
+      "company": "Zoox",
+      "title": "Technical Product Management Intern, Operational Tools",
+      "location": "Foster City, CA",
+      "url": "https://jobs.lever.co/zoox/d6c86c35-b706-4046-9bfe-396114ebddf1",
       "days_posted": 7,
       "compensation": ""
     },
@@ -1297,14 +1289,6 @@
       "compensation": ""
     },
     {
-      "company": "Okta",
-      "title": "Site Reliability Engineer Intern (Summer 2026)",
-      "location": "Bellevue, Washington",
-      "url": "https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798",
-      "days_posted": 9,
-      "compensation": ""
-    },
-    {
       "company": "Webflow",
       "title": "Technical Support Associate, EMEA (German Speaking)",
       "location": "Ireland Remote; U.K. Remote",
@@ -1345,6 +1329,14 @@
       "compensation": ""
     },
     {
+      "company": "Okta",
+      "title": "Site Reliability Engineer Intern (Summer 2026)",
+      "location": "Bellevue, Washington",
+      "url": "https://www.okta.com/company/careers/opportunity/7545798?gh_jid=7545798",
+      "days_posted": 10,
+      "compensation": ""
+    },
+    {
       "company": "NVIDIA",
       "title": "Technical Program Management Intern, Deep Learning Software - Summer 2026",
       "location": "US, CA, Santa Clara",
@@ -1369,19 +1361,19 @@
       "compensation": ""
     },
     {
-      "company": "Woven by Toyota",
-      "title": "Machine Learning Engineer, Behavior (Internship)",
-      "location": "Palo Alto, CA",
-      "url": "https://jobs.lever.co/woven-by-toyota/f324d834-99b1-4cb2-825e-ecc2e0623d57",
-      "days_posted": 13,
-      "compensation": ""
-    },
-    {
       "company": "Upstart",
       "title": "Machine Learning Engineer Intern",
       "location": "United States | Remote",
       "url": "https://careers.upstart.com/jobs?gh_jid=7409227",
       "days_posted": 13,
+      "compensation": ""
+    },
+    {
+      "company": "Woven by Toyota",
+      "title": "Machine Learning Engineer, Behavior (Internship)",
+      "location": "Palo Alto, CA",
+      "url": "https://jobs.lever.co/woven-by-toyota/f324d834-99b1-4cb2-825e-ecc2e0623d57",
+      "days_posted": 14,
       "compensation": ""
     },
     {
@@ -1837,7 +1829,7 @@
       "title": "Enterprise Integration Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/0a53e7a7-bbbf-4834-bcd4-f0372e388dfa",
-      "days_posted": 44,
+      "days_posted": 45,
       "compensation": ""
     },
     {
@@ -1845,7 +1837,7 @@
       "title": "Embedded Software Development Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/1fcd743b-6bba-4e6e-b926-a164fff73654",
-      "days_posted": 45,
+      "days_posted": 46,
       "compensation": ""
     },
     {
@@ -1861,22 +1853,6 @@
       "title": "Data Governance Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/e63f6b8f-bd1a-4822-9b61-22576c01f64f",
-      "days_posted": 49,
-      "compensation": ""
-    },
-    {
-      "company": "Zoox",
-      "title": "Manufacturing Engineering Intern",
-      "location": "Hayward, CA",
-      "url": "https://jobs.lever.co/zoox/0b25d6a9-8e85-4b38-aae9-c3699e499b6a",
-      "days_posted": 49,
-      "compensation": ""
-    },
-    {
-      "company": "Zoox",
-      "title": "System Engineering Intern",
-      "location": "Foster City, CA",
-      "url": "https://jobs.lever.co/zoox/eb2f10b7-300a-46f1-bd35-41167c9f7c63",
       "days_posted": 49,
       "compensation": ""
     },
@@ -1898,6 +1874,14 @@
     },
     {
       "company": "Zoox",
+      "title": "Manufacturing Engineering Intern",
+      "location": "Hayward, CA",
+      "url": "https://jobs.lever.co/zoox/0b25d6a9-8e85-4b38-aae9-c3699e499b6a",
+      "days_posted": 50,
+      "compensation": ""
+    },
+    {
+      "company": "Zoox",
       "title": "Mechanical Engineering Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/9563a5de-8361-4fd1-946a-be872332ae26",
@@ -1909,6 +1893,14 @@
       "title": "Quality Engineering Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/499ef1a2-6383-4dd6-b94f-63ce8de6c483",
+      "days_posted": 50,
+      "compensation": ""
+    },
+    {
+      "company": "Zoox",
+      "title": "System Engineering Intern",
+      "location": "Foster City, CA",
+      "url": "https://jobs.lever.co/zoox/eb2f10b7-300a-46f1-bd35-41167c9f7c63",
       "days_posted": 50,
       "compensation": ""
     },
@@ -2037,7 +2029,7 @@
       "title": "Core Software Systems Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/db76eba1-18cb-41f1-ab7e-f4ace0085a68",
-      "days_posted": 87,
+      "days_posted": 88,
       "compensation": ""
     },
     {
@@ -2045,7 +2037,7 @@
       "title": "Automation & DevOps Tooling Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/fd2be6ec-162d-4955-802f-fb8d2de8b3c0",
-      "days_posted": 90,
+      "days_posted": 91,
       "compensation": ""
     },
     {
@@ -2053,7 +2045,7 @@
       "title": "Data Engineer Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/b9fb6f1d-31db-4a79-b70b-9396bf01b117",
-      "days_posted": 90,
+      "days_posted": 91,
       "compensation": ""
     },
     {
@@ -2061,7 +2053,7 @@
       "title": "Data Scientist Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/ab805ec5-1d08-420c-9606-f91825e6a1f9",
-      "days_posted": 90,
+      "days_posted": 91,
       "compensation": ""
     },
     {
@@ -2069,7 +2061,7 @@
       "title": "Firmware & C++ Development Intern",
       "location": "San Diego, CA",
       "url": "https://jobs.lever.co/zoox/5b8ec01c-fdc6-4e05-b077-051f28384b6f",
-      "days_posted": 90,
+      "days_posted": 91,
       "compensation": ""
     },
     {
@@ -2077,7 +2069,7 @@
       "title": "HIL & System Validation Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/07ac26ee-0594-41d8-928e-7cf1e373e2dd",
-      "days_posted": 90,
+      "days_posted": 91,
       "compensation": ""
     },
     {
@@ -2085,7 +2077,7 @@
       "title": "Test Automation & QA Systems Intern",
       "location": "Foster City, CA",
       "url": "https://jobs.lever.co/zoox/3a7c0c4b-4f23-4136-99a9-df64b341a0fd",
-      "days_posted": 90,
+      "days_posted": 91,
       "compensation": ""
     },
     {
@@ -2093,7 +2085,7 @@
       "title": "Software Engineering R&D - Internship",
       "location": "El Segundo, CA",
       "url": "https://jobs.lever.co/saviynt/17118748-6a11-44e2-9bf9-58badadb6ac0",
-      "days_posted": 93,
+      "days_posted": 94,
       "compensation": ""
     },
     {
@@ -2110,14 +2102,6 @@
       "location": "San Francisco, CA",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8215921002?gh_jid=8215921002",
       "days_posted": 109,
-      "compensation": ""
-    },
-    {
-      "company": "Hermeus",
-      "title": "Modeling & Simulation Software Engineering Intern - Summer 2026",
-      "location": "Los Angeles, CA",
-      "url": "https://jobs.lever.co/hermeus/dcd92687-0f98-4288-a68e-403fcd654853",
-      "days_posted": 128,
       "compensation": ""
     },
     {
@@ -2138,10 +2122,18 @@
     },
     {
       "company": "Hermeus",
+      "title": "Modeling & Simulation Software Engineering Intern - Summer 2026",
+      "location": "Los Angeles, CA",
+      "url": "https://jobs.lever.co/hermeus/dcd92687-0f98-4288-a68e-403fcd654853",
+      "days_posted": 129,
+      "compensation": ""
+    },
+    {
+      "company": "Hermeus",
       "title": "Manufacturing Engineering Intern - Summer 2026",
       "location": "Los Angeles, CA",
       "url": "https://jobs.lever.co/hermeus/a1f3aa29-72ea-4843-b2ea-801f3bef73ae",
-      "days_posted": 129,
+      "days_posted": 130,
       "compensation": ""
     },
     {
@@ -2157,7 +2149,7 @@
       "title": "Junior Software Engineer",
       "location": "San Francisco",
       "url": "https://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490",
-      "days_posted": 202,
+      "days_posted": 203,
       "compensation": ""
     }
   ]
